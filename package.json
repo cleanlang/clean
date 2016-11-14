@@ -1,0 +1,17 @@
+{
+  "name": "clean",
+  "version": "0.0.1",
+  "description": "A Clean new programming Language",
+  "main": "lib/clean.js",
+  "bin": {
+    "clean": "bin/command.js"
+  },
+  "scripts": {
+    "test": "node tests/test.js"
+  },
+  "author": "Santosh Rajan",
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}
