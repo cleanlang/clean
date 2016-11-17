@@ -24,7 +24,7 @@ let expc = {
   ]
 }
 
-test('parser', function (t) {
+test('parser', t => {
   t.plan(1)
   t.deepEqual(parser(src), expc)
 })
