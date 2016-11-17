@@ -1,5 +1,5 @@
 const test = require('tape')
-const parser = require(__dirname + '/../lib/parser.js')
+const parser = require(__dirname + '/../lib/parser')
 let src = `a = 7`
 let expc = {
   'type': 'Program',
