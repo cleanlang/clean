@@ -2,9 +2,9 @@ const test = require('tape')
 const parser = require(__dirname + '/../lib/parser')
 const fs = require('fs')
 let full_src = fs.readFileSync('test.cl', 'utf8').split('\n')
-//Variable Declaration Parser
-let src = full_src[0].toString()
-let expc = {
+// Variable Declaration Parser
+let src1 = full_src[0].toString()
+let expc1 = {
     "type": "Program",
     "body": [
         {
@@ -29,13 +29,9 @@ let expc = {
     "sourceType": "script"
 }
 
-test('parser', function (t) {
-  t.plan(1)
-  t.deepEqual(parser(src), expc)
-})
-//Function Declaration Parser
-src = full_src[1].toString()
-expc = {
+// Function Declaration Parser
+let src2 = full_src[1].toString()
+let expc2 = {
     "type": "Program",
     "body": [
         {
@@ -76,7 +72,9 @@ expc = {
     "sourceType": "script"
 }
 
+
 test('parser', function (t) {
-  t.plan(1)
-  t.deepEqual(parser(src), expc)
+  t.plan(2)
+  t.deepEqual(parser(src1), expc1, 'Varaible Declaration Parser')
+  t.deepEqual(parser(src2), expc2, 'Function Declaration Parser')
 })
