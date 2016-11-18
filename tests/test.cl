@@ -1,4 +1,1 @@
-square = 1
-
-
-
+add a b = 1
