@@ -15,9 +15,18 @@ const expected = {
             'name': 'a'
           },
           'init': {
-            'type': 'Literal',
-            'value': 7,
-            'raw': '7'
+            'type': 'BinaryExpression',
+            'operator': '+',
+            'left': {
+              'type': 'Literal',
+              'value': 7,
+              'raw': '7'
+            },
+            'right': {
+              'type': 'Literal',
+              'value': 2,
+              'raw': '2'
+            }
           }
         }
       ],
