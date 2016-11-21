@@ -61,7 +61,7 @@ const expected = {
   'sourceType': 'script'
 }
 
-test('parser', function (t) {
+test('parser', t => {
   t.plan(1)
   t.deepEqual(parser(src), expected, 'Program Parser')
 })
