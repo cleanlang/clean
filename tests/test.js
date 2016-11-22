@@ -56,11 +56,34 @@ const expected = {
         }
       ],
       'kind': 'const'
+    },
+    {
+      'type': 'ExpressionStatement',
+      'expression': {
+        'type': 'CallExpression',
+        'callee': {
+          'type': 'Identifier',
+          'name': 'f'
+        },
+        'arguements': [
+          {
+            'type': 'Literal',
+            'value': 5,
+            'raw': '5'
+          },
+          {
+            'type': 'Literal',
+            'value': 1,
+            'raw': '1'
+          }
+        ]
+      }
     }
+
   ],
   'sourceType': 'script'
 }
-
+//console.log(JSON.stringify(parser(src), null, 4))
 test('parser', t => {
   t.plan(1)
   t.deepEqual(parser(src), expected, 'Program Parser')
