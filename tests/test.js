@@ -56,12 +56,35 @@ const expected = {
         }
       ],
       'kind': 'const'
+    },
+    {
+      'type': 'ExpressionStatement',
+      'expression': {
+        'type': 'CallExpression',
+        'callee': {
+          'type': 'Identifier',
+          'name': 'f'
+        },
+        'arguements': [
+          {
+            'type': 'Literal',
+            'value': 5,
+            'raw': '5'
+          },
+          {
+            'type': 'Literal',
+            'value': 1,
+            'raw': '1'
+          }
+        ]
+      }
     }
+
   ],
   'sourceType': 'script'
 }
 
-test('parser', function (t) {
+test('parser', t => {
   t.plan(1)
   t.deepEqual(parser(src), expected, 'Program Parser')
 })
