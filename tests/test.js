@@ -83,7 +83,7 @@ const expected = {
   ],
   'sourceType': 'script'
 }
-//console.log(JSON.stringify(parser(src), null, 4))
+
 test('parser', t => {
   t.plan(1)
   t.deepEqual(parser(src), expected, 'Program Parser')
