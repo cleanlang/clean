@@ -78,8 +78,31 @@ const expected = {
           }
         ]
       }
+    },
+    {
+      'type': 'ExpressionStatement',
+      'expression': {
+        'type': 'ArrowFunctionExpression',
+        'id': null,
+        'params': [
+          {
+            'type': 'Identifier',
+            'name': 'a'
+          },
+          {
+            'type': 'Identifier',
+            'name': 'b'
+          }
+        ],
+        'body': {
+          'type': 'Literal',
+          'value': 6,
+          'raw': '6'
+        },
+        'generator': false,
+        'expression': true
+      }
     }
-
   ],
   'sourceType': 'script'
 }
