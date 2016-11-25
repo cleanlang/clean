@@ -10,7 +10,9 @@ expected.body = [
     [estemplate.identifier('a'), estemplate.identifier('b')],
     estemplate.literal('1')),
   estemplate.fnCall(estemplate.identifier('f'),
-    [estemplate.literal('5'), estemplate.literal('1')])
+    [estemplate.literal('5'), estemplate.literal('1')]),
+  estemplate.lambda([estemplate.identifier('a'), estemplate.identifier('b')],
+    estemplate.literal('6'))
 ]
 
 test('parser', t => {
