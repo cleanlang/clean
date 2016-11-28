@@ -1,7 +1,7 @@
 const test = require('tape')
 const parser = require('../lib/parser')
 const fs = require('fs')
-const src = fs.readFileSync('test.cl', 'utf8').toString()
+const src = fs.readFileSync('tests/test.cl', 'utf8').toString()
 const estemplate = require('../lib/template')
 let expected = estemplate.ast()
 expected.body = [
@@ -12,7 +12,9 @@ expected.body = [
   estemplate.fnCall(estemplate.identifier('f'),
     [estemplate.literal('5'), estemplate.literal('1')]),
   estemplate.lambda([estemplate.identifier('a'), estemplate.identifier('b')],
-    estemplate.literal('6'))
+    estemplate.literal('6')),
+  estemplate.letExpression([estemplate.identifier('x'), estemplate.identifier('y')],
+    [estemplate.literal('10'), estemplate.literal('20')], estemplate.literal('3'))
 ]
 
 test('parser', t => {
