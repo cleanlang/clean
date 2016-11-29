@@ -105,21 +105,18 @@ let expected = {
         },
         'arguments': [
           {
-            'type': 'ExpressionStatement',
-            'expression': {
-              'type': 'CallExpression',
-              'callee': {
-                'type': 'Identifier',
-                'name': 'fact'
-              },
-              'arguments': [
-                {
-                  'type': 'Literal',
-                  'value': 5,
-                  'raw': '5'
-                }
-              ]
-            }
+            'type': 'CallExpression',
+            'callee': {
+              'type': 'Identifier',
+              'name': 'fact'
+            },
+            'arguments': [
+              {
+                'type': 'Literal',
+                'value': 5,
+                'raw': '5'
+              }
+            ]
           }
         ]
       }
