@@ -2,20 +2,148 @@ const test = require('tape')
 const parser = require('../lib/parser')
 const fs = require('fs')
 const src = fs.readFileSync('tests/test.cl', 'utf8').toString()
-const estemplate = require('../lib/template')
-let expected = estemplate.ast()
-expected.body = [
-  estemplate.declaration(estemplate.identifier('a'), estemplate.literal('7')),
-  estemplate.funcDeclaration(estemplate.identifier('f'),
-    [estemplate.identifier('a'), estemplate.identifier('b')],
-    estemplate.literal('1')),
-  estemplate.fnCall(estemplate.identifier('f'),
-    [estemplate.literal('5'), estemplate.literal('1')]),
-  estemplate.lambda([estemplate.identifier('a'), estemplate.identifier('b')],
-    estemplate.literal('6')),
-  estemplate.letExpression([estemplate.identifier('x'), estemplate.identifier('y')],
-    [estemplate.literal('10'), estemplate.literal('20')], estemplate.literal('3'))
-]
+// const estemplate = require('../lib/template')
+let expected = {
+  'type': 'Program',
+  'body': [
+    {
+      'type': 'VariableDeclaration',
+      'declarations': [
+        {
+          'type': 'VariableDeclarator',
+          'id': {
+            'type': 'Identifier',
+            'name': 'fact'
+          },
+          'init': {
+            'type': 'ArrowFunctionExpression',
+            'id': null,
+            'params': [
+              {
+                'type': 'Literal',
+                'value': 1,
+                'raw': '1'
+              }
+            ],
+            'body': {
+              'type': 'Literal',
+              'value': 1,
+              'raw': '1'
+            },
+            'generator': false,
+            'expression': true
+          }
+        }
+      ],
+      'kind': 'const'
+    },
+    {
+      'type': 'VariableDeclaration',
+      'declarations': [
+        {
+          'type': 'VariableDeclarator',
+          'id': {
+            'type': 'Identifier',
+            'name': 'fact'
+          },
+          'init': {
+            'type': 'ArrowFunctionExpression',
+            'id': null,
+            'params': [
+              {
+                'type': 'Identifier',
+                'name': 'n'
+              }
+            ],
+            'body': {
+              'type': 'BinaryExpression',
+              'operator': '*',
+              'left': {
+                'type': 'Identifier',
+                'name': 'n'
+              },
+              'right': {
+                'type': 'ExpressionStatement',
+                'expression': {
+                  'type': 'CallExpression',
+                  'callee': {
+                    'type': 'Identifier',
+                    'name': 'fact'
+                  },
+                  'arguments': [
+                    {
+                      'type': 'BinaryExpression',
+                      'operator': '-',
+                      'left': {
+                        'type': 'Identifier',
+                        'name': 'n'
+                      },
+                      'right': {
+                        'type': 'Literal',
+                        'value': 1,
+                        'raw': '1'
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            'generator': false,
+            'expression': true
+          }
+        }
+      ],
+      'kind': 'const'
+    },
+    {
+      'type': 'ExpressionStatement',
+      'expression': {
+        'type': 'CallExpression',
+        'callee': {
+          'type': 'Identifier',
+          'name': 'print'
+        },
+        'arguments': [
+          {
+            'type': 'ExpressionStatement',
+            'expression': {
+              'type': 'CallExpression',
+              'callee': {
+                'type': 'Identifier',
+                'name': 'fact'
+              },
+              'arguments': [
+                {
+                  'type': 'Literal',
+                  'value': 5,
+                  'raw': '5'
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      'type': 'ExpressionStatement',
+      'expression': {
+        'type': 'CallExpression',
+        'callee': {
+          'type': 'Identifier',
+          'name': 'fact'
+        },
+        'arguments': [
+          {
+            'type': 'Literal',
+            'value': 10,
+            'raw': '10'
+          }
+        ]
+      }
+    }
+  ],
+  'sourceType': 'script'
+}
 
 test('parser', t => {
   t.plan(1)
