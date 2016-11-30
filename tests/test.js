@@ -20,73 +20,101 @@ let expected = {
             'id': null,
             'params': [
               {
-                'type': 'Literal',
-                'value': 1,
-                'raw': '1'
-              }
-            ],
-            'body': {
-              'type': 'Literal',
-              'value': 1,
-              'raw': '1'
-            },
-            'generator': false,
-            'expression': true
-          }
-        }
-      ],
-      'kind': 'const'
-    },
-    {
-      'type': 'VariableDeclaration',
-      'declarations': [
-        {
-          'type': 'VariableDeclarator',
-          'id': {
-            'type': 'Identifier',
-            'name': 'fact'
-          },
-          'init': {
-            'type': 'ArrowFunctionExpression',
-            'id': null,
-            'params': [
-              {
                 'type': 'Identifier',
                 'name': 'n'
               }
             ],
             'body': {
-              'type': 'BinaryExpression',
-              'operator': '*',
-              'left': {
-                'type': 'Identifier',
-                'name': 'n'
-              },
-              'right': {
-                'type': 'CallExpression',
-                'callee': {
-                  'type': 'Identifier',
-                  'name': 'fact'
-                },
-                'arguments': [
-                  {
-                    'type': 'BinaryExpression',
-                    'operator': '-',
-                    'left': {
-                      'type': 'Identifier',
-                      'name': 'n'
+              'type': 'BlockStatement',
+              'body': [
+                {
+                  'type': 'SwitchStatement',
+                  'discriminant': {
+                    'type': 'Identifier',
+                    'name': 'n'
+                  },
+                  'cases': [
+                    {
+                      'type': 'SwitchCase',
+                      'test': {
+                        'type': 'Literal',
+                        'value': 0,
+                        'raw': '0'
+                      },
+                      'consequent': [
+                        {
+                          'type': 'ReturnStatement',
+                          'argument': {
+                            'type': 'Literal',
+                            'value': 0,
+                            'raw': '0'
+                          }
+                        }
+                      ]
                     },
-                    'right': {
-                      'type': 'Literal',
-                      'value': 1,
-                      'raw': '1'
+                    {
+                      'type': 'SwitchCase',
+                      'test': {
+                        'type': 'Literal',
+                        'value': 1,
+                        'raw': '1'
+                      },
+                      'consequent': [
+                        {
+                          'type': 'ReturnStatement',
+                          'argument': {
+                            'type': 'Literal',
+                            'value': 1,
+                            'raw': '1'
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      'type': 'SwitchCase',
+                      'test': null,
+                      'consequent': [
+                        {
+                          'type': 'ReturnStatement',
+                          'argument': {
+                            'type': 'BinaryExpression',
+                            'operator': '*',
+                            'left': {
+                              'type': 'Identifier',
+                              'name': 'n'
+                            },
+                            'right': {
+                              'type': 'CallExpression',
+                              'callee': {
+                                'type': 'Identifier',
+                                'name': 'fact'
+                              },
+                              'arguments': [
+                                {
+                                  'type': 'BinaryExpression',
+                                  'operator': '-',
+                                  'left': {
+                                    'type': 'Identifier',
+                                    'name': 'n'
+                                  },
+                                  'right': {
+                                    'type': 'Literal',
+                                    'value': 1,
+                                    'raw': '1'
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ]
                     }
-                  }
-                ]
-              }
+                  ]
+                }
+              ]
             },
             'generator': false,
-            'expression': true
+            'expression': false
           }
         }
       ],
