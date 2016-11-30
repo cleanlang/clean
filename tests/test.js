@@ -63,29 +63,26 @@ let expected = {
                 'name': 'n'
               },
               'right': {
-                'type': 'ExpressionStatement',
-                'expression': {
-                  'type': 'CallExpression',
-                  'callee': {
-                    'type': 'Identifier',
-                    'name': 'fact'
-                  },
-                  'arguments': [
-                    {
-                      'type': 'BinaryExpression',
-                      'operator': '-',
-                      'left': {
-                        'type': 'Identifier',
-                        'name': 'n'
-                      },
-                      'right': {
-                        'type': 'Literal',
-                        'value': 1,
-                        'raw': '1'
-                      }
+                'type': 'CallExpression',
+                'callee': {
+                  'type': 'Identifier',
+                  'name': 'fact'
+                },
+                'arguments': [
+                  {
+                    'type': 'BinaryExpression',
+                    'operator': '-',
+                    'left': {
+                      'type': 'Identifier',
+                      'name': 'n'
+                    },
+                    'right': {
+                      'type': 'Literal',
+                      'value': 1,
+                      'raw': '1'
                     }
-                  ]
-                }
+                  }
+                ]
               }
             },
             'generator': false,
