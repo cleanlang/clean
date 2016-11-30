@@ -145,23 +145,6 @@ let expected = {
           }
         ]
       }
-    },
-    {
-      'type': 'ExpressionStatement',
-      'expression': {
-        'type': 'CallExpression',
-        'callee': {
-          'type': 'Identifier',
-          'name': 'fact'
-        },
-        'arguments': [
-          {
-            'type': 'Literal',
-            'value': 10,
-            'raw': '10'
-          }
-        ]
-      }
     }
   ],
   'sourceType': 'script'
