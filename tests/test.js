@@ -125,8 +125,16 @@ let expected = {
       'expression': {
         'type': 'CallExpression',
         'callee': {
-          'type': 'Identifier',
-          'name': 'print'
+          'type': 'MemberExpression',
+          'computed': false,
+          'object': {
+            'type': 'Identifier',
+            'name': 'console'
+          },
+          'property': {
+            'type': 'Identifier',
+            'name': 'log'
+          }
         },
         'arguments': [
           {
