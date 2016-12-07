@@ -153,6 +153,35 @@ let expected = {
           }
         ]
       }
+    },
+    {
+      'type': 'ExpressionStatement',
+      'expression': {
+        'type': 'ConditionalExpression',
+        'test': {
+          'type': 'BinaryExpression',
+          'operator': '>=',
+          'left': {
+            'type': 'Identifier',
+            'name': 'mark'
+          },
+          'right': {
+            'type': 'Literal',
+            'value': 60,
+            'raw': '60'
+          }
+        },
+        'consequent': {
+          'type': 'Literal',
+          'value': 'pass',
+          'raw': 'pass'
+        },
+        'alternate': {
+          'type': 'Literal',
+          'value': 'fail',
+          'raw': 'fail'
+        }
+      }
     }
   ],
   'sourceType': 'script'
