@@ -1,6 +1,5 @@
-
-fact 0 = 0
-fact 1 = 1
-fact n = n * fact (n - 1)
-print (fact 5)
+fibonacci 0 = 0
+fibonacci 1 = 1
+fibonacci n = fibonacci (n - 1) + fibonacci (n - 2)
+print (fibonacci 5)
 if mark >= 60 then 'pass' else 'fail'
