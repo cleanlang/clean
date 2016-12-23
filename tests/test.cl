@@ -3,7 +3,7 @@ fibonacci 1 = 1
 fibonacci n = fibonacci (n - 1)
   * fibonacci (n - 2)
   + 1
-  print abc
-fibonacci n = fibonacci (n - 1) + fibonacci (n - 2)
-print (fibonacci 5)
+  print success
+  print failure
+fact n = n - 1
 if mark >= 60 then 'pass' else 'fail'
