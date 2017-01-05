@@ -1,8 +1,7 @@
 const test = require('tape')
 const parser = require('../lib/parser')
 const fs = require('fs')
-const src = fs.readFileSync('tests/test.cl', 'utf8').toString()
-// const estemplate = require('../lib/template')
+const src = fs.readFileSync('test.cl', 'utf8').toString()
 let expected = {
   'type': 'Program',
   'body': [
