@@ -1,9 +1,6 @@
-fact 1 = 1
-fact n = n * fact (n - 1)
-print (fact 5)
-
-print a
-  print b
-  print c
-    print d
-  print e
+a = 1 +
+ 1 +
+ 1
+if a == 3
+  then 'a'
+  else 'b'
