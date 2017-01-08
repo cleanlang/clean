@@ -188,5 +188,5 @@ let expected = {
 
 test('parser', t => {
   t.plan(1)
-  t.deepEqual(parser(src), expected, 'Program Parser')
+  t.deepEqual(parser({'str': src, 'line': 1, 'column': 1, 'indent': 0}), expected, 'Program Parser')
 })
