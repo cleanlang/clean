@@ -1,8 +1,7 @@
 const test = require('tape')
 const parser = require('../lib/parser')
 const fs = require('fs')
-const src = fs.readFileSync('tests/test.cl', 'utf8').toString()
-// const estemplate = require('../lib/template')
+const src = fs.readFileSync('test.cl', 'utf8').toString()
 let expected = {
   'type': 'Program',
   'body': [
@@ -189,5 +188,5 @@ let expected = {
 
 test('parser', t => {
   t.plan(1)
-  t.deepEqual(parser(src), expected, 'Program Parser')
+  t.deepEqual(parser({'str': src, 'line': 1, 'column': 1, 'indent': 0}), expected, 'Program Parser')
 })
