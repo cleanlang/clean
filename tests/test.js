@@ -1,2 +1,9 @@
-const fact = n => n === 1 ? 1 : n * fact(n - 1);
+const fact = n => {
+    switch (n) {
+    case 1:
+        return 1;
+    default:
+        return n * fact(n - 1);
+    }
+};
 console.log(fact(5));
