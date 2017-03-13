@@ -23,6 +23,4 @@ const getAscii = computeFact.map(num => [
 ]).bind((art, strNum, num, ascii) =>
     (IO.putLine(art))).map((art, strNum, num, ascii) => [[]])
 const tempIO = getAscii
-{
-    (tempIO.then(() => null))
-}
+const main = tempIO.then(() => null)
