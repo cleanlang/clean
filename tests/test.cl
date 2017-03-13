@@ -12,7 +12,7 @@ computeFact = do
 getAscii = do
      num <- computeFact
      let strNum = String num
-     ascii <- httpGet 'http://artii.herokuapp.com/make?text=' ++ strNum
+     ascii <- httpGet ('http://artii.herokuapp.com/make?text=' ++ strNum)
      let art = ascii
      putLine art
 
