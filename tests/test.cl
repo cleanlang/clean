@@ -15,6 +15,7 @@ getAscii = do
      ascii <- httpGet ('http://artii.herokuapp.com/make?text=' ++ strNum)
      let art = ascii
      putLine art
+     return []
 
 
 tempIO = getAscii
