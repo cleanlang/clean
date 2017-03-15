@@ -13,7 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "escodegen": "^1.8.1",
-    "minimist": "^1.2.0"
+    "yargs": "^7.0.1"
   },
   "devDependencies": {
     "tape": "^4.6.2"
