@@ -4,7 +4,7 @@
 
 ### Install
 
-    $ npm install clean-js -g
+    $ npm install cleanlang -g
 
 ### Usage
 
