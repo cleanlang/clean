@@ -1,7 +1,34 @@
-# Work in progress. Do not use!
+# CleanJS
 
-## Install
+## A clean compile to JavaScript language
 
-Clone this repo. cd to folder and
+### Install
 
-    $ npm link
+    $ npm install clean-js -g
+
+### Usage
+
+    $ clean hello.cl
+
+Will compile and run `hello.cl`
+
+    $ clean --help
+
+For more options
+
+### Hello World
+
+    main = putLine 'Hello World'
+
+### File copy program
+
+    main = do
+      data <- readFile process.argv[2]
+      writeFile process.argv[3] data
+
+### Factorial function
+
+    factorial 1 = 1
+    factorial n = n * factorial (n - 1)
+    
+    main = putLine (factorial 5)
