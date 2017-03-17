@@ -30,18 +30,18 @@ For more options
 
     factorial 1 = 1
     factorial n = n * factorial (n - 1)
-    
+
     main = putLine (factorial 5)
 
 ### Express Example
 
     express     = require 'express'
     app         = express ()
-    
-    main = do
+
+    do
         req res <- createIO (app.get '/')
         res.send 'Hello World'
-    
+
     app.listen 3000
 
 ### Program Example
