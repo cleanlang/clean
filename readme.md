@@ -18,6 +18,7 @@ For more options
 
 ### Hello World
 
+    import node-core
     main = putLine 'Hello World!'
 
 Define function `main`. It is called at the start of your program. `putLine` is an asynchronous
@@ -25,6 +26,7 @@ function.
 
 ### File copy program
 
+    import node-core
     main = do
       data <- readFile process.argv[2]
       writeFile process.argv[3] data
@@ -34,10 +36,11 @@ Copies file given as the first argument to the file with name given as the next 
     $ clean copy.cl file1.txt file2.txt
 
 Both `readFile` and `writeFile` are asynchronous function. These are Evented IO functions. In `clean`
-you can do evented io in `main` or `do` blocks only.
+you can do evented IO in `main` or `do` blocks only.
 
 ### Factorial function
 
+    import node-core
     factorial 1 = 1
     factorial n = n * factorial (n - 1)
 
@@ -47,6 +50,7 @@ You can use pattern matching `(factorial 1 = 1)` in function definitions in `cle
 
 ### Express example
 
+    import node-core
     express = require 'express'
     app = express ()
 
@@ -67,6 +71,7 @@ the events will get activated in the `do`
 Here is a command line program that gets a user input number. The factorial of the
 number is calculated, and ascii art from an API, for the factorial is printed.
 
+    import node-core
     request = require 'request'
 
     fact 1 = 1
@@ -93,6 +98,6 @@ because `computeFact` will be used in the next `do` block.
 
 In the next `do` block we bind `computeFact` to a variable called `data`. You can use let
 statements in a `do` block to create scoped variables. `++` is used for string concatenation.
-The we create an evented IO that uses `request`. The created IO function is bound to `err`,
+Then we create an evented IO that uses `request`. The created IO function is bound to `err`,
 `res` and `body`. `mayBeErr` will terminate the do if `err` is an instance of JavaScript Error, and calls
 `putLine err`.
