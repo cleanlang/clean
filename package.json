@@ -1,6 +1,6 @@
 {
   "name": "cleanlang",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "A Clean new programming Language",
   "main": "lib/clean.js",
   "bin": {
