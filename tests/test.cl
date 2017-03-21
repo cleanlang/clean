@@ -13,7 +13,7 @@ computeFact = do
 getAscii = do
      data <- computeFact
      let link = 'http://artii.herokuapp.com/make?text=' ++ data
-     err res body <- createIO (request link)
+     err res body <- IO (request link)
      mayBeErr err (putLine err)
      putLine body
      return body
