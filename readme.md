@@ -55,12 +55,12 @@ You can use pattern matching `(factorial 1 = 1)` in function definitions in `cle
     app = express ()
 
     do
-      req res <- createIO (app.get '/')
+      req res <- IO (app.get '/')
       res.send 'Hello World'
 
     app.listen 3000
 
-Use `createIO` to create your own Evented IO function. The argument to `createIO` is the IO
+Use `IO` to create your own Evented IO function. The argument to `IO` is the IO
 call you want to make minus the callback. (Notice that we don't provide a callback to `app.get`).
 
 There is no `main` in our program above. `main` is not mandatory. Since most of the IO you do is evented,
@@ -86,7 +86,7 @@ number is calculated, and ascii art from an API, for the factorial is printed.
     do
       data <- computeFact
       let link = 'http://artii.herokuapp.com/make?text=' ++ data
-      err res body <- createIO (request link)
+      err res body <- IO (request link)
       mayBeErr err (putLine err)
       putLine body
 
