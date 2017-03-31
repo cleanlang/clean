@@ -12,6 +12,7 @@
   "author": "Santosh Rajan",
   "license": "MIT",
   "dependencies": {
+    "chokidar": "^1.6.1",
     "escodegen": "^1.8.1",
     "yargs": "^7.0.1"
   },
