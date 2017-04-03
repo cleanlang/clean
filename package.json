@@ -1,6 +1,6 @@
 {
   "name": "cleanlang",
-  "version": "0.1.13",
+  "version": "0.2.0",
   "description": "A Clean new programming Language",
   "main": "lib/clean.js",
   "bin": {
@@ -18,5 +18,9 @@
   },
   "devDependencies": {
     "tape": "^4.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/geekskool/clean.git"
   }
 }
