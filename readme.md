@@ -18,7 +18,7 @@ For more options
 
 ### Hello World
 
-    import node-core
+    include node-core
     main = putLine 'Hello World!'
 
 Define function `main`. It is called at the start of your program. `putLine` is an asynchronous
@@ -26,7 +26,7 @@ function.
 
 ### File copy program
 
-    import node-core
+    include node-core
     main = do
       data <- readFile process.argv[2]
       writeFile process.argv[3] data
@@ -50,7 +50,7 @@ You can use pattern matching `(factorial 1 = 1)` in function definitions in `cle
 
 ### Express example
 
-    import node-core
+    include node-core
     express = require 'express'
     app = express ()
 
@@ -71,7 +71,7 @@ the events will get activated in the `do`
 Here is a command line program that gets a user input number. The factorial of the
 number is calculated, and ascii art from an API, for the factorial is printed.
 
-    import node-core
+    include node-core
     request = require 'request'
 
     fact 1 = 1
@@ -87,7 +87,7 @@ number is calculated, and ascii art from an API, for the factorial is printed.
       data <- computeFact
       let link = 'http://artii.herokuapp.com/make?text=' ++ data
       err res body <- IO (request link)
-      mayBeErr err (putLine err)
+      maybeErr err (putLine err)
       putLine body
 
 We define `computeFact` to be an IO function that takes the user input and returns the
@@ -99,5 +99,5 @@ because `computeFact` will be used in the next `do` block.
 In the next `do` block we bind `computeFact` to a variable called `data`. You can use let
 statements in a `do` block to create scoped variables. `++` is used for string concatenation.
 Then we create an evented IO that uses `request`. The created IO function is bound to `err`,
-`res` and `body`. `mayBeErr` will terminate the do if `err` is an instance of JavaScript Error, and calls
+`res` and `body`. `maybeErr` will terminate the do if `err` is an instance of JavaScript Error, and calls
 `putLine err`.
