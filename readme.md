@@ -40,7 +40,7 @@ you can do evented IO in `main` or `do` blocks only.
 
 ### Factorial function
 
-    import node-core
+    include node-core
     factorial 1 = 1
     factorial n = n * factorial (n - 1)
 
