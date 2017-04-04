@@ -1,4 +1,4 @@
-import node-core
+include node-core
 request = require 'request'
 
 fact 1 = 1
