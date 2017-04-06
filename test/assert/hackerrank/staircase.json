@@ -1,0 +1,325 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "hash"
+          },
+          "init": {
+            "type": "Literal",
+            "value": "#",
+            "raw": "#",
+            "sType": "string"
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "space"
+          },
+          "init": {
+            "type": "Literal",
+            "value": 5,
+            "raw": "5",
+            "sType": "number"
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "staircase"
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "n"
+              },
+              {
+                "type": "Identifier",
+                "name": "space"
+              },
+              {
+                "type": "Identifier",
+                "name": "hash"
+              },
+              {
+                "type": "Identifier",
+                "name": "acc"
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "SwitchStatement",
+                  "cases": [
+                    {
+                      "type": "SwitchCase",
+                      "consequent": [
+                        {
+                          "type": "ReturnStatement",
+                          "argument": {
+                            "type": "Literal",
+                            "value": 0,
+                            "raw": "0",
+                            "sType": "number"
+                          }
+                        }
+                      ],
+                      "test": {
+                        "type": "Literal",
+                        "value": 0,
+                        "raw": "0",
+                        "sType": "number"
+                      }
+                    },
+                    {
+                      "type": "SwitchCase",
+                      "test": null,
+                      "consequent": [
+                        {
+                          "type": "ReturnStatement",
+                          "argument": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "Identifier",
+                              "name": "staircase"
+                            },
+                            "arguments": [
+                              {
+                                "type": "BinaryExpression",
+                                "operator": "-",
+                                "sType": "number",
+                                "left": {
+                                  "type": "Identifier",
+                                  "name": "n"
+                                },
+                                "right": {
+                                  "type": "Literal",
+                                  "value": 1,
+                                  "raw": "1",
+                                  "sType": "number"
+                                }
+                              },
+                              {
+                                "type": "BinaryExpression",
+                                "operator": "-",
+                                "sType": "number",
+                                "left": {
+                                  "type": "Identifier",
+                                  "name": "space"
+                                },
+                                "right": {
+                                  "type": "Literal",
+                                  "value": 1,
+                                  "raw": "1",
+                                  "sType": "number"
+                                }
+                              },
+                              {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "hash"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "concat",
+                                    "isSubscript": false
+                                  }
+                                },
+                                "arguments": [
+                                  {
+                                    "type": "Literal",
+                                    "value": "#",
+                                    "raw": "#",
+                                    "sType": "string"
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "Identifier",
+                                  "name": "showtree"
+                                },
+                                "arguments": [
+                                  {
+                                    "type": "Identifier",
+                                    "name": "space"
+                                  },
+                                  {
+                                    "type": "Identifier",
+                                    "name": "hash"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "discriminant": {
+                    "type": "Identifier",
+                    "name": "n"
+                  }
+                }
+              ]
+            },
+            "generator": false,
+            "expression": false
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "showtree"
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "space"
+              },
+              {
+                "type": "Identifier",
+                "name": "hash"
+              }
+            ],
+            "body": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "console"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "log"
+                }
+              },
+              "arguments": [
+                {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                          "type": "Literal",
+                          "value": " ",
+                          "raw": " ",
+                          "sType": "string"
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "repeat",
+                          "isSubscript": false
+                        }
+                      },
+                      "arguments": [
+                        {
+                          "type": "Identifier",
+                          "name": "space"
+                        }
+                      ]
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "concat",
+                      "isSubscript": false
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "name": "hash"
+                    }
+                  ]
+                }
+              ],
+              "sType": "IO"
+            },
+            "generator": false,
+            "expression": true
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "staircase"
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": 6,
+            "raw": "6",
+            "sType": "number"
+          },
+          {
+            "type": "Identifier",
+            "name": "space"
+          },
+          {
+            "type": "Identifier",
+            "name": "hash"
+          },
+          {
+            "type": "Literal",
+            "value": "",
+            "raw": "",
+            "sType": "string"
+          }
+        ]
+      }
+    }
+  ],
+  "sourceType": "script"
+}

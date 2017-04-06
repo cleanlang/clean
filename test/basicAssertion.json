@@ -1,0 +1,224 @@
+{
+  "basic": {
+    "returnParser": {
+      "\n": {"str": "\n", "line": 2, "column": 0}
+    },
+    "spaceParser": {
+      " ": {"str": " ", "line": 1, "column": 1}
+    },
+    "openParensParser": {
+      "(": {"str": "(", "line": 1, "column": 1}
+    },
+    "closeParensParser": {
+      ")": {"str": ")", "line": 1, "column": 1}
+    },
+    "openCurlyBraceParser": {
+      "{": {"str": "{", "line": 1, "column": 1}
+    },
+    "closeCurlyBraceParser": {
+      "}": {"str": "}", "line": 1, "column": 1}
+    },
+    "openSquareBracketParser": {
+      "[": {"str": "[", "line": 1, "column": 1}
+    },
+    "closeSquareBracketParser": {
+      "]": {"str": "]", "line": 1, "column": 1}
+    },
+    "commaParser": {
+      ",": {"str": ",", "line": 1, "column": 1}
+    },
+    "colonParser": {
+      ":": {"str": ":", "line": 1, "column": 1}
+    },
+    "binaryOperatorParser": {
+      "+": {"str": "+", "line": 1, "column": 1},
+      "-": {"str": "-", "line": 1, "column": 1},
+      "/": {"str": "/", "line": 1, "column": 1},
+      "%": {"str": "%", "line": 1, "column": 1},
+      "*": {"str": "*", "line": 1, "column": 1},
+      "^": {"str": "^", "line": 1, "column": 1},
+      "<": {"str": "<", "line": 1, "column": 1},
+      ">": {"str": ">", "line": 1, "column": 1},
+      "++": {"str": "++", "line": 1, "column": 2},
+      ">>": {"str": ">>", "line": 1, "column": 2},
+      "<<": {"str": "<<", "line": 1, "column": 2},
+      "<=": {"str": "<=", "line": 1, "column": 2},
+      ">=": {"str": ">=", "line": 1, "column": 2},
+      "&": {"str": "&", "line": 1, "column": 1},
+      "&&": {"str": "&&", "line": 1, "column": 2},
+      "||": {"str": "||", "line": 1, "column": 2},
+      "==": {"str": "==", "line": 1, "column": 2},
+      "!=": {"str": "!=", "line": 1, "column": 2},
+      ">>>": {"str": ">>>", "line": 1, "column": 3}
+    },
+    "unaryOperatorParser": {
+      ":type": {"str": ":type", "line": 1, "column": 5},
+      "-": {"str": "-", "line": 1, "column": 1},
+      "!": {"str": "!", "line": 1, "column": 1}
+    },
+    "letParser": {
+      "let ": {"str": "let ", "line": 1, "column": 4}
+    },
+    "inParser": {
+      "in ": {"str": "in ", "line": 1, "column": 3}
+    },
+    "dotParser": {
+      ".": {"str": ".", "line": 1, "column": 1}
+    },
+    "thinArrowParser": {
+      " -> ": {"str": " -> ", "line": 1, "column": 4}
+    },
+    "reverseBindParser": {
+      " <- ": {"str": " <- ", "line": 1, "column": 4}
+    },
+    "ifParser": {
+      "if ": {"str": "if ", "line": 1, "column": 3}
+    },
+    "thenParser": {
+      "then ": {"str": "then ", "line": 1, "column": 5}
+    },
+    "elseParser": {
+      "else ": {"str": "else ", "line": 1, "column": 5}
+    },
+    "doParser": {
+      "do": {"str": "do", "line": 1, "column": 2}
+    },
+    "equalSignParser": {
+      " = ": {"str": " = ", "line": 1, "column": 3}
+    },
+    "slashParser": {
+      "\\": {"str": "\\", "line": 1, "column": 1}
+    },
+    "returnKeywordParser": {
+      "return": {"str": "return", "line": 1, "column": 6}
+    },
+    "includeParser": {
+      "include node-core": {"str": "node-core", "line": 1, "column": 17}
+    },
+    "emptyArgsParser": {
+      "()": {"str": [], "line": 1, "column": 2},
+      "(   )": {"str": [], "line": 1, "column": 5}
+    },
+    "definePropParser": {
+      "defineProp": {"str": "defineProp", "line": 1, "column": 10}
+    },
+    "deleteKeywordParser": {
+      "delete": {"str": "delete", "line": 1, "column": 6}
+    }
+  },
+  "literal": {
+    "nonReservedIdParser": [
+      "identifier", {
+        "abcd": "abcd",
+        "_abc_123": "_abc_123",
+        "if": null,
+        "then": null,
+        "else": null,
+        "const": null,
+        "let": null,
+        "where": null,
+        "in": null,
+        "push": null,
+        "pop": null,
+        "shift": null,
+        "unshift": null,
+        "true": null,
+        "false": null,
+        "null": null,
+        "do": null,
+        "console": null,
+        "return": null,
+        "delete": null,
+        "defineProp": null,
+        "putLine": null,
+        "getLine": null,
+        "readFile": null,
+        "writeFile": null,
+        "get": null,
+        "del": null,
+        "getJSON": null,
+        "delJSON": null,
+        "getBlob": null,
+        "postJSON": null,
+        "putJSON": null,
+        "click": null,
+        "change": null,
+        "IO": null,
+        "maybeErr": null,
+        "maybeTrue": null,
+        "maybeFalse": null,
+        "maybeNull": null,
+        "maybeUndefined": null
+      }
+    ],
+    "identifierParser": [
+      "identifier", {
+        "abcd": "abcd",
+        "_abc_123": "_abc_123"
+      }
+    ],
+    "numberParser": [
+      "literal", {
+        "1234": "1234",
+        "1.256": "1.256"
+      }
+    ],
+    "booleanParser": [
+      "boolLiteral", {
+        "true": "true",
+        "false": "false"
+      }
+    ],
+    "stringParser": [
+      "stringLiteral", {
+        "'defghi'": "defghi",
+        "'abc\\'def\\'ghi'": "abc'def'ghi"
+      }
+    ],
+    "nullParser": [
+      "nullLiteral", {
+        "null": "null"
+      }
+    ],
+    "ioFuncNameParser": [
+      "identifier", {
+        "putLine": "putLine",
+        "getLine": "getLine",
+        "readFile":"readFile" ,
+        "writeFile": "writeFile",
+        "get": "get",
+        "del": "del",
+        "getJSON": "getJSON",
+        "delJSON": "delJSON",
+        "getBlob": "getBlob",
+        "postJSON":"postJSON" ,
+        "putJSON": "putJSON",
+        "click": "click",
+        "change": "change",
+        "IO": "IO"
+      }
+    ],
+    "ioMethodNameParser": [
+      "identifier", {
+        "maybeErr": "maybeErr",
+        "maybeTrue": "maybeTrue",
+        "maybeFalse": "maybeFalse",
+        "maybeNull": "maybeNull",
+        "maybeUndefined": "maybeUndefined"
+      }
+    ],
+    "singleLineCommentParser": [
+      "comment", {
+        "// This is a comment\n": ["Line", " This is a comment\n"],
+        "// This is a no end new line comment": ["Line", " This is a no end new line comment"],
+        "// This is a comment\ntest": ["Line", " This is a comment\n"]
+      }
+    ],
+    "multiLineCommentParser": [
+      "comment", {
+        "/* This is a comment */": ["Block", " This is a comment "],
+        "/* This is a\n multiline comment */": ["Block", " This is a\n multiline comment "]
+      }
+    ]
+  }
+}
