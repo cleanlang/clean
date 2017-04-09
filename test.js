@@ -1,11 +1,27 @@
 const fs = require('fs')
 const path = require('path')
-const tape = require('tape')
+const ava = require('ava')
 const base = require('./lib/basicParsers')
 const parsers = require('./lib/parser')
 const templ = require('./lib/estemplate')
 const assertion = require('./test/basicAssertion')
+const utils = require('./lib/utilityFunctions')
+const typeInfer = require('./lib/typeInference')
 const [srcFiles, assertFiles] = [path.join(__dirname, '/test/src'), path.join(__dirname, '/test/assert')]
+
+const decl = templ.declaration
+const id = templ.identifier
+const num = templ.literal
+const str = templ.stringLiteral
+const bool = templ.boolLiteral
+const binEx = templ.binaryExpression
+const ifthen = templ.ifthenelse
+const funcDecl = templ.funcDeclaration
+const fnCall = templ.fnCall
+const define = templ.defineProp
+const lambda = templ.lambda
+const lambdaCall = templ.lambdaCall
+const exprStmt = templ.expression
 
 const {
   programParser,
@@ -25,88 +41,72 @@ const initObj = (input, line = 1, column = 0) => ({str: input, line, column})
 
 const output = (input, line, column) => [input, initObj('', line, column)]
 
-const tapeTester = (test, assert, msg) => {
-  tape(msg, t => {
-    t.deepEqual(test, assert, '')
-    t.end()
+const testRunner = (test, assert, msg) => {
+  ava(msg, t => {
+    t.deepEqual(test, assert)
   })
 }
 
 for (let parser in base) {
   let valid = assertion.basic[parser]
-  if (valid !== undefined) {
+  if (utils.notUndefined(valid)) {
     for (let input in valid) {
       let op = valid[input]
-      tapeTester(base[parser](initObj(input)), output(op.str, op.line, op.column), parser)
+      testRunner(base[parser](initObj(input)), output(op.str, op.line, op.column), parser)
     }
   }
   valid = assertion.literal[parser]
-  if (valid !== undefined) {
+  if (utils.notUndefined(valid)) {
     let inpTempl = valid[0]
     let checks = valid[1]
     for (let input in checks) {
       let value = base[parser](initObj(input))
-      if (value !== null) {
+      if (utils.notNull(value)) {
         value = value[0]
         delete value.cursorLoc
       }
       let output = checks[input]
-      let expected = output === null ? null : templ[inpTempl](output)
+      let expected = utils.isNull(output) ? null : templ[inpTempl](output)
       if (Array.isArray(output)) {
         expected = templ[inpTempl](...output)
       }
-      tapeTester(value, expected, parser)
+      testRunner(value, expected, parser)
     }
   }
 }
 
-const decl = templ.declaration
-const id = templ.identifier
-const num = templ.literal
-const str = templ.stringLiteral
-const bool = templ.boolLiteral
-const binEx = templ.binaryExpression
-const ifthen = templ.ifthenelse
-const funcDecl = templ.funcDeclaration
-const fnCall = templ.fnCall
-const define = templ.defineProp
-const lambda = templ.lambda
-const lambdaCall = templ.lambdaCall
-const exprStmt = templ.expression
-
 const ifPass = initObj('if 2 > 3 then true else false')
 const ifTest = ifthen(binEx(num('2'), '>', num('3')), bool('true'), bool('false'))
-
-tapeTester(ifExprParser(ifPass)[0], ifTest, 'ifExprParser')
+testRunner(ifExprParser(ifPass)[0], ifTest, 'ifExprParser')
 
 const declPass = initObj('a = 25')
 const declTest = decl(id('a'), num('25'))
-tapeTester(declParser(declPass)[0], declTest, 'declParser')
-tapeTester(declParser(ifPass), null, 'declParser')
+testRunner(declParser(declPass)[0], declTest, 'declParser')
+testRunner(declParser(ifPass), null, 'declParser')
 
 const fnDeclPass = initObj('fact n = n * 25')
 const fnDeclTest = funcDecl(id('fact'), [id('n')], binEx(id('n'), '*', num('25')))
-tapeTester(fnDeclParser(fnDeclPass)[0], fnDeclTest, 'fnDeclParser')
+testRunner(fnDeclParser(fnDeclPass)[0], fnDeclTest, 'fnDeclParser')
 
 const fnCallPass = initObj('fact 5 15')
 const fnCallTest = exprStmt(fnCall(id('fact'), [num('5'), num('15')]))
-tapeTester(fnCallParser(fnCallPass)[0], fnCallTest, 'fnCallParser')
+testRunner(fnCallParser(fnCallPass)[0], fnCallTest, 'fnCallParser')
 
 const definePass = initObj(`defineProp a 'b' 'abcd'`)
 const defineTest = define(id('a'), str('b'), str('abcd'), false)
-tapeTester(defineStmtParser(definePass)[0], defineTest, 'defineProp')
+testRunner(defineStmtParser(definePass)[0], defineTest, 'defineProp')
 
 const lambdaPass = initObj('\\a b -> a + b')
 const lambdaTest = lambda([id('a'), id('b')], binEx(id('a'), '+', id('b')))
-tapeTester(lambdaParser(lambdaPass)[0], lambdaTest, 'lambdaParser')
+testRunner(lambdaParser(lambdaPass)[0], lambdaTest, 'lambdaParser')
 
 const lambdaCallPass = initObj('(\\a b -> a + b) 2 1')
 const lambdaCallTest = lambdaCall([id('a'), id('b')], [num('2'), num('1')], binEx(id('a'), '+', id('b')))
-tapeTester(lambdaCallParser(lambdaCallPass)[0], lambdaCallTest, 'lambdaCallParser')
+testRunner(lambdaCallParser(lambdaCallPass)[0], lambdaCallTest, 'lambdaCallParser')
 
 // const ioStmtPass = initObj(`a = putLine 'a'`)
 // const ioStmtTest = decl(id('a'), ioCall(id('putLine'), [str('a')]))
-// tapeTester(ioParser(ioStmtPass)[0], ioStmtTest, 'ioStmt')
+// testRunner(ioParser(ioStmtPass)[0], ioStmtTest, 'ioStmt')
 const generateTree = input => {
   const parseResult = base.includeParser(input)
   let rest = input
@@ -114,10 +114,14 @@ const generateTree = input => {
     [, rest] = parseResult
   }
   const tree = programParser(rest)
+  if (tree.error) return tree
+  const newTree = typeInfer(tree.body)
+  if (newTree.error) return newTree
+  tree.body = newTree
   return tree
 }
 
-const readFileContent = file => fs.readFileSync(file, 'utf8').toString()
+const readFileContent = file => fs.readFileSync(file, 'utf8')
 
 const searchAndTest = (tests, assert) => {
   if (fs.existsSync(tests)) {
@@ -126,15 +130,14 @@ const searchAndTest = (tests, assert) => {
       if (fs.lstatSync(curPath).isDirectory()) {
         searchAndTest(curPath, path.join(assert, '/', file))
       } else {
-        const input = initObj(readFileContent(curPath))
         const pathParse = path.parse(curPath)
+        const input = initObj(readFileContent(path.join(pathParse.dir, `${pathParse.name}.cl`)))
         const assertJson = path.join(assert, `${pathParse.name}.json`)
+        const jsonValue = require(assertJson)
         const tree = generateTree(input)
-        const jsonValue = JSON.parse(readFileContent(assertJson))
-        tapeTester(tree, jsonValue, file)
+        testRunner(tree, jsonValue, file)
       }
     })
   }
 }
-
 searchAndTest(srcFiles, assertFiles)
