@@ -1,0 +1,11 @@
+{
+  "line": 1,
+  "column": 7,
+  "regex": [
+    "idRegex",
+    "numRegex",
+    "binaryOperatorRegex"
+  ],
+  "str": " = 1 +",
+  "error": true
+}

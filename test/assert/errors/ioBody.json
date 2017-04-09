@@ -1,0 +1,7 @@
+{
+  "line": 7,
+  "column": 16,
+  "str": "a <- getLine",
+  "error": true,
+  "msg": "Expected expression, found: a <- getLine"
+}

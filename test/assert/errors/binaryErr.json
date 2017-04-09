@@ -1,0 +1,7 @@
+{
+  "line": 1,
+  "column": 7,
+  "str": " = 1 +",
+  "error": true,
+  "msg": "Missing operand"
+}

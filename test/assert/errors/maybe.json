@@ -1,0 +1,7 @@
+{
+  "line": 7,
+  "column": 16,
+  "str": "maybeErr a ()",
+  "error": true,
+  "msg": "Missing expression"
+}
