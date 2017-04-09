@@ -1,13 +1,17 @@
 const fs = require('fs')
 const path = require('path')
 const ava = require('ava')
-const base = require('./lib/basicParsers')
-const parsers = require('./lib/parser')
-const templ = require('./lib/estemplate')
-const assertion = require('./test/basicAssertion')
-const utils = require('./lib/utilityFunctions')
-const typeInfer = require('./lib/typeInference')
-const [srcFiles, assertFiles] = [path.join(__dirname, '/test/src'), path.join(__dirname, '/test/assert')]
+
+/* lib files */
+const base = require('../lib/basicParsers')
+const parsers = require('../lib/parser')
+const templ = require('../lib/estemplate')
+const utils = require('../lib/utilityFunctions')
+const typeInfer = require('../lib/typeInference')
+
+/* test and assert files */
+const assertion = require('./basicAssertion')
+const [srcFiles, assertFiles] = [path.join(__dirname, '/src'), path.join(__dirname, '/assert')]
 
 const decl = templ.declaration
 const id = templ.identifier
@@ -47,6 +51,7 @@ const testRunner = (test, assert, msg) => {
   })
 }
 
+/* basic parsers tests start here */
 for (let parser in base) {
   let valid = assertion.basic[parser]
   if (utils.notUndefined(valid)) {
@@ -74,6 +79,7 @@ for (let parser in base) {
     }
   }
 }
+/* basic parsers tests ends here */
 
 const ifPass = initObj('if 2 > 3 then true else false')
 const ifTest = ifthen(binEx(num('2'), '>', num('3')), bool('true'), bool('false'))
