@@ -1,0 +1,7 @@
+{
+  "line": 4,
+  "column": 6,
+  "str": " = do",
+  "error": true,
+  "msg": "Looks like you missed an action after the 'do'"
+}

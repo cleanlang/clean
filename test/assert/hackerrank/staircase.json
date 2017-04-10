@@ -1,0 +1,500 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "concatStrType"
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "strType"
+              },
+              {
+                "type": "Identifier",
+                "name": "count"
+              },
+              {
+                "type": "Identifier",
+                "name": "accum"
+              }
+            ],
+            "body": {
+              "type": "ConditionalExpression",
+              "test": {
+                "type": "BinaryExpression",
+                "operator": "===",
+                "sType": "bool",
+                "left": {
+                  "type": "Identifier",
+                  "name": "count"
+                },
+                "right": {
+                  "type": "Literal",
+                  "value": 0,
+                  "raw": "0",
+                  "sType": "number"
+                }
+              },
+              "consequent": {
+                "type": "Identifier",
+                "name": "accum"
+              },
+              "alternate": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "concatStrType"
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "strType"
+                  },
+                  {
+                    "type": "BinaryExpression",
+                    "operator": "-",
+                    "sType": "number",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "count"
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": 1,
+                      "raw": "1",
+                      "sType": "number"
+                    }
+                  },
+                  {
+                    "type": "BinaryExpression",
+                    "operator": "+",
+                    "sType": "string",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "accum"
+                    },
+                    "right": {
+                      "type": "Identifier",
+                      "name": "strType"
+                    }
+                  }
+                ]
+              }
+            },
+            "generator": false,
+            "expression": true
+          }
+        }
+      ],
+      "kind": "const",
+      "leadingComments": [
+        {
+          "type": "Line",
+          "value": " link to hackerRank : https://www.hackerrank.com/challenges/staircase\n",
+          "cursorLoc": {
+            "line": 2,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": " Print the stairs using space and hash------------------------------------z'\n",
+          "cursorLoc": {
+            "line": 3,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": " Concat single character count times to itself\n",
+          "cursorLoc": {
+            "line": 6,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": " string count -> string\n",
+          "cursorLoc": {
+            "line": 7,
+            "column": 0
+          }
+        }
+      ]
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "produceStep"
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "str1"
+              },
+              {
+                "type": "Identifier",
+                "name": "str2"
+              },
+              {
+                "type": "Identifier",
+                "name": "len1"
+              },
+              {
+                "type": "Identifier",
+                "name": "len2"
+              }
+            ],
+            "body": {
+              "type": "BinaryExpression",
+              "operator": "+",
+              "sType": "string",
+              "left": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "concatStrType"
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "str1"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "len1"
+                  },
+                  {
+                    "type": "Literal",
+                    "value": "",
+                    "raw": "",
+                    "sType": "string"
+                  }
+                ]
+              },
+              "right": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "concatStrType"
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "str2"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "len2"
+                  },
+                  {
+                    "type": "Literal",
+                    "value": "",
+                    "raw": "",
+                    "sType": "string"
+                  }
+                ]
+              }
+            },
+            "generator": false,
+            "expression": true
+          }
+        }
+      ],
+      "kind": "const",
+      "leadingComments": [
+        {
+          "type": "Line",
+          "value": " concat two strings\n",
+          "cursorLoc": {
+            "line": 13,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": " string string number number -> string\n",
+          "cursorLoc": {
+            "line": 14,
+            "column": 0
+          }
+        }
+      ]
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "printStairs"
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "h"
+              },
+              {
+                "type": "Identifier",
+                "name": "count"
+              },
+              {
+                "type": "Identifier",
+                "name": "acc"
+              }
+            ],
+            "body": {
+              "type": "ConditionalExpression",
+              "test": {
+                "type": "BinaryExpression",
+                "operator": "===",
+                "sType": "bool",
+                "left": {
+                  "type": "Identifier",
+                  "name": "count"
+                },
+                "right": {
+                  "type": "Identifier",
+                  "name": "h"
+                }
+              },
+              "consequent": {
+                "type": "BinaryExpression",
+                "operator": "+",
+                "sType": "string",
+                "left": {
+                  "type": "Identifier",
+                  "name": "acc"
+                },
+                "right": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "produceStep"
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "value": " ",
+                      "raw": " ",
+                      "sType": "string"
+                    },
+                    {
+                      "type": "Literal",
+                      "value": "#",
+                      "raw": "#",
+                      "sType": "string"
+                    },
+                    {
+                      "type": "BinaryExpression",
+                      "operator": "-",
+                      "sType": "number",
+                      "left": {
+                        "type": "Identifier",
+                        "name": "h"
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "count"
+                      }
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "count"
+                    }
+                  ]
+                }
+              },
+              "alternate": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "printStairs"
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "h"
+                  },
+                  {
+                    "type": "BinaryExpression",
+                    "operator": "+",
+                    "sType": "number",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "count"
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": 1,
+                      "raw": "1",
+                      "sType": "number"
+                    }
+                  },
+                  {
+                    "type": "BinaryExpression",
+                    "operator": "+",
+                    "sType": "string",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "acc"
+                    },
+                    "right": {
+                      "type": "BinaryExpression",
+                      "operator": "+",
+                      "sType": "string",
+                      "left": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "produceStep"
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": " ",
+                            "raw": " ",
+                            "sType": "string"
+                          },
+                          {
+                            "type": "Literal",
+                            "value": "#",
+                            "raw": "#",
+                            "sType": "string"
+                          },
+                          {
+                            "type": "BinaryExpression",
+                            "operator": "-",
+                            "sType": "number",
+                            "left": {
+                              "type": "Identifier",
+                              "name": "h"
+                            },
+                            "right": {
+                              "type": "Identifier",
+                              "name": "count"
+                            }
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "count"
+                          }
+                        ]
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "value": "\n",
+                        "raw": "\n",
+                        "sType": "string"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "generator": false,
+            "expression": true
+          }
+        }
+      ],
+      "kind": "const",
+      "leadingComments": [
+        {
+          "type": "Line",
+          "value": " prints stairs given height of stairs\n",
+          "cursorLoc": {
+            "line": 20,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": " height -> string\n",
+          "cursorLoc": {
+            "line": 21,
+            "column": 0
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "console"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "log"
+          }
+        },
+        "arguments": [
+          {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "printStairs"
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": 5,
+                "raw": "5",
+                "sType": "number"
+              },
+              {
+                "type": "Literal",
+                "value": 1,
+                "raw": "1",
+                "sType": "number"
+              },
+              {
+                "type": "Literal",
+                "value": "",
+                "raw": "",
+                "sType": "string"
+              }
+            ]
+          }
+        ],
+        "sType": "IO"
+      },
+      "trailingComments": [
+        {
+          "type": "Block",
+          "value": "\n    #\n   ##\n  ###\n ####\n#####\n\n",
+          "cursorLoc": {
+            "line": 33,
+            "column": 0
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "script"
+}

@@ -1,0 +1,219 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "main"
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "computed": false,
+              "object": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "MemberExpression",
+                  "computed": false,
+                  "object": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "MemberExpression",
+                      "computed": false,
+                      "object": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "IO"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "readFile"
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "Identifier",
+                                "name": "process"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "argv",
+                                "isSubscript": false
+                              }
+                            },
+                            "property": {
+                              "type": "Literal",
+                              "value": 2,
+                              "raw": "2",
+                              "sType": "number",
+                              "isSubscript": true
+                            }
+                          }
+                        ],
+                        "nextParams": [
+                          {
+                            "type": "Identifier",
+                            "name": "data"
+                          }
+                        ]
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "map"
+                      }
+                    },
+                    "arguments": [
+                      {
+                        "type": "ArrowFunctionExpression",
+                        "id": null,
+                        "params": [
+                          {
+                            "type": "Identifier",
+                            "name": "data"
+                          }
+                        ],
+                        "body": {
+                          "type": "ArrayExpression",
+                          "elements": [
+                            {
+                              "type": "Identifier",
+                              "name": "data"
+                            }
+                          ]
+                        },
+                        "generator": false,
+                        "expression": true
+                      }
+                    ],
+                    "nextParams": [
+                      {
+                        "type": "Identifier",
+                        "name": "data"
+                      }
+                    ]
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "bind"
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "ArrowFunctionExpression",
+                    "id": null,
+                    "params": [
+                      {
+                        "type": "Identifier",
+                        "name": "data"
+                      }
+                    ],
+                    "body": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                          "type": "Identifier",
+                          "name": "IO"
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "writeFile"
+                        }
+                      },
+                      "arguments": [
+                        {
+                          "type": "MemberExpression",
+                          "computed": true,
+                          "object": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "Identifier",
+                              "name": "process"
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "argv",
+                              "isSubscript": false
+                            }
+                          },
+                          "property": {
+                            "type": "Literal",
+                            "value": 3,
+                            "raw": "3",
+                            "sType": "number",
+                            "isSubscript": true
+                          }
+                        },
+                        {
+                          "type": "Identifier",
+                          "name": "data"
+                        }
+                      ]
+                    },
+                    "generator": false,
+                    "expression": false
+                  }
+                ],
+                "nextParams": [
+                  {
+                    "type": "Identifier",
+                    "name": "data"
+                  }
+                ]
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "then"
+              }
+            },
+            "arguments": [
+              {
+                "type": "ArrowFunctionExpression",
+                "id": null,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "data"
+                  }
+                ],
+                "body": {
+                  "type": "ArrayExpression",
+                  "elements": []
+                },
+                "generator": false,
+                "expression": true
+              }
+            ],
+            "ioParams": [
+              {
+                "type": "Identifier",
+                "name": "data"
+              }
+            ],
+            "sType": "IO",
+            "expression": false
+          }
+        }
+      ],
+      "kind": "const"
+    }
+  ],
+  "sourceType": "script"
+}

@@ -1,0 +1,70 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "main"
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "computed": false,
+              "object": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "MemberExpression",
+                  "computed": false,
+                  "object": {
+                    "type": "Identifier",
+                    "name": "IO"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "putLine"
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "Literal",
+                    "value": "Hello World!",
+                    "raw": "Hello World!",
+                    "sType": "string"
+                  }
+                ],
+                "nextParams": [],
+                "sType": "IO"
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "then"
+              }
+            },
+            "arguments": [
+              {
+                "type": "ArrowFunctionExpression",
+                "id": null,
+                "params": [],
+                "body": {
+                  "type": "Literal",
+                  "value": null,
+                  "raw": "null"
+                },
+                "generator": false,
+                "expression": true
+              }
+            ],
+            "sType": "IO"
+          }
+        }
+      ],
+      "kind": "const"
+    }
+  ],
+  "sourceType": "script"
+}

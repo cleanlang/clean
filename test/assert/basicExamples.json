@@ -1,0 +1,3643 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "intDec"
+          },
+          "init": {
+            "type": "Literal",
+            "value": 1233567,
+            "raw": "1233567",
+            "sType": "number"
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "floatDec"
+          },
+          "init": {
+            "type": "UnaryExpression",
+            "operator": "-",
+            "argument": {
+              "type": "Literal",
+              "value": 123.45678,
+              "raw": "123.45678",
+              "sType": "number"
+            },
+            "prefix": true
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "negIntDec"
+          },
+          "init": {
+            "type": "UnaryExpression",
+            "operator": "-",
+            "argument": {
+              "type": "Literal",
+              "value": 1234567,
+              "raw": "1234567",
+              "sType": "number"
+            },
+            "prefix": true
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "negFloatDec"
+          },
+          "init": {
+            "type": "UnaryExpression",
+            "operator": "-",
+            "argument": {
+              "type": "Literal",
+              "value": 1.346788,
+              "raw": "1.346788",
+              "sType": "number"
+            },
+            "prefix": true
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "num"
+          },
+          "init": {
+            "type": "Literal",
+            "value": 144,
+            "raw": "144",
+            "sType": "number"
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "expDec"
+          },
+          "init": {
+            "type": "Literal",
+            "value": 10000000000,
+            "raw": "1e+10",
+            "sType": "number"
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "expDec2"
+          },
+          "init": {
+            "type": "Literal",
+            "value": 0.000001,
+            "raw": "1e-6",
+            "sType": "number"
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "exponentDec"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "**",
+            "sType": "number",
+            "left": {
+              "type": "Literal",
+              "value": 5,
+              "raw": "5",
+              "sType": "number"
+            },
+            "right": {
+              "type": "Literal",
+              "value": 2,
+              "raw": "2",
+              "sType": "number"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "powDec"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "**",
+            "sType": "number",
+            "left": {
+              "type": "Literal",
+              "value": 5,
+              "raw": "5",
+              "sType": "number"
+            },
+            "right": {
+              "type": "BinaryExpression",
+              "operator": "**",
+              "sType": "number",
+              "left": {
+                "type": "Literal",
+                "value": 2,
+                "raw": "2",
+                "sType": "number"
+              },
+              "right": {
+                "type": "BinaryExpression",
+                "operator": "**",
+                "sType": "number",
+                "left": {
+                  "type": "Literal",
+                  "value": 3,
+                  "raw": "3",
+                  "sType": "number"
+                },
+                "right": {
+                  "type": "BinaryExpression",
+                  "operator": "**",
+                  "sType": "number",
+                  "left": {
+                    "type": "Literal",
+                    "value": 1,
+                    "raw": "1",
+                    "sType": "number"
+                  },
+                  "right": {
+                    "type": "BinaryExpression",
+                    "operator": "**",
+                    "sType": "number",
+                    "left": {
+                      "type": "Literal",
+                      "value": 1,
+                      "raw": "1",
+                      "sType": "number"
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": 1,
+                      "raw": "1",
+                      "sType": "number"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "powDec2"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "**",
+            "sType": "number",
+            "left": {
+              "type": "Literal",
+              "value": 222,
+              "raw": "222",
+              "sType": "number"
+            },
+            "right": {
+              "type": "UnaryExpression",
+              "operator": "-",
+              "argument": {
+                "type": "Literal",
+                "value": 1,
+                "raw": "1",
+                "sType": "number"
+              },
+              "prefix": true
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "multpDec"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "*",
+            "sType": "number",
+            "left": {
+              "type": "BinaryExpression",
+              "operator": "*",
+              "sType": "number",
+              "left": {
+                "type": "BinaryExpression",
+                "operator": "*",
+                "sType": "number",
+                "left": {
+                  "type": "BinaryExpression",
+                  "operator": "*",
+                  "sType": "number",
+                  "left": {
+                    "type": "Literal",
+                    "value": 22,
+                    "raw": "22",
+                    "sType": "number"
+                  },
+                  "right": {
+                    "type": "Literal",
+                    "value": 2,
+                    "raw": "2",
+                    "sType": "number"
+                  }
+                },
+                "right": {
+                  "type": "Literal",
+                  "value": 3,
+                  "raw": "3",
+                  "sType": "number"
+                }
+              },
+              "right": {
+                "type": "Literal",
+                "value": 1,
+                "raw": "1",
+                "sType": "number"
+              }
+            },
+            "right": {
+              "type": "Literal",
+              "value": 1111,
+              "raw": "1111",
+              "sType": "number"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "modDec"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "%",
+            "sType": "number",
+            "left": {
+              "type": "Literal",
+              "value": 22,
+              "raw": "22",
+              "sType": "number"
+            },
+            "right": {
+              "type": "Literal",
+              "value": 1,
+              "raw": "1",
+              "sType": "number"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "modDec2"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "%",
+            "sType": "number",
+            "left": {
+              "type": "BinaryExpression",
+              "operator": "%",
+              "sType": "number",
+              "left": {
+                "type": "Literal",
+                "value": 44,
+                "raw": "44",
+                "sType": "number"
+              },
+              "right": {
+                "type": "Literal",
+                "value": 3,
+                "raw": "3",
+                "sType": "number"
+              }
+            },
+            "right": {
+              "type": "Literal",
+              "value": 2,
+              "raw": "2",
+              "sType": "number"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "divDec"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "/",
+            "sType": "number",
+            "left": {
+              "type": "Literal",
+              "value": 1,
+              "raw": "1",
+              "sType": "number"
+            },
+            "right": {
+              "type": "Literal",
+              "value": 2,
+              "raw": "2",
+              "sType": "number"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "divDec2"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "/",
+            "sType": "number",
+            "left": {
+              "type": "BinaryExpression",
+              "operator": "/",
+              "sType": "number",
+              "left": {
+                "type": "Literal",
+                "value": 1,
+                "raw": "1",
+                "sType": "number"
+              },
+              "right": {
+                "type": "Literal",
+                "value": 1,
+                "raw": "1",
+                "sType": "number"
+              }
+            },
+            "right": {
+              "type": "BinaryExpression",
+              "operator": "/",
+              "sType": "number",
+              "left": {
+                "type": "Literal",
+                "value": 3,
+                "raw": "3",
+                "sType": "number"
+              },
+              "right": {
+                "type": "Literal",
+                "value": 3,
+                "raw": "3",
+                "sType": "number"
+              }
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "divDec3"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "/",
+            "sType": "number",
+            "left": {
+              "type": "Literal",
+              "value": 5,
+              "raw": "5",
+              "sType": "number"
+            },
+            "right": {
+              "type": "Literal",
+              "value": 2,
+              "raw": "2",
+              "sType": "number"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "addNum"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "sType": "number",
+            "left": {
+              "type": "Identifier",
+              "name": "intDec"
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "floatDec"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "addNum2"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "sType": "number",
+            "left": {
+              "type": "Identifier",
+              "name": "expDec"
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "expDec2"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "addNum3"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "sType": "number",
+            "left": {
+              "type": "Identifier",
+              "name": "powDec"
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "powDec2"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "subNum"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "-",
+            "sType": "number",
+            "left": {
+              "type": "Identifier",
+              "name": "addNum"
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "negIntDec"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "subNum2"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "-",
+            "sType": "number",
+            "left": {
+              "type": "Literal",
+              "value": 0,
+              "raw": "0",
+              "sType": "number"
+            },
+            "right": {
+              "type": "Literal",
+              "value": 248,
+              "raw": "248",
+              "sType": "number"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "operCheck"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "*",
+            "sType": "number",
+            "left": {
+              "type": "Identifier",
+              "name": "subNum"
+            },
+            "right": {
+              "type": "BinaryExpression",
+              "operator": "*",
+              "sType": "number",
+              "left": {
+                "type": "BinaryExpression",
+                "operator": "/",
+                "sType": "number",
+                "left": {
+                  "type": "BinaryExpression",
+                  "operator": "**",
+                  "sType": "number",
+                  "left": {
+                    "type": "Identifier",
+                    "name": "subNum2"
+                  },
+                  "right": {
+                    "type": "Identifier",
+                    "name": "divDec"
+                  }
+                },
+                "right": {
+                  "type": "Identifier",
+                  "name": "expDec"
+                }
+              },
+              "right": {
+                "type": "BinaryExpression",
+                "operator": "**",
+                "sType": "number",
+                "left": {
+                  "type": "Identifier",
+                  "name": "expDec2"
+                },
+                "right": {
+                  "type": "Literal",
+                  "value": 3,
+                  "raw": "3",
+                  "sType": "number"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "operCheck2"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "**",
+            "sType": "number",
+            "left": {
+              "type": "Literal",
+              "value": 0.99,
+              "raw": "0.99",
+              "sType": "number"
+            },
+            "right": {
+              "type": "Literal",
+              "value": 365,
+              "raw": "365",
+              "sType": "number"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "operCheck3"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "sType": "number",
+            "left": {
+              "type": "UnaryExpression",
+              "operator": "-",
+              "argument": {
+                "type": "Literal",
+                "value": 111,
+                "raw": "111",
+                "sType": "number"
+              },
+              "prefix": true
+            },
+            "right": {
+              "type": "BinaryExpression",
+              "operator": "-",
+              "sType": "number",
+              "left": {
+                "type": "BinaryExpression",
+                "operator": "+",
+                "sType": "number",
+                "left": {
+                  "type": "BinaryExpression",
+                  "operator": "*",
+                  "sType": "number",
+                  "left": {
+                    "type": "BinaryExpression",
+                    "operator": "**",
+                    "sType": "number",
+                    "left": {
+                      "type": "Literal",
+                      "value": 2,
+                      "raw": "2",
+                      "sType": "number"
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": 3,
+                      "raw": "3",
+                      "sType": "number"
+                    }
+                  },
+                  "right": {
+                    "type": "Literal",
+                    "value": 8,
+                    "raw": "8",
+                    "sType": "number"
+                  }
+                },
+                "right": {
+                  "type": "Literal",
+                  "value": 34,
+                  "raw": "34",
+                  "sType": "number"
+                }
+              },
+              "right": {
+                "type": "Literal",
+                "value": 23,
+                "raw": "23",
+                "sType": "number"
+              }
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "boolDec"
+          },
+          "init": {
+            "type": "Literal",
+            "value": true,
+            "raw": "true",
+            "sType": "bool"
+          }
+        }
+      ],
+      "kind": "const",
+      "leadingComments": [
+        {
+          "type": "Line",
+          "value": " BOOLEAN DECLARATION\n",
+          "cursorLoc": {
+            "line": 34,
+            "column": 0
+          }
+        }
+      ]
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "boolDec2"
+          },
+          "init": {
+            "type": "Literal",
+            "value": false,
+            "raw": "false",
+            "sType": "bool"
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "boolCheck"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "===",
+            "sType": "bool",
+            "left": {
+              "type": "Literal",
+              "value": true,
+              "raw": "true",
+              "sType": "bool"
+            },
+            "right": {
+              "type": "Literal",
+              "value": false,
+              "raw": "false",
+              "sType": "bool"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "notEqual"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "!==",
+            "sType": "bool",
+            "left": {
+              "type": "Literal",
+              "value": true,
+              "raw": "true",
+              "sType": "bool"
+            },
+            "right": {
+              "type": "Literal",
+              "value": false,
+              "raw": "false",
+              "sType": "bool"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "boolCheck2"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": ">",
+            "sType": "bool",
+            "left": {
+              "type": "Literal",
+              "value": 4,
+              "raw": "4",
+              "sType": "number"
+            },
+            "right": {
+              "type": "Literal",
+              "value": 1,
+              "raw": "1",
+              "sType": "number"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "boolCheck3"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "===",
+            "sType": "bool",
+            "left": {
+              "type": "Literal",
+              "value": 4,
+              "raw": "4",
+              "sType": "number"
+            },
+            "right": {
+              "type": "Literal",
+              "value": 4,
+              "raw": "4",
+              "sType": "number"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "boolCheck4"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "<",
+            "sType": "bool",
+            "left": {
+              "type": "Literal",
+              "value": 5,
+              "raw": "5",
+              "sType": "number"
+            },
+            "right": {
+              "type": "Literal",
+              "value": 9,
+              "raw": "9",
+              "sType": "number"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "boolCheck6"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "<=",
+            "sType": "bool",
+            "left": {
+              "type": "Literal",
+              "value": 1,
+              "raw": "1",
+              "sType": "number"
+            },
+            "right": {
+              "type": "Literal",
+              "value": 1,
+              "raw": "1",
+              "sType": "number"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "boolCheck7"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": ">=",
+            "sType": "bool",
+            "left": {
+              "type": "Literal",
+              "value": 4,
+              "raw": "4",
+              "sType": "number"
+            },
+            "right": {
+              "type": "Literal",
+              "value": 5,
+              "raw": "5",
+              "sType": "number"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "boolCheck9"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": ">",
+            "sType": "bool",
+            "left": {
+              "type": "Literal",
+              "value": "testString",
+              "raw": "testString",
+              "sType": "string"
+            },
+            "right": {
+              "type": "Literal",
+              "value": "StringCompare",
+              "raw": "StringCompare",
+              "sType": "string"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "concatCheck2"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "sType": "string",
+            "left": {
+              "type": "Literal",
+              "value": "this is a test ",
+              "raw": "this is a test ",
+              "sType": "string"
+            },
+            "right": {
+              "type": "Literal",
+              "value": "folder",
+              "raw": "folder",
+              "sType": "string"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "logicalCheck"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "&&",
+            "sType": "bool",
+            "left": {
+              "type": "Literal",
+              "value": true,
+              "raw": "true",
+              "sType": "bool"
+            },
+            "right": {
+              "type": "Literal",
+              "value": true,
+              "raw": "true",
+              "sType": "bool"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "logicalCheck2"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "&&",
+            "sType": "bool",
+            "left": {
+              "type": "Literal",
+              "value": false,
+              "raw": "false",
+              "sType": "bool"
+            },
+            "right": {
+              "type": "Literal",
+              "value": false,
+              "raw": "false",
+              "sType": "bool"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "logicalCheck3"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "&&",
+            "sType": "bool",
+            "left": {
+              "type": "Literal",
+              "value": false,
+              "raw": "false",
+              "sType": "bool"
+            },
+            "right": {
+              "type": "Literal",
+              "value": true,
+              "raw": "true",
+              "sType": "bool"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "logicalCheck4"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "&&",
+            "sType": "bool",
+            "left": {
+              "type": "Literal",
+              "value": true,
+              "raw": "true",
+              "sType": "bool"
+            },
+            "right": {
+              "type": "Literal",
+              "value": false,
+              "raw": "false",
+              "sType": "bool"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "logicalCheck5"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "||",
+            "sType": "bool",
+            "left": {
+              "type": "Literal",
+              "value": true,
+              "raw": "true",
+              "sType": "bool"
+            },
+            "right": {
+              "type": "Literal",
+              "value": true,
+              "raw": "true",
+              "sType": "bool"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "logicalCheck6"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "||",
+            "sType": "bool",
+            "left": {
+              "type": "Literal",
+              "value": false,
+              "raw": "false",
+              "sType": "bool"
+            },
+            "right": {
+              "type": "Literal",
+              "value": false,
+              "raw": "false",
+              "sType": "bool"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "logicalCheck7"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "||",
+            "sType": "bool",
+            "left": {
+              "type": "Literal",
+              "value": false,
+              "raw": "false",
+              "sType": "bool"
+            },
+            "right": {
+              "type": "Literal",
+              "value": true,
+              "raw": "true",
+              "sType": "bool"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "logicalCheck8"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "||",
+            "sType": "bool",
+            "left": {
+              "type": "Literal",
+              "value": true,
+              "raw": "true",
+              "sType": "bool"
+            },
+            "right": {
+              "type": "Literal",
+              "value": false,
+              "raw": "false",
+              "sType": "bool"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "logicalCheck9"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "&&",
+            "sType": "bool",
+            "left": {
+              "type": "Literal",
+              "value": 1,
+              "raw": "1",
+              "sType": "number"
+            },
+            "right": {
+              "type": "Literal",
+              "value": 2,
+              "raw": "2",
+              "sType": "number"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "logicalCheck13"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "&&",
+            "sType": "bool",
+            "left": {
+              "type": "BinaryExpression",
+              "operator": ">",
+              "sType": "bool",
+              "left": {
+                "type": "Literal",
+                "value": 5,
+                "raw": "5",
+                "sType": "number"
+              },
+              "right": {
+                "type": "Literal",
+                "value": 4,
+                "raw": "4",
+                "sType": "number"
+              }
+            },
+            "right": {
+              "type": "BinaryExpression",
+              "operator": "&&",
+              "sType": "bool",
+              "left": {
+                "type": "BinaryExpression",
+                "operator": ">",
+                "sType": "bool",
+                "left": {
+                  "type": "Literal",
+                  "value": 6,
+                  "raw": "6",
+                  "sType": "number"
+                },
+                "right": {
+                  "type": "Literal",
+                  "value": 4,
+                  "raw": "4",
+                  "sType": "number"
+                }
+              },
+              "right": {
+                "type": "BinaryExpression",
+                "operator": "&&",
+                "sType": "bool",
+                "left": {
+                  "type": "BinaryExpression",
+                  "operator": "<",
+                  "sType": "bool",
+                  "left": {
+                    "type": "Literal",
+                    "value": 7,
+                    "raw": "7",
+                    "sType": "number"
+                  },
+                  "right": {
+                    "type": "Literal",
+                    "value": 0,
+                    "raw": "0",
+                    "sType": "number"
+                  }
+                },
+                "right": {
+                  "type": "BinaryExpression",
+                  "operator": ">",
+                  "sType": "bool",
+                  "left": {
+                    "type": "Literal",
+                    "value": true,
+                    "raw": "true",
+                    "sType": "bool"
+                  },
+                  "right": {
+                    "type": "Literal",
+                    "value": false,
+                    "raw": "false",
+                    "sType": "bool"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "logicalCheck14"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": ">",
+            "sType": "bool",
+            "left": {
+              "type": "Literal",
+              "value": true,
+              "raw": "true",
+              "sType": "bool"
+            },
+            "right": {
+              "type": "Literal",
+              "value": false,
+              "raw": "false",
+              "sType": "bool"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "logicalCheck16"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "===",
+            "sType": "bool",
+            "left": {
+              "type": "Literal",
+              "value": true,
+              "raw": "true",
+              "sType": "bool"
+            },
+            "right": {
+              "type": "Literal",
+              "value": true,
+              "raw": "true",
+              "sType": "bool"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "logicalCheck17"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "===",
+            "sType": "bool",
+            "left": {
+              "type": "UnaryExpression",
+              "operator": "-",
+              "argument": {
+                "type": "Literal",
+                "value": 1,
+                "raw": "1",
+                "sType": "number"
+              },
+              "prefix": true
+            },
+            "right": {
+              "type": "BinaryExpression",
+              "operator": "+",
+              "sType": "number",
+              "left": {
+                "type": "UnaryExpression",
+                "operator": "-",
+                "argument": {
+                  "type": "Literal",
+                  "value": 4,
+                  "raw": "4",
+                  "sType": "number"
+                },
+                "prefix": true
+              },
+              "right": {
+                "type": "Literal",
+                "value": 3,
+                "raw": "3",
+                "sType": "number"
+              }
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "logicalCheck18"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "!==",
+            "sType": "bool",
+            "left": {
+              "type": "UnaryExpression",
+              "operator": "-",
+              "argument": {
+                "type": "Literal",
+                "value": 1,
+                "raw": "1",
+                "sType": "number"
+              },
+              "prefix": true
+            },
+            "right": {
+              "type": "Literal",
+              "value": 1.31431,
+              "raw": "1.31431",
+              "sType": "number"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "logicalCheck20"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": ">",
+            "sType": "bool",
+            "left": {
+              "type": "Literal",
+              "value": 23,
+              "raw": "23",
+              "sType": "number"
+            },
+            "right": {
+              "type": "BinaryExpression",
+              "operator": "**",
+              "sType": "number",
+              "left": {
+                "type": "Literal",
+                "value": 2,
+                "raw": "2",
+                "sType": "number"
+              },
+              "right": {
+                "type": "Literal",
+                "value": 2,
+                "raw": "2",
+                "sType": "number"
+              }
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "logicalCheck21"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "&&",
+            "sType": "bool",
+            "left": {
+              "type": "BinaryExpression",
+              "operator": "**",
+              "sType": "number",
+              "left": {
+                "type": "Literal",
+                "value": 10,
+                "raw": "10",
+                "sType": "number"
+              },
+              "right": {
+                "type": "Literal",
+                "value": 5,
+                "raw": "5",
+                "sType": "number"
+              }
+            },
+            "right": {
+              "type": "Literal",
+              "value": 100000,
+              "raw": "1e+5",
+              "sType": "number"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "logicalCheck23"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "sType": "number",
+            "left": {
+              "type": "Literal",
+              "value": 100,
+              "raw": "1e+2",
+              "sType": "number"
+            },
+            "right": {
+              "type": "Literal",
+              "value": 2000,
+              "raw": "2e+3",
+              "sType": "number"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "logicalCheck24"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "===",
+            "sType": "bool",
+            "left": {
+              "type": "BinaryExpression",
+              "operator": ">",
+              "sType": "bool",
+              "left": {
+                "type": "Literal",
+                "value": 5,
+                "raw": "5",
+                "sType": "number"
+              },
+              "right": {
+                "type": "Literal",
+                "value": 1,
+                "raw": "1",
+                "sType": "number"
+              }
+            },
+            "right": {
+              "type": "BinaryExpression",
+              "operator": "!==",
+              "sType": "bool",
+              "left": {
+                "type": "Literal",
+                "value": 9,
+                "raw": "9",
+                "sType": "number"
+              },
+              "right": {
+                "type": "Literal",
+                "value": 9,
+                "raw": "9",
+                "sType": "number"
+              }
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "arrayCheck"
+          },
+          "init": {
+            "type": "ArrayExpression",
+            "elements": []
+          }
+        }
+      ],
+      "kind": "const",
+      "leadingComments": [
+        {
+          "type": "Line",
+          "value": " ARRAYS\n",
+          "cursorLoc": {
+            "line": 68,
+            "column": 0
+          }
+        }
+      ]
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "arrayCheck2"
+          },
+          "init": {
+            "type": "ArrayExpression",
+            "elements": []
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "arrayCheck3"
+          },
+          "init": {
+            "type": "ArrayExpression",
+            "elements": [
+              {
+                "type": "Literal",
+                "value": 1,
+                "raw": "1",
+                "sType": "number"
+              },
+              {
+                "type": "Literal",
+                "value": 2,
+                "raw": "2",
+                "sType": "number"
+              },
+              {
+                "type": "Literal",
+                "value": 2.334,
+                "raw": "2.334",
+                "sType": "number"
+              },
+              {
+                "type": "Literal",
+                "value": 10000,
+                "raw": "1e+4",
+                "sType": "number"
+              },
+              {
+                "type": "Literal",
+                "value": true,
+                "raw": "true",
+                "sType": "bool"
+              },
+              {
+                "type": "Literal",
+                "value": "str",
+                "raw": "str",
+                "sType": "string"
+              },
+              {
+                "type": "BinaryExpression",
+                "operator": "+",
+                "sType": "number",
+                "left": {
+                  "type": "Literal",
+                  "value": 2,
+                  "raw": "2",
+                  "sType": "number"
+                },
+                "right": {
+                  "type": "Literal",
+                  "value": 4,
+                  "raw": "4",
+                  "sType": "number"
+                }
+              },
+              {
+                "type": "BinaryExpression",
+                "operator": "**",
+                "sType": "number",
+                "left": {
+                  "type": "Literal",
+                  "value": 4,
+                  "raw": "4",
+                  "sType": "number"
+                },
+                "right": {
+                  "type": "Literal",
+                  "value": 4,
+                  "raw": "4",
+                  "sType": "number"
+                }
+              },
+              {
+                "type": "BinaryExpression",
+                "operator": "%",
+                "sType": "number",
+                "left": {
+                  "type": "Literal",
+                  "value": 3,
+                  "raw": "3",
+                  "sType": "number"
+                },
+                "right": {
+                  "type": "Literal",
+                  "value": 3,
+                  "raw": "3",
+                  "sType": "number"
+                }
+              },
+              {
+                "type": "BinaryExpression",
+                "operator": ">",
+                "sType": "bool",
+                "left": {
+                  "type": "Literal",
+                  "value": 2,
+                  "raw": "2",
+                  "sType": "number"
+                },
+                "right": {
+                  "type": "Literal",
+                  "value": 1,
+                  "raw": "1",
+                  "sType": "number"
+                }
+              },
+              {
+                "type": "BinaryExpression",
+                "operator": "||",
+                "sType": "bool",
+                "left": {
+                  "type": "Literal",
+                  "value": 2,
+                  "raw": "2",
+                  "sType": "number"
+                },
+                "right": {
+                  "type": "Literal",
+                  "value": true,
+                  "raw": "true",
+                  "sType": "bool"
+                }
+              },
+              {
+                "type": "BinaryExpression",
+                "operator": "+",
+                "sType": "string",
+                "left": {
+                  "type": "Literal",
+                  "value": "dtr",
+                  "raw": "dtr",
+                  "sType": "string"
+                },
+                "right": {
+                  "type": "Literal",
+                  "value": "675",
+                  "raw": "675",
+                  "sType": "string"
+                }
+              },
+              {
+                "type": "BinaryExpression",
+                "operator": "&&",
+                "sType": "bool",
+                "left": {
+                  "type": "Literal",
+                  "value": 5,
+                  "raw": "5",
+                  "sType": "number"
+                },
+                "right": {
+                  "type": "Literal",
+                  "value": 4,
+                  "raw": "4",
+                  "sType": "number"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "arrayCheck4"
+          },
+          "init": {
+            "type": "ArrayExpression",
+            "elements": [
+              {
+                "type": "Literal",
+                "value": 1,
+                "raw": "1",
+                "sType": "number"
+              },
+              {
+                "type": "Literal",
+                "value": 2,
+                "raw": "2",
+                "sType": "number"
+              },
+              {
+                "type": "ObjectExpression",
+                "properties": [
+                  {
+                    "type": "Property",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "a"
+                    },
+                    "computed": false,
+                    "value": {
+                      "type": "Literal",
+                      "value": 23,
+                      "raw": "23",
+                      "sType": "number"
+                    },
+                    "kind": "init",
+                    "method": false,
+                    "shorthand": false
+                  },
+                  {
+                    "type": "Property",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "b"
+                    },
+                    "computed": false,
+                    "value": {
+                      "type": "ArrayExpression",
+                      "elements": []
+                    },
+                    "kind": "init",
+                    "method": false,
+                    "shorthand": false
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "arrayCheck5"
+          },
+          "init": {
+            "type": "ArrayExpression",
+            "elements": [
+              null,
+              {
+                "type": "Literal",
+                "value": 23,
+                "raw": "23",
+                "sType": "number"
+              },
+              null,
+              null,
+              {
+                "type": "Literal",
+                "value": 44,
+                "raw": "44",
+                "sType": "number"
+              },
+              null
+            ]
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "arrayCheck6"
+          },
+          "init": {
+            "type": "ArrayExpression",
+            "elements": [
+              {
+                "type": "Literal",
+                "value": 1,
+                "raw": "1",
+                "sType": "number"
+              },
+              {
+                "type": "ArrayExpression",
+                "elements": [
+                  {
+                    "type": "Literal",
+                    "value": "str",
+                    "raw": "str",
+                    "sType": "string"
+                  },
+                  {
+                    "type": "ArrayExpression",
+                    "elements": [
+                      {
+                        "type": "Literal",
+                        "value": true,
+                        "raw": "true",
+                        "sType": "bool"
+                      },
+                      {
+                        "type": "Literal",
+                        "value": false,
+                        "raw": "false",
+                        "sType": "bool"
+                      },
+                      {
+                        "type": "ArrayExpression",
+                        "elements": [
+                          {
+                            "type": "Literal",
+                            "value": 1.315,
+                            "raw": "1.315",
+                            "sType": "number"
+                          },
+                          {
+                            "type": "ArrayExpression",
+                            "elements": []
+                          },
+                          {
+                            "type": "Literal",
+                            "value": 10000,
+                            "raw": "1e+4",
+                            "sType": "number"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "objectCheck"
+          },
+          "init": {
+            "type": "ObjectExpression",
+            "properties": []
+          }
+        }
+      ],
+      "kind": "const",
+      "leadingComments": [
+        {
+          "type": "Line",
+          "value": "OBJECTS\n",
+          "cursorLoc": {
+            "line": 76,
+            "column": 0
+          }
+        }
+      ]
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "objectCheck2"
+          },
+          "init": {
+            "type": "ObjectExpression",
+            "properties": []
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "objectCheck3"
+          },
+          "init": {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "a"
+                },
+                "computed": false,
+                "value": {
+                  "type": "ObjectExpression",
+                  "properties": []
+                },
+                "kind": "init",
+                "method": false,
+                "shorthand": false
+              }
+            ]
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "objectCheck4"
+          },
+          "init": {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "a"
+                },
+                "computed": false,
+                "value": {
+                  "type": "Literal",
+                  "value": 23,
+                  "raw": "23",
+                  "sType": "number"
+                },
+                "kind": "init",
+                "method": false,
+                "shorthand": false
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Literal",
+                  "value": 4,
+                  "raw": "4",
+                  "sType": "number"
+                },
+                "computed": false,
+                "value": {
+                  "type": "Literal",
+                  "value": "str",
+                  "raw": "str",
+                  "sType": "string"
+                },
+                "kind": "init",
+                "method": false,
+                "shorthand": false
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Literal",
+                  "value": "string",
+                  "raw": "string",
+                  "sType": "string"
+                },
+                "computed": false,
+                "value": {
+                  "type": "Literal",
+                  "value": "s",
+                  "raw": "s",
+                  "sType": "string"
+                },
+                "kind": "init",
+                "method": false,
+                "shorthand": false
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "b"
+                },
+                "computed": false,
+                "value": {
+                  "type": "Literal",
+                  "value": true,
+                  "raw": "true",
+                  "sType": "bool"
+                },
+                "kind": "init",
+                "method": false,
+                "shorthand": false
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "c"
+                },
+                "computed": false,
+                "value": {
+                  "type": "ArrayExpression",
+                  "elements": [
+                    {
+                      "type": "Literal",
+                      "value": 2,
+                      "raw": "2",
+                      "sType": "number"
+                    },
+                    {
+                      "type": "Literal",
+                      "value": true,
+                      "raw": "true",
+                      "sType": "bool"
+                    }
+                  ]
+                },
+                "kind": "init",
+                "method": false,
+                "shorthand": false
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "e"
+                },
+                "computed": false,
+                "value": {
+                  "type": "ObjectExpression",
+                  "properties": [
+                    {
+                      "type": "Property",
+                      "key": {
+                        "type": "Literal",
+                        "value": "happy",
+                        "raw": "happy",
+                        "sType": "string"
+                      },
+                      "computed": false,
+                      "value": {
+                        "type": "BinaryExpression",
+                        "operator": "+",
+                        "sType": "number",
+                        "left": {
+                          "type": "Literal",
+                          "value": 1,
+                          "raw": "1",
+                          "sType": "number"
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": 2,
+                          "raw": "2",
+                          "sType": "number"
+                        }
+                      },
+                      "kind": "init",
+                      "method": false,
+                      "shorthand": false
+                    },
+                    {
+                      "type": "Property",
+                      "key": {
+                        "type": "Literal",
+                        "value": "_sad",
+                        "raw": "_sad",
+                        "sType": "string"
+                      },
+                      "computed": false,
+                      "value": {
+                        "type": "BinaryExpression",
+                        "operator": ">",
+                        "sType": "bool",
+                        "left": {
+                          "type": "Literal",
+                          "value": 1,
+                          "raw": "1",
+                          "sType": "number"
+                        },
+                        "right": {
+                          "type": "BinaryExpression",
+                          "operator": "%",
+                          "sType": "number",
+                          "left": {
+                            "type": "Literal",
+                            "value": 3,
+                            "raw": "3",
+                            "sType": "number"
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": 1,
+                            "raw": "1",
+                            "sType": "number"
+                          }
+                        }
+                      },
+                      "kind": "init",
+                      "method": false,
+                      "shorthand": false
+                    }
+                  ]
+                },
+                "kind": "init",
+                "method": false,
+                "shorthand": false
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "f"
+                },
+                "computed": false,
+                "value": {
+                  "type": "ArrayExpression",
+                  "elements": [
+                    {
+                      "type": "ObjectExpression",
+                      "properties": [
+                        {
+                          "type": "Property",
+                          "key": {
+                            "type": "Literal",
+                            "value": "js",
+                            "raw": "js",
+                            "sType": "string"
+                          },
+                          "computed": false,
+                          "value": {
+                            "type": "Literal",
+                            "value": "foobar",
+                            "raw": "foobar",
+                            "sType": "string"
+                          },
+                          "kind": "init",
+                          "method": false,
+                          "shorthand": false
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ObjectExpression",
+                      "properties": [
+                        {
+                          "type": "Property",
+                          "key": {
+                            "type": "Literal",
+                            "value": "cd",
+                            "raw": "cd",
+                            "sType": "string"
+                          },
+                          "computed": false,
+                          "value": {
+                            "type": "ArrayExpression",
+                            "elements": [
+                              {
+                                "type": "ObjectExpression",
+                                "properties": [
+                                  {
+                                    "type": "Property",
+                                    "key": {
+                                      "type": "Identifier",
+                                      "name": "obj"
+                                    },
+                                    "computed": false,
+                                    "value": {
+                                      "type": "ArrayExpression",
+                                      "elements": [
+                                        null,
+                                        {
+                                          "type": "Literal",
+                                          "value": "nine",
+                                          "raw": "nine",
+                                          "sType": "string"
+                                        }
+                                      ]
+                                    },
+                                    "kind": "init",
+                                    "method": false,
+                                    "shorthand": false
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          "kind": "init",
+                          "method": false,
+                          "shorthand": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "kind": "init",
+                "method": false,
+                "shorthand": false
+              }
+            ]
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "arrSubs"
+          },
+          "init": {
+            "type": "MemberExpression",
+            "computed": true,
+            "object": {
+              "type": "Identifier",
+              "name": "arrayCheck3"
+            },
+            "property": {
+              "type": "Literal",
+              "value": 0,
+              "raw": "0",
+              "sType": "number",
+              "isSubscript": true
+            }
+          }
+        }
+      ],
+      "kind": "const",
+      "leadingComments": [
+        {
+          "type": "Line",
+          "value": " ARRAY-SUBSCRIPTING -- MEMBER-EXPRESSIONS\n",
+          "cursorLoc": {
+            "line": 104,
+            "column": 0
+          }
+        }
+      ]
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "arrSubs2"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "sType": "number",
+            "left": {
+              "type": "BinaryExpression",
+              "operator": "+",
+              "sType": "number",
+              "left": {
+                "type": "MemberExpression",
+                "computed": true,
+                "object": {
+                  "type": "Identifier",
+                  "name": "arrayCheck3"
+                },
+                "property": {
+                  "type": "Literal",
+                  "value": 0,
+                  "raw": "0",
+                  "sType": "number",
+                  "isSubscript": true
+                }
+              },
+              "right": {
+                "type": "Literal",
+                "value": 4,
+                "raw": "4",
+                "sType": "number"
+              }
+            },
+            "right": {
+              "type": "MemberExpression",
+              "computed": true,
+              "object": {
+                "type": "Identifier",
+                "name": "arrayCheck3"
+              },
+              "property": {
+                "type": "Literal",
+                "value": 1,
+                "raw": "1",
+                "sType": "number",
+                "isSubscript": true
+              }
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "arrSubs3"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": ">",
+            "sType": "bool",
+            "left": {
+              "type": "MemberExpression",
+              "computed": true,
+              "object": {
+                "type": "Identifier",
+                "name": "arrayCheck3"
+              },
+              "property": {
+                "type": "Literal",
+                "value": 0,
+                "raw": "0",
+                "sType": "number",
+                "isSubscript": true
+              }
+            },
+            "right": {
+              "type": "BinaryExpression",
+              "operator": "+",
+              "sType": "number",
+              "left": {
+                "type": "MemberExpression",
+                "computed": true,
+                "object": {
+                  "type": "Identifier",
+                  "name": "arrayCheck3"
+                },
+                "property": {
+                  "type": "Literal",
+                  "value": 1,
+                  "raw": "1",
+                  "sType": "number",
+                  "isSubscript": true
+                }
+              },
+              "right": {
+                "type": "Literal",
+                "value": 2,
+                "raw": "2",
+                "sType": "number"
+              }
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "arrSubs4"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "sType": "number",
+            "left": {
+              "type": "BinaryExpression",
+              "operator": "+",
+              "sType": "number",
+              "left": {
+                "type": "MemberExpression",
+                "computed": true,
+                "object": {
+                  "type": "Identifier",
+                  "name": "arrayCheck3"
+                },
+                "property": {
+                  "type": "Literal",
+                  "value": 1,
+                  "raw": "1",
+                  "sType": "number",
+                  "isSubscript": true
+                }
+              },
+              "right": {
+                "type": "Literal",
+                "value": 1,
+                "raw": "1",
+                "sType": "number"
+              }
+            },
+            "right": {
+              "type": "Literal",
+              "value": 4,
+              "raw": "4",
+              "sType": "number"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "arrSubs5"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "&&",
+            "sType": "bool",
+            "left": {
+              "type": "MemberExpression",
+              "computed": true,
+              "object": {
+                "type": "Identifier",
+                "name": "arrayCheck3"
+              },
+              "property": {
+                "type": "Literal",
+                "value": 0,
+                "raw": "0",
+                "sType": "number",
+                "isSubscript": true
+              }
+            },
+            "right": {
+              "type": "BinaryExpression",
+              "operator": "+",
+              "sType": "number",
+              "left": {
+                "type": "MemberExpression",
+                "computed": true,
+                "object": {
+                  "type": "Identifier",
+                  "name": "arrayCheck3"
+                },
+                "property": {
+                  "type": "Literal",
+                  "value": 1,
+                  "raw": "1",
+                  "sType": "number",
+                  "isSubscript": true
+                }
+              },
+              "right": {
+                "type": "Literal",
+                "value": 234,
+                "raw": "234",
+                "sType": "number"
+              }
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "memCheck"
+          },
+          "init": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "objectCheck3"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "a",
+              "isSubscript": false
+            }
+          }
+        }
+      ],
+      "kind": "const",
+      "leadingComments": [
+        {
+          "type": "Line",
+          "value": " Member check\n",
+          "cursorLoc": {
+            "line": 111,
+            "column": 0
+          }
+        }
+      ]
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "memCheck2"
+          },
+          "init": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "objectCheck4"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "a",
+              "isSubscript": false
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "memCheck3"
+          },
+          "init": {
+            "type": "MemberExpression",
+            "computed": true,
+            "object": {
+              "type": "Identifier",
+              "name": "objectCheck4"
+            },
+            "property": {
+              "type": "Literal",
+              "value": "string",
+              "raw": "string",
+              "sType": "string",
+              "isSubscript": true
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "memCheck4"
+          },
+          "init": {
+            "type": "MemberExpression",
+            "computed": true,
+            "object": {
+              "type": "MemberExpression",
+              "computed": false,
+              "object": {
+                "type": "Identifier",
+                "name": "objectCheck4"
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "c",
+                "isSubscript": false
+              }
+            },
+            "property": {
+              "type": "Literal",
+              "value": 0,
+              "raw": "0",
+              "sType": "number",
+              "isSubscript": true
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "memCheck5"
+          },
+          "init": {
+            "type": "MemberExpression",
+            "computed": true,
+            "object": {
+              "type": "MemberExpression",
+              "computed": false,
+              "object": {
+                "type": "Identifier",
+                "name": "objectCheck4"
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "c",
+                "isSubscript": false
+              }
+            },
+            "property": {
+              "type": "Literal",
+              "value": 1,
+              "raw": "1",
+              "sType": "number",
+              "isSubscript": true
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "memCheck6"
+          },
+          "init": {
+            "type": "MemberExpression",
+            "computed": true,
+            "object": {
+              "type": "MemberExpression",
+              "computed": true,
+              "object": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "objectCheck4"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "f",
+                  "isSubscript": false
+                }
+              },
+              "property": {
+                "type": "Literal",
+                "value": 0,
+                "raw": "0",
+                "sType": "number",
+                "isSubscript": true
+              }
+            },
+            "property": {
+              "type": "Literal",
+              "value": "js",
+              "raw": "js",
+              "sType": "string",
+              "isSubscript": true
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "memCheck7"
+          },
+          "init": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "MemberExpression",
+              "computed": true,
+              "object": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "objectCheck4"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "f",
+                  "isSubscript": false
+                }
+              },
+              "property": {
+                "type": "Literal",
+                "value": 0,
+                "raw": "0",
+                "sType": "number",
+                "isSubscript": true
+              }
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "js",
+              "isSubscript": false
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "memCheck8"
+          },
+          "init": {
+            "type": "MemberExpression",
+            "computed": true,
+            "object": {
+              "type": "MemberExpression",
+              "computed": false,
+              "object": {
+                "type": "Identifier",
+                "name": "objectCheck4"
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "e",
+                "isSubscript": false
+              }
+            },
+            "property": {
+              "type": "Literal",
+              "value": "_sad",
+              "raw": "_sad",
+              "sType": "string",
+              "isSubscript": true
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "memCheck9"
+          },
+          "init": {
+            "type": "MemberExpression",
+            "computed": true,
+            "object": {
+              "type": "Identifier",
+              "name": "objectCheck4"
+            },
+            "property": {
+              "type": "Literal",
+              "value": "4",
+              "raw": "4",
+              "sType": "string",
+              "isSubscript": true
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "memCheck10"
+          },
+          "init": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "MemberExpression",
+              "computed": true,
+              "object": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "MemberExpression",
+                  "computed": true,
+                  "object": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                      "type": "Identifier",
+                      "name": "objectCheck4"
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "f",
+                      "isSubscript": false
+                    }
+                  },
+                  "property": {
+                    "type": "Literal",
+                    "value": 1,
+                    "raw": "1",
+                    "sType": "number",
+                    "isSubscript": true
+                  }
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "cd",
+                  "isSubscript": false
+                }
+              },
+              "property": {
+                "type": "Literal",
+                "value": 0,
+                "raw": "0",
+                "sType": "number",
+                "isSubscript": true
+              }
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "obj",
+              "isSubscript": false
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "memCheck11"
+          },
+          "init": {
+            "type": "MemberExpression",
+            "computed": true,
+            "object": {
+              "type": "MemberExpression",
+              "computed": true,
+              "object": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "MemberExpression",
+                  "computed": true,
+                  "object": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                      "type": "Identifier",
+                      "name": "objectCheck4"
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "f",
+                      "isSubscript": false
+                    }
+                  },
+                  "property": {
+                    "type": "Literal",
+                    "value": 1,
+                    "raw": "1",
+                    "sType": "number",
+                    "isSubscript": true
+                  }
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "cd",
+                  "isSubscript": false
+                }
+              },
+              "property": {
+                "type": "Literal",
+                "value": 0,
+                "raw": "0",
+                "sType": "number",
+                "isSubscript": true
+              }
+            },
+            "property": {
+              "type": "Literal",
+              "value": "obj",
+              "raw": "obj",
+              "sType": "string",
+              "isSubscript": true
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "memCheck12"
+          },
+          "init": {
+            "type": "MemberExpression",
+            "computed": true,
+            "object": {
+              "type": "MemberExpression",
+              "computed": true,
+              "object": {
+                "type": "MemberExpression",
+                "computed": true,
+                "object": {
+                  "type": "MemberExpression",
+                  "computed": false,
+                  "object": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                      "type": "MemberExpression",
+                      "computed": false,
+                      "object": {
+                        "type": "Identifier",
+                        "name": "objectCheck4"
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "f",
+                        "isSubscript": false
+                      }
+                    },
+                    "property": {
+                      "type": "Literal",
+                      "value": 1,
+                      "raw": "1",
+                      "sType": "number",
+                      "isSubscript": true
+                    }
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "cd",
+                    "isSubscript": false
+                  }
+                },
+                "property": {
+                  "type": "Literal",
+                  "value": 0,
+                  "raw": "0",
+                  "sType": "number",
+                  "isSubscript": true
+                }
+              },
+              "property": {
+                "type": "Literal",
+                "value": "obj",
+                "raw": "obj",
+                "sType": "string",
+                "isSubscript": true
+              }
+            },
+            "property": {
+              "type": "Literal",
+              "value": 0,
+              "raw": "0",
+              "sType": "number",
+              "isSubscript": true
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "memCheck13"
+          },
+          "init": {
+            "type": "MemberExpression",
+            "computed": true,
+            "object": {
+              "type": "MemberExpression",
+              "computed": true,
+              "object": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "MemberExpression",
+                  "computed": true,
+                  "object": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                      "type": "Identifier",
+                      "name": "objectCheck4"
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "f",
+                      "isSubscript": false
+                    }
+                  },
+                  "property": {
+                    "type": "Literal",
+                    "value": 1,
+                    "raw": "1",
+                    "sType": "number",
+                    "isSubscript": true
+                  }
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "cd",
+                  "isSubscript": false
+                }
+              },
+              "property": {
+                "type": "Literal",
+                "value": 0,
+                "raw": "0",
+                "sType": "number",
+                "isSubscript": true
+              }
+            },
+            "property": {
+              "type": "Literal",
+              "value": "obj",
+              "raw": "obj",
+              "sType": "string",
+              "isSubscript": true
+            }
+          }
+        }
+      ],
+      "kind": "const",
+      "trailingComments": [
+        {
+          "type": "Line",
+          "value": " should fail\n",
+          "cursorLoc": {
+            "line": 127,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": "boolCheck5 = 5 < 'string'\n",
+          "cursorLoc": {
+            "line": 128,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": "strNumAdd = 5 + 'string'\n",
+          "cursorLoc": {
+            "line": 129,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": " boolCheck8 = 5 <= 'clean'\n",
+          "cursorLoc": {
+            "line": 130,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": "boolCheck10 = true > 1\n",
+          "cursorLoc": {
+            "line": 131,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": "concatCheck = 1 ++ 3\n",
+          "cursorLoc": {
+            "line": 132,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": "concatCheck3 = 'clean' ++ 01235\n",
+          "cursorLoc": {
+            "line": 133,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": " concatCheck4 = 01234 ++ 'afnbf'\n",
+          "cursorLoc": {
+            "line": 134,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": " concatCheck5 = true ++ false\n",
+          "cursorLoc": {
+            "line": 135,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": " concatCheck6 = true ++ 1\n",
+          "cursorLoc": {
+            "line": 136,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": "logicalCheck11 = 1 && 'dack'\n",
+          "cursorLoc": {
+            "line": 137,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": " logicalCheck10 = 1 && true\n",
+          "cursorLoc": {
+            "line": 138,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": "logicalCheck12 = 1 || true\n",
+          "cursorLoc": {
+            "line": 139,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": " logicalCheck15 = 7 != 7 && 'garima' ++ ' kamboj'\n",
+          "cursorLoc": {
+            "line": 140,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": " logicalCheck19 = -4 == 'clean'\n",
+          "cursorLoc": {
+            "line": 141,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": " logicalCheck22 = 10 & 10\n",
+          "cursorLoc": {
+            "line": 142,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": " logicalCheck24 = 5 > 1 == 9 != 9\n",
+          "cursorLoc": {
+            "line": 143,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": " arrayCheck7 = (['str'] ++ ['tgb'])\n",
+          "cursorLoc": {
+            "line": 144,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": " arrSubs3 = arrayCheck3[0] + arrayCheck3[1]\n",
+          "cursorLoc": {
+            "line": 145,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": " arrSubs5 = arrayCheck3[1 + 3]\n",
+          "cursorLoc": {
+            "line": 146,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": "\n",
+          "cursorLoc": {
+            "line": 147,
+            "column": 0
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "script"
+}

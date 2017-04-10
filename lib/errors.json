@@ -1,0 +1,8 @@
+{
+  "openParensRegex": "Missing expression",
+  "binaryOperatorRegex": "Missing operand",
+  "unaryOperatorRegex": "Missing operand",
+  "stringRegex": "String error",
+  "doRegex": "Looks like you missed an action after the 'do'",
+  "default": "Expected expression, found"
+}

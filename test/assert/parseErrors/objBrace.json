@@ -1,0 +1,7 @@
+{
+  "line": 1,
+  "column": 12,
+  "str": " = {1:'a',}",
+  "error": true,
+  "msg": "Expected expression, found:  = {1:'a',}"
+}

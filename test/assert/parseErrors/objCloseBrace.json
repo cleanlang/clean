@@ -1,0 +1,7 @@
+{
+  "line": 1,
+  "column": 11,
+  "str": " = {1: 'a'",
+  "error": true,
+  "msg": "String error"
+}

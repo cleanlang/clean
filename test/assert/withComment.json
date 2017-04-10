@@ -1,0 +1,168 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "a"
+          },
+          "init": {
+            "type": "Literal",
+            "value": 15,
+            "raw": "15",
+            "sType": "number"
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "b"
+          },
+          "init": {
+            "type": "Literal",
+            "value": 64,
+            "raw": "64",
+            "sType": "number"
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "f"
+          },
+          "init": {
+            "type": "Literal",
+            "value": 0.0000158,
+            "raw": "1.58e-5",
+            "sType": "number"
+          }
+        }
+      ],
+      "kind": "const",
+      "leadingComments": [
+        {
+          "type": "Line",
+          "value": " This is a comment to test\n",
+          "cursorLoc": {
+            "line": 6,
+            "column": 0
+          }
+        }
+      ]
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "m"
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "sType": "number",
+            "left": {
+              "type": "Literal",
+              "value": 1,
+              "raw": "1",
+              "sType": "number"
+            },
+            "right": {
+              "type": "Literal",
+              "value": 48,
+              "raw": "48",
+              "sType": "number"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "variable"
+          },
+          "init": {
+            "type": "ConditionalExpression",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": ">",
+              "sType": "bool",
+              "left": {
+                "type": "Literal",
+                "value": "hello",
+                "raw": "hello",
+                "sType": "string"
+              },
+              "right": {
+                "type": "Literal",
+                "value": "world",
+                "raw": "world",
+                "sType": "string"
+              }
+            },
+            "consequent": {
+              "type": "Literal",
+              "value": true,
+              "raw": "true",
+              "sType": "bool"
+            },
+            "alternate": {
+              "type": "Literal",
+              "value": false,
+              "raw": "false",
+              "sType": "bool"
+            }
+          }
+        }
+      ],
+      "kind": "const",
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "\n\nMulti line comments\nMore comments\nEven more 2 + 1\n\nprod a b = a * b\n\n\n",
+          "cursorLoc": {
+            "line": 20,
+            "column": 0
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Line",
+          "value": " This is the end\n",
+          "cursorLoc": {
+            "line": 25,
+            "column": 0
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "script"
+}

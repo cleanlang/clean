@@ -1,0 +1,241 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "a"
+          },
+          "init": {
+            "type": "ConditionalExpression",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": ">",
+              "sType": "bool",
+              "left": {
+                "type": "Literal",
+                "value": 3,
+                "raw": "3",
+                "sType": "number"
+              },
+              "right": {
+                "type": "Literal",
+                "value": 2,
+                "raw": "2",
+                "sType": "number"
+              }
+            },
+            "consequent": {
+              "type": "Literal",
+              "value": true,
+              "raw": "true",
+              "sType": "bool"
+            },
+            "alternate": {
+              "type": "Literal",
+              "value": false,
+              "raw": "false",
+              "sType": "bool"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "b"
+          },
+          "init": {
+            "type": "ConditionalExpression",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "<",
+              "sType": "bool",
+              "left": {
+                "type": "Literal",
+                "value": 98,
+                "raw": "98",
+                "sType": "number"
+              },
+              "right": {
+                "type": "Literal",
+                "value": 25,
+                "raw": "25",
+                "sType": "number"
+              }
+            },
+            "consequent": {
+              "type": "Literal",
+              "value": "a",
+              "raw": "a",
+              "sType": "string"
+            },
+            "alternate": {
+              "type": "Literal",
+              "value": "b",
+              "raw": "b",
+              "sType": "string"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "c"
+          },
+          "init": {
+            "type": "ConditionalExpression",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": ">=",
+              "sType": "bool",
+              "left": {
+                "type": "Literal",
+                "value": 145,
+                "raw": "145",
+                "sType": "number"
+              },
+              "right": {
+                "type": "Literal",
+                "value": 145,
+                "raw": "145",
+                "sType": "number"
+              }
+            },
+            "consequent": {
+              "type": "BinaryExpression",
+              "operator": "+",
+              "sType": "number",
+              "left": {
+                "type": "Literal",
+                "value": 1,
+                "raw": "1",
+                "sType": "number"
+              },
+              "right": {
+                "type": "Literal",
+                "value": 2,
+                "raw": "2",
+                "sType": "number"
+              }
+            },
+            "alternate": {
+              "type": "BinaryExpression",
+              "operator": "+",
+              "sType": "number",
+              "left": {
+                "type": "Literal",
+                "value": 3,
+                "raw": "3",
+                "sType": "number"
+              },
+              "right": {
+                "type": "Literal",
+                "value": 4,
+                "raw": "4",
+                "sType": "number"
+              }
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "d"
+          },
+          "init": {
+            "type": "ConditionalExpression",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "&&",
+              "sType": "bool",
+              "left": {
+                "type": "BinaryExpression",
+                "operator": ">",
+                "sType": "bool",
+                "left": {
+                  "type": "Literal",
+                  "value": 9,
+                  "raw": "9",
+                  "sType": "number"
+                },
+                "right": {
+                  "type": "Literal",
+                  "value": 9,
+                  "raw": "9",
+                  "sType": "number"
+                }
+              },
+              "right": {
+                "type": "BinaryExpression",
+                "operator": ">",
+                "sType": "bool",
+                "left": {
+                  "type": "BinaryExpression",
+                  "operator": "-",
+                  "sType": "number",
+                  "left": {
+                    "type": "Literal",
+                    "value": 10,
+                    "raw": "10",
+                    "sType": "number"
+                  },
+                  "right": {
+                    "type": "Literal",
+                    "value": 4,
+                    "raw": "4",
+                    "sType": "number"
+                  }
+                },
+                "right": {
+                  "type": "Literal",
+                  "value": 0,
+                  "raw": "0",
+                  "sType": "number"
+                }
+              }
+            },
+            "consequent": {
+              "type": "Literal",
+              "value": false,
+              "raw": "false",
+              "sType": "bool"
+            },
+            "alternate": {
+              "type": "Literal",
+              "value": true,
+              "raw": "true",
+              "sType": "bool"
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    }
+  ],
+  "sourceType": "script"
+}
