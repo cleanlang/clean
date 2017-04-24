@@ -254,48 +254,69 @@
                           }
                         ],
                         "body": {
-                          "type": "ArrayExpression",
-                          "elements": [
+                          "type": "BlockStatement",
+                          "body": [
                             {
-                              "type": "CallExpression",
-                              "callee": {
-                                "type": "Identifier",
-                                "name": "sum"
-                              },
-                              "arguments": [
+                              "type": "VariableDeclaration",
+                              "declarations": [
                                 {
-                                  "type": "Literal",
-                                  "value": 5,
-                                  "raw": "5",
-                                  "sType": "number"
-                                },
-                                {
-                                  "type": "Literal",
-                                  "value": 15,
-                                  "raw": "15",
-                                  "sType": "number"
+                                  "type": "VariableDeclarator",
+                                  "id": {
+                                    "type": "Identifier",
+                                    "name": "val"
+                                  },
+                                  "init": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "Identifier",
+                                      "name": "sum"
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "Literal",
+                                        "value": 5,
+                                        "raw": "5",
+                                        "sType": "number"
+                                      },
+                                      {
+                                        "type": "Literal",
+                                        "value": 15,
+                                        "raw": "15",
+                                        "sType": "number"
+                                      }
+                                    ]
+                                  }
                                 }
-                              ]
+                              ],
+                              "kind": "let"
                             },
                             {
-                              "type": "Identifier",
-                              "name": "req"
-                            },
-                            {
-                              "type": "Identifier",
-                              "name": "res"
+                              "type": "ReturnStatement",
+                              "argument": {
+                                "type": "ArrayExpression",
+                                "elements": [
+                                  {
+                                    "type": "Identifier",
+                                    "name": "req"
+                                  },
+                                  {
+                                    "type": "Identifier",
+                                    "name": "res"
+                                  },
+                                  {
+                                    "type": "Identifier",
+                                    "name": "val"
+                                  }
+                                ]
+                              }
                             }
                           ]
                         },
                         "generator": false,
-                        "expression": true
+                        "expression": false
                       }
                     ],
                     "nextParams": [
-                      {
-                        "type": "Identifier",
-                        "name": "val"
-                      },
                       {
                         "type": "Identifier",
                         "name": "req"
@@ -303,6 +324,10 @@
                       {
                         "type": "Identifier",
                         "name": "res"
+                      },
+                      {
+                        "type": "Identifier",
+                        "name": "val"
                       }
                     ]
                   },
@@ -318,15 +343,15 @@
                     "params": [
                       {
                         "type": "Identifier",
-                        "name": "val"
-                      },
-                      {
-                        "type": "Identifier",
                         "name": "req"
                       },
                       {
                         "type": "Identifier",
                         "name": "res"
+                      },
+                      {
+                        "type": "Identifier",
+                        "name": "val"
                       }
                     ],
                     "body": {
@@ -364,15 +389,15 @@
                     "params": [
                       {
                         "type": "Identifier",
-                        "name": "val"
-                      },
-                      {
-                        "type": "Identifier",
                         "name": "req"
                       },
                       {
                         "type": "Identifier",
                         "name": "res"
+                      },
+                      {
+                        "type": "Identifier",
+                        "name": "val"
                       }
                     ],
                     "body": {
@@ -406,15 +431,15 @@
                 "nextParams": [
                   {
                     "type": "Identifier",
-                    "name": "val"
-                  },
-                  {
-                    "type": "Identifier",
                     "name": "req"
                   },
                   {
                     "type": "Identifier",
                     "name": "res"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "val"
                   }
                 ]
               },
@@ -430,15 +455,15 @@
                 "params": [
                   {
                     "type": "Identifier",
-                    "name": "val"
-                  },
-                  {
-                    "type": "Identifier",
                     "name": "req"
                   },
                   {
                     "type": "Identifier",
                     "name": "res"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "val"
                   }
                 ],
                 "body": {
@@ -478,15 +503,15 @@
                         "elements": [
                           {
                             "type": "Identifier",
-                            "name": "val"
-                          },
-                          {
-                            "type": "Identifier",
                             "name": "req"
                           },
                           {
                             "type": "Identifier",
                             "name": "res"
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "val"
                           }
                         ]
                       }
@@ -500,15 +525,15 @@
             "nextParams": [
               {
                 "type": "Identifier",
-                "name": "val"
-              },
-              {
-                "type": "Identifier",
                 "name": "req"
               },
               {
                 "type": "Identifier",
                 "name": "res"
+              },
+              {
+                "type": "Identifier",
+                "name": "val"
               }
             ]
           },
@@ -524,15 +549,15 @@
             "params": [
               {
                 "type": "Identifier",
-                "name": "val"
-              },
-              {
-                "type": "Identifier",
                 "name": "req"
               },
               {
                 "type": "Identifier",
                 "name": "res"
+              },
+              {
+                "type": "Identifier",
+                "name": "val"
               }
             ],
             "body": {
@@ -546,15 +571,15 @@
         "ioParams": [
           {
             "type": "Identifier",
-            "name": "val"
-          },
-          {
-            "type": "Identifier",
             "name": "req"
           },
           {
             "type": "Identifier",
             "name": "res"
+          },
+          {
+            "type": "Identifier",
+            "name": "val"
           }
         ],
         "sType": "IO"

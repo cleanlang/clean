@@ -243,48 +243,73 @@
                             }
                           ],
                           "body": {
-                            "type": "ArrayExpression",
-                            "elements": [
+                            "type": "BlockStatement",
+                            "body": [
                               {
-                                "type": "CallExpression",
-                                "callee": {
-                                  "type": "Identifier",
-                                  "name": "fact"
-                                },
-                                "arguments": [
+                                "type": "VariableDeclaration",
+                                "declarations": [
                                   {
-                                    "type": "CallExpression",
-                                    "callee": {
+                                    "type": "VariableDeclarator",
+                                    "id": {
                                       "type": "Identifier",
-                                      "name": "parseInt"
+                                      "name": "val"
                                     },
-                                    "arguments": [
-                                      {
+                                    "init": {
+                                      "type": "CallExpression",
+                                      "callee": {
                                         "type": "Identifier",
-                                        "name": "num"
-                                      }
-                                    ]
+                                        "name": "fact"
+                                      },
+                                      "arguments": [
+                                        {
+                                          "type": "CallExpression",
+                                          "callee": {
+                                            "type": "Identifier",
+                                            "name": "parseInt"
+                                          },
+                                          "arguments": [
+                                            {
+                                              "type": "Identifier",
+                                              "name": "num"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
                                   }
-                                ]
+                                ],
+                                "kind": "let"
                               },
                               {
-                                "type": "Identifier",
-                                "name": "num"
+                                "type": "ReturnStatement",
+                                "argument": {
+                                  "type": "ArrayExpression",
+                                  "elements": [
+                                    {
+                                      "type": "Identifier",
+                                      "name": "num"
+                                    },
+                                    {
+                                      "type": "Identifier",
+                                      "name": "val"
+                                    }
+                                  ]
+                                }
                               }
                             ]
                           },
                           "generator": false,
-                          "expression": true
+                          "expression": false
                         }
                       ],
                       "nextParams": [
                         {
                           "type": "Identifier",
-                          "name": "val"
+                          "name": "num"
                         },
                         {
                           "type": "Identifier",
-                          "name": "num"
+                          "name": "val"
                         }
                       ]
                     },
@@ -300,11 +325,11 @@
                       "params": [
                         {
                           "type": "Identifier",
-                          "name": "val"
+                          "name": "num"
                         },
                         {
                           "type": "Identifier",
-                          "name": "num"
+                          "name": "val"
                         }
                       ],
                       "body": {
@@ -335,11 +360,11 @@
                   "nextParams": [
                     {
                       "type": "Identifier",
-                      "name": "val"
+                      "name": "num"
                     },
                     {
                       "type": "Identifier",
-                      "name": "num"
+                      "name": "val"
                     }
                   ],
                   "returnVals": [
@@ -370,11 +395,11 @@
                   "params": [
                     {
                       "type": "Identifier",
-                      "name": "val"
+                      "name": "num"
                     },
                     {
                       "type": "Identifier",
-                      "name": "num"
+                      "name": "val"
                     }
                   ],
                   "body": {
@@ -402,11 +427,11 @@
               "nextParams": [
                 {
                   "type": "Identifier",
-                  "name": "val"
+                  "name": "num"
                 },
                 {
                   "type": "Identifier",
-                  "name": "num"
+                  "name": "val"
                 }
               ]
             },
@@ -491,41 +516,66 @@
                                         }
                                       ],
                                       "body": {
-                                        "type": "ArrayExpression",
-                                        "elements": [
+                                        "type": "BlockStatement",
+                                        "body": [
                                           {
-                                            "type": "BinaryExpression",
-                                            "operator": "+",
-                                            "sType": "string",
-                                            "left": {
-                                              "type": "Literal",
-                                              "value": "http://artii.herokuapp.com/make?text=",
-                                              "raw": "http://artii.herokuapp.com/make?text=",
-                                              "sType": "string"
-                                            },
-                                            "right": {
-                                              "type": "Identifier",
-                                              "name": "data"
-                                            }
+                                            "type": "VariableDeclaration",
+                                            "declarations": [
+                                              {
+                                                "type": "VariableDeclarator",
+                                                "id": {
+                                                  "type": "Identifier",
+                                                  "name": "link"
+                                                },
+                                                "init": {
+                                                  "type": "BinaryExpression",
+                                                  "operator": "+",
+                                                  "sType": "string",
+                                                  "left": {
+                                                    "type": "Literal",
+                                                    "value": "http://artii.herokuapp.com/make?text=",
+                                                    "raw": "http://artii.herokuapp.com/make?text=",
+                                                    "sType": "string"
+                                                  },
+                                                  "right": {
+                                                    "type": "Identifier",
+                                                    "name": "data"
+                                                  }
+                                                }
+                                              }
+                                            ],
+                                            "kind": "let"
                                           },
                                           {
-                                            "type": "Identifier",
-                                            "name": "data"
+                                            "type": "ReturnStatement",
+                                            "argument": {
+                                              "type": "ArrayExpression",
+                                              "elements": [
+                                                {
+                                                  "type": "Identifier",
+                                                  "name": "data"
+                                                },
+                                                {
+                                                  "type": "Identifier",
+                                                  "name": "link"
+                                                }
+                                              ]
+                                            }
                                           }
                                         ]
                                       },
                                       "generator": false,
-                                      "expression": true
+                                      "expression": false
                                     }
                                   ],
                                   "nextParams": [
                                     {
                                       "type": "Identifier",
-                                      "name": "link"
+                                      "name": "data"
                                     },
                                     {
                                       "type": "Identifier",
-                                      "name": "data"
+                                      "name": "link"
                                     }
                                   ]
                                 },
@@ -541,11 +591,11 @@
                                   "params": [
                                     {
                                       "type": "Identifier",
-                                      "name": "link"
+                                      "name": "data"
                                     },
                                     {
                                       "type": "Identifier",
-                                      "name": "data"
+                                      "name": "link"
                                     }
                                   ],
                                   "body": {
@@ -596,11 +646,11 @@
                                     "nextParams": [
                                       {
                                         "type": "Identifier",
-                                        "name": "link"
+                                        "name": "data"
                                       },
                                       {
                                         "type": "Identifier",
-                                        "name": "data"
+                                        "name": "link"
                                       },
                                       {
                                         "type": "Identifier",
@@ -623,11 +673,11 @@
                               "nextParams": [
                                 {
                                   "type": "Identifier",
-                                  "name": "link"
+                                  "name": "data"
                                 },
                                 {
                                   "type": "Identifier",
-                                  "name": "data"
+                                  "name": "link"
                                 },
                                 {
                                   "type": "Identifier",
@@ -655,11 +705,11 @@
                               "params": [
                                 {
                                   "type": "Identifier",
-                                  "name": "link"
+                                  "name": "data"
                                 },
                                 {
                                   "type": "Identifier",
-                                  "name": "data"
+                                  "name": "link"
                                 },
                                 {
                                   "type": "Identifier",
@@ -679,11 +729,11 @@
                                 "elements": [
                                   {
                                     "type": "Identifier",
-                                    "name": "link"
+                                    "name": "data"
                                   },
                                   {
                                     "type": "Identifier",
-                                    "name": "data"
+                                    "name": "link"
                                   },
                                   {
                                     "type": "Identifier",
@@ -706,11 +756,11 @@
                           "nextParams": [
                             {
                               "type": "Identifier",
-                              "name": "link"
+                              "name": "data"
                             },
                             {
                               "type": "Identifier",
-                              "name": "data"
+                              "name": "link"
                             },
                             {
                               "type": "Identifier",
@@ -738,11 +788,11 @@
                           "params": [
                             {
                               "type": "Identifier",
-                              "name": "link"
+                              "name": "data"
                             },
                             {
                               "type": "Identifier",
-                              "name": "data"
+                              "name": "link"
                             },
                             {
                               "type": "Identifier",
@@ -770,11 +820,11 @@
                           "params": [
                             {
                               "type": "Identifier",
-                              "name": "link"
+                              "name": "data"
                             },
                             {
                               "type": "Identifier",
-                              "name": "data"
+                              "name": "link"
                             },
                             {
                               "type": "Identifier",
@@ -843,11 +893,11 @@
                       "nextParams": [
                         {
                           "type": "Identifier",
-                          "name": "link"
+                          "name": "data"
                         },
                         {
                           "type": "Identifier",
-                          "name": "data"
+                          "name": "link"
                         },
                         {
                           "type": "Identifier",
@@ -875,11 +925,11 @@
                       "params": [
                         {
                           "type": "Identifier",
-                          "name": "link"
+                          "name": "data"
                         },
                         {
                           "type": "Identifier",
-                          "name": "data"
+                          "name": "link"
                         },
                         {
                           "type": "Identifier",
@@ -922,11 +972,11 @@
                   "nextParams": [
                     {
                       "type": "Identifier",
-                      "name": "link"
+                      "name": "data"
                     },
                     {
                       "type": "Identifier",
-                      "name": "data"
+                      "name": "link"
                     },
                     {
                       "type": "Identifier",
@@ -960,11 +1010,11 @@
                   "params": [
                     {
                       "type": "Identifier",
-                      "name": "link"
+                      "name": "data"
                     },
                     {
                       "type": "Identifier",
-                      "name": "data"
+                      "name": "link"
                     },
                     {
                       "type": "Identifier",
@@ -995,11 +1045,11 @@
               "nextParams": [
                 {
                   "type": "Identifier",
-                  "name": "link"
+                  "name": "data"
                 },
                 {
                   "type": "Identifier",
-                  "name": "data"
+                  "name": "link"
                 },
                 {
                   "type": "Identifier",

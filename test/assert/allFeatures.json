@@ -867,53 +867,74 @@
                                     }
                                   ],
                                   "body": {
-                                    "type": "ArrayExpression",
-                                    "elements": [
+                                    "type": "BlockStatement",
+                                    "body": [
                                       {
-                                        "type": "ObjectExpression",
-                                        "properties": [
+                                        "type": "VariableDeclaration",
+                                        "declarations": [
                                           {
-                                            "type": "Property",
-                                            "key": {
+                                            "type": "VariableDeclarator",
+                                            "id": {
                                               "type": "Identifier",
-                                              "name": "f"
+                                              "name": "ob"
                                             },
-                                            "computed": false,
-                                            "value": {
-                                              "type": "Literal",
-                                              "value": 25,
-                                              "raw": "25",
-                                              "sType": "number"
-                                            },
-                                            "kind": "init",
-                                            "method": false,
-                                            "shorthand": false
+                                            "init": {
+                                              "type": "ObjectExpression",
+                                              "properties": [
+                                                {
+                                                  "type": "Property",
+                                                  "key": {
+                                                    "type": "Identifier",
+                                                    "name": "f"
+                                                  },
+                                                  "computed": false,
+                                                  "value": {
+                                                    "type": "Literal",
+                                                    "value": 25,
+                                                    "raw": "25",
+                                                    "sType": "number"
+                                                  },
+                                                  "kind": "init",
+                                                  "method": false,
+                                                  "shorthand": false
+                                                }
+                                              ]
+                                            }
                                           }
-                                        ]
+                                        ],
+                                        "kind": "let"
                                       },
                                       {
-                                        "type": "Identifier",
-                                        "name": "a"
-                                      },
-                                      {
-                                        "type": "Identifier",
-                                        "name": "err"
-                                      },
-                                      {
-                                        "type": "Identifier",
-                                        "name": "res"
+                                        "type": "ReturnStatement",
+                                        "argument": {
+                                          "type": "ArrayExpression",
+                                          "elements": [
+                                            {
+                                              "type": "Identifier",
+                                              "name": "a"
+                                            },
+                                            {
+                                              "type": "Identifier",
+                                              "name": "err"
+                                            },
+                                            {
+                                              "type": "Identifier",
+                                              "name": "res"
+                                            },
+                                            {
+                                              "type": "Identifier",
+                                              "name": "ob"
+                                            }
+                                          ]
+                                        }
                                       }
                                     ]
                                   },
                                   "generator": false,
-                                  "expression": true
+                                  "expression": false
                                 }
                               ],
                               "nextParams": [
-                                {
-                                  "type": "Identifier",
-                                  "name": "ob"
-                                },
                                 {
                                   "type": "Identifier",
                                   "name": "a"
@@ -925,6 +946,10 @@
                                 {
                                   "type": "Identifier",
                                   "name": "res"
+                                },
+                                {
+                                  "type": "Identifier",
+                                  "name": "ob"
                                 }
                               ]
                             },
@@ -940,10 +965,6 @@
                               "params": [
                                 {
                                   "type": "Identifier",
-                                  "name": "ob"
-                                },
-                                {
-                                  "type": "Identifier",
                                   "name": "a"
                                 },
                                 {
@@ -953,6 +974,10 @@
                                 {
                                   "type": "Identifier",
                                   "name": "res"
+                                },
+                                {
+                                  "type": "Identifier",
+                                  "name": "ob"
                                 }
                               ],
                               "body": {
@@ -1065,10 +1090,6 @@
                                       "elements": [
                                         {
                                           "type": "Identifier",
-                                          "name": "ob"
-                                        },
-                                        {
-                                          "type": "Identifier",
                                           "name": "a"
                                         },
                                         {
@@ -1078,6 +1099,10 @@
                                         {
                                           "type": "Identifier",
                                           "name": "res"
+                                        },
+                                        {
+                                          "type": "Identifier",
+                                          "name": "ob"
                                         }
                                       ]
                                     }
@@ -1091,10 +1116,6 @@
                           "nextParams": [
                             {
                               "type": "Identifier",
-                              "name": "ob"
-                            },
-                            {
-                              "type": "Identifier",
                               "name": "a"
                             },
                             {
@@ -1104,6 +1125,10 @@
                             {
                               "type": "Identifier",
                               "name": "res"
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "ob"
                             }
                           ]
                         },
@@ -1119,10 +1144,6 @@
                           "params": [
                             {
                               "type": "Identifier",
-                              "name": "ob"
-                            },
-                            {
-                              "type": "Identifier",
                               "name": "a"
                             },
                             {
@@ -1132,6 +1153,10 @@
                             {
                               "type": "Identifier",
                               "name": "res"
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "ob"
                             }
                           ],
                           "body": {
@@ -1162,10 +1187,6 @@
                                   "elements": [
                                     {
                                       "type": "Identifier",
-                                      "name": "ob"
-                                    },
-                                    {
-                                      "type": "Identifier",
                                       "name": "a"
                                     },
                                     {
@@ -1175,6 +1196,10 @@
                                     {
                                       "type": "Identifier",
                                       "name": "res"
+                                    },
+                                    {
+                                      "type": "Identifier",
+                                      "name": "ob"
                                     }
                                   ]
                                 }
@@ -1188,10 +1213,6 @@
                       "nextParams": [
                         {
                           "type": "Identifier",
-                          "name": "ob"
-                        },
-                        {
-                          "type": "Identifier",
                           "name": "a"
                         },
                         {
@@ -1201,6 +1222,10 @@
                         {
                           "type": "Identifier",
                           "name": "res"
+                        },
+                        {
+                          "type": "Identifier",
+                          "name": "ob"
                         }
                       ]
                     },
@@ -1216,10 +1241,6 @@
                       "params": [
                         {
                           "type": "Identifier",
-                          "name": "ob"
-                        },
-                        {
-                          "type": "Identifier",
                           "name": "a"
                         },
                         {
@@ -1229,6 +1250,10 @@
                         {
                           "type": "Identifier",
                           "name": "res"
+                        },
+                        {
+                          "type": "Identifier",
+                          "name": "ob"
                         }
                       ],
                       "body": {
@@ -1268,10 +1293,6 @@
                   "nextParams": [
                     {
                       "type": "Identifier",
-                      "name": "ob"
-                    },
-                    {
-                      "type": "Identifier",
                       "name": "a"
                     },
                     {
@@ -1281,6 +1302,10 @@
                     {
                       "type": "Identifier",
                       "name": "res"
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "ob"
                     }
                   ],
                   "returnVals": [
@@ -1311,10 +1336,6 @@
                   "params": [
                     {
                       "type": "Identifier",
-                      "name": "ob"
-                    },
-                    {
-                      "type": "Identifier",
                       "name": "a"
                     },
                     {
@@ -1324,6 +1345,10 @@
                     {
                       "type": "Identifier",
                       "name": "res"
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "ob"
                     }
                   ],
                   "body": {
@@ -1351,10 +1376,6 @@
               "nextParams": [
                 {
                   "type": "Identifier",
-                  "name": "ob"
-                },
-                {
-                  "type": "Identifier",
                   "name": "a"
                 },
                 {
@@ -1364,6 +1385,10 @@
                 {
                   "type": "Identifier",
                   "name": "res"
+                },
+                {
+                  "type": "Identifier",
+                  "name": "ob"
                 }
               ]
             },
