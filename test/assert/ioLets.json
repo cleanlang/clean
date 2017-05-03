@@ -85,301 +85,32 @@
                                                                     "type": "MemberExpression",
                                                                     "computed": false,
                                                                     "object": {
-                                                                      "type": "CallExpression",
-                                                                      "callee": {
-                                                                        "type": "MemberExpression",
-                                                                        "computed": false,
-                                                                        "object": {
-                                                                          "type": "CallExpression",
-                                                                          "callee": {
-                                                                            "type": "MemberExpression",
-                                                                            "computed": false,
-                                                                            "object": {
-                                                                              "type": "CallExpression",
-                                                                              "callee": {
-                                                                                "type": "MemberExpression",
-                                                                                "computed": false,
-                                                                                "object": {
-                                                                                  "type": "Identifier",
-                                                                                  "name": "IO"
-                                                                                },
-                                                                                "property": {
-                                                                                  "type": "Identifier",
-                                                                                  "name": "getLine"
-                                                                                }
-                                                                              },
-                                                                              "arguments": [
-                                                                                {
-                                                                                  "type": "Literal",
-                                                                                  "value": "Enter a number: ",
-                                                                                  "raw": "Enter a number: ",
-                                                                                  "sType": "string"
-                                                                                }
-                                                                              ],
-                                                                              "nextParams": [
-                                                                                {
-                                                                                  "type": "Identifier",
-                                                                                  "name": "a"
-                                                                                }
-                                                                              ]
-                                                                            },
-                                                                            "property": {
-                                                                              "type": "Identifier",
-                                                                              "name": "map"
-                                                                            }
-                                                                          },
-                                                                          "arguments": [
-                                                                            {
-                                                                              "type": "ArrowFunctionExpression",
-                                                                              "id": null,
-                                                                              "params": [
-                                                                                {
-                                                                                  "type": "Identifier",
-                                                                                  "name": "a"
-                                                                                }
-                                                                              ],
-                                                                              "body": {
-                                                                                "type": "ArrayExpression",
-                                                                                "elements": [
-                                                                                  {
-                                                                                    "type": "Identifier",
-                                                                                    "name": "a"
-                                                                                  }
-                                                                                ]
-                                                                              },
-                                                                              "generator": false,
-                                                                              "expression": true
-                                                                            }
-                                                                          ],
-                                                                          "nextParams": [
-                                                                            {
-                                                                              "type": "Identifier",
-                                                                              "name": "a"
-                                                                            }
-                                                                          ]
-                                                                        },
-                                                                        "property": {
-                                                                          "type": "Identifier",
-                                                                          "name": "map"
-                                                                        }
-                                                                      },
-                                                                      "arguments": [
-                                                                        {
-                                                                          "type": "ArrowFunctionExpression",
-                                                                          "id": null,
-                                                                          "params": [
-                                                                            {
-                                                                              "type": "Identifier",
-                                                                              "name": "a"
-                                                                            }
-                                                                          ],
-                                                                          "body": {
-                                                                            "type": "BlockStatement",
-                                                                            "body": [
-                                                                              {
-                                                                                "type": "VariableDeclaration",
-                                                                                "declarations": [
-                                                                                  {
-                                                                                    "type": "VariableDeclarator",
-                                                                                    "id": {
-                                                                                      "type": "Identifier",
-                                                                                      "name": "b"
-                                                                                    },
-                                                                                    "init": {
-                                                                                      "type": "CallExpression",
-                                                                                      "callee": {
-                                                                                        "type": "MemberExpression",
-                                                                                        "computed": false,
-                                                                                        "object": {
-                                                                                          "type": "Identifier",
-                                                                                          "name": "Math"
-                                                                                        },
-                                                                                        "property": {
-                                                                                          "type": "Identifier",
-                                                                                          "name": "pow",
-                                                                                          "isSubscript": false
-                                                                                        }
-                                                                                      },
-                                                                                      "arguments": [
-                                                                                        {
-                                                                                          "type": "CallExpression",
-                                                                                          "callee": {
-                                                                                            "type": "Identifier",
-                                                                                            "name": "parseInt"
-                                                                                          },
-                                                                                          "arguments": [
-                                                                                            {
-                                                                                              "type": "Identifier",
-                                                                                              "name": "a"
-                                                                                            }
-                                                                                          ]
-                                                                                        },
-                                                                                        {
-                                                                                          "type": "Literal",
-                                                                                          "value": 5,
-                                                                                          "raw": "5",
-                                                                                          "sType": "number"
-                                                                                        }
-                                                                                      ]
-                                                                                    }
-                                                                                  }
-                                                                                ],
-                                                                                "kind": "let"
-                                                                              },
-                                                                              {
-                                                                                "type": "ReturnStatement",
-                                                                                "argument": {
-                                                                                  "type": "ArrayExpression",
-                                                                                  "elements": [
-                                                                                    {
-                                                                                      "type": "Identifier",
-                                                                                      "name": "a"
-                                                                                    },
-                                                                                    {
-                                                                                      "type": "Identifier",
-                                                                                      "name": "b"
-                                                                                    }
-                                                                                  ]
-                                                                                }
-                                                                              }
-                                                                            ]
-                                                                          },
-                                                                          "generator": false,
-                                                                          "expression": false
-                                                                        }
-                                                                      ],
-                                                                      "nextParams": [
-                                                                        {
-                                                                          "type": "Identifier",
-                                                                          "name": "a"
-                                                                        },
-                                                                        {
-                                                                          "type": "Identifier",
-                                                                          "name": "b"
-                                                                        }
-                                                                      ]
+                                                                      "type": "Identifier",
+                                                                      "name": "IO"
                                                                     },
                                                                     "property": {
                                                                       "type": "Identifier",
-                                                                      "name": "map"
+                                                                      "name": "getLine"
                                                                     }
                                                                   },
                                                                   "arguments": [
                                                                     {
-                                                                      "type": "ArrowFunctionExpression",
-                                                                      "id": null,
-                                                                      "params": [
-                                                                        {
-                                                                          "type": "Identifier",
-                                                                          "name": "a"
-                                                                        },
-                                                                        {
-                                                                          "type": "Identifier",
-                                                                          "name": "b"
-                                                                        }
-                                                                      ],
-                                                                      "body": {
-                                                                        "type": "BlockStatement",
-                                                                        "body": [
-                                                                          {
-                                                                            "type": "VariableDeclaration",
-                                                                            "declarations": [
-                                                                              {
-                                                                                "type": "VariableDeclarator",
-                                                                                "id": {
-                                                                                  "type": "Identifier",
-                                                                                  "name": "c"
-                                                                                },
-                                                                                "init": {
-                                                                                  "type": "BinaryExpression",
-                                                                                  "operator": "+",
-                                                                                  "sType": "number",
-                                                                                  "left": {
-                                                                                    "type": "Identifier",
-                                                                                    "name": "b"
-                                                                                  },
-                                                                                  "right": {
-                                                                                    "type": "Literal",
-                                                                                    "value": 25,
-                                                                                    "raw": "25",
-                                                                                    "sType": "number"
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            ],
-                                                                            "kind": "let"
-                                                                          },
-                                                                          {
-                                                                            "type": "VariableDeclaration",
-                                                                            "declarations": [
-                                                                              {
-                                                                                "type": "VariableDeclarator",
-                                                                                "id": {
-                                                                                  "type": "Identifier",
-                                                                                  "name": "d"
-                                                                                },
-                                                                                "init": {
-                                                                                  "type": "Literal",
-                                                                                  "value": "some string val",
-                                                                                  "raw": "some string val",
-                                                                                  "sType": "string"
-                                                                                }
-                                                                              }
-                                                                            ],
-                                                                            "kind": "let"
-                                                                          },
-                                                                          {
-                                                                            "type": "ReturnStatement",
-                                                                            "argument": {
-                                                                              "type": "ArrayExpression",
-                                                                              "elements": [
-                                                                                {
-                                                                                  "type": "Identifier",
-                                                                                  "name": "a"
-                                                                                },
-                                                                                {
-                                                                                  "type": "Identifier",
-                                                                                  "name": "b"
-                                                                                },
-                                                                                {
-                                                                                  "type": "Identifier",
-                                                                                  "name": "c"
-                                                                                },
-                                                                                {
-                                                                                  "type": "Identifier",
-                                                                                  "name": "d"
-                                                                                }
-                                                                              ]
-                                                                            }
-                                                                          }
-                                                                        ]
-                                                                      },
-                                                                      "generator": false,
-                                                                      "expression": false
+                                                                      "type": "Literal",
+                                                                      "value": "Enter a number: ",
+                                                                      "raw": "Enter a number: ",
+                                                                      "sType": "string"
                                                                     }
                                                                   ],
                                                                   "nextParams": [
                                                                     {
                                                                       "type": "Identifier",
                                                                       "name": "a"
-                                                                    },
-                                                                    {
-                                                                      "type": "Identifier",
-                                                                      "name": "b"
-                                                                    },
-                                                                    {
-                                                                      "type": "Identifier",
-                                                                      "name": "c"
-                                                                    },
-                                                                    {
-                                                                      "type": "Identifier",
-                                                                      "name": "d"
                                                                     }
                                                                   ]
                                                                 },
                                                                 "property": {
                                                                   "type": "Identifier",
-                                                                  "name": "bind"
+                                                                  "name": "map"
                                                                 }
                                                               },
                                                               "arguments": [
@@ -390,73 +121,25 @@
                                                                     {
                                                                       "type": "Identifier",
                                                                       "name": "a"
-                                                                    },
-                                                                    {
-                                                                      "type": "Identifier",
-                                                                      "name": "b"
-                                                                    },
-                                                                    {
-                                                                      "type": "Identifier",
-                                                                      "name": "c"
-                                                                    },
-                                                                    {
-                                                                      "type": "Identifier",
-                                                                      "name": "d"
                                                                     }
                                                                   ],
                                                                   "body": {
-                                                                    "type": "CallExpression",
-                                                                    "callee": {
-                                                                      "type": "MemberExpression",
-                                                                      "computed": false,
-                                                                      "object": {
-                                                                        "type": "Identifier",
-                                                                        "name": "IO"
-                                                                      },
-                                                                      "property": {
-                                                                        "type": "Identifier",
-                                                                        "name": "putLine"
-                                                                      }
-                                                                    },
-                                                                    "arguments": [
+                                                                    "type": "ArrayExpression",
+                                                                    "elements": [
                                                                       {
                                                                         "type": "Identifier",
                                                                         "name": "a"
-                                                                      },
-                                                                      {
-                                                                        "type": "Identifier",
-                                                                        "name": "b"
-                                                                      },
-                                                                      {
-                                                                        "type": "Identifier",
-                                                                        "name": "c"
-                                                                      },
-                                                                      {
-                                                                        "type": "Identifier",
-                                                                        "name": "d"
                                                                       }
                                                                     ]
                                                                   },
                                                                   "generator": false,
-                                                                  "expression": false
+                                                                  "expression": true
                                                                 }
                                                               ],
                                                               "nextParams": [
                                                                 {
                                                                   "type": "Identifier",
                                                                   "name": "a"
-                                                                },
-                                                                {
-                                                                  "type": "Identifier",
-                                                                  "name": "b"
-                                                                },
-                                                                {
-                                                                  "type": "Identifier",
-                                                                  "name": "c"
-                                                                },
-                                                                {
-                                                                  "type": "Identifier",
-                                                                  "name": "d"
                                                                 }
                                                               ]
                                                             },
@@ -473,18 +156,6 @@
                                                                 {
                                                                   "type": "Identifier",
                                                                   "name": "a"
-                                                                },
-                                                                {
-                                                                  "type": "Identifier",
-                                                                  "name": "b"
-                                                                },
-                                                                {
-                                                                  "type": "Identifier",
-                                                                  "name": "c"
-                                                                },
-                                                                {
-                                                                  "type": "Identifier",
-                                                                  "name": "d"
                                                                 }
                                                               ],
                                                               "body": {
@@ -497,11 +168,91 @@
                                                                         "type": "VariableDeclarator",
                                                                         "id": {
                                                                           "type": "Identifier",
-                                                                          "name": "obj"
+                                                                          "name": "b"
                                                                         },
                                                                         "init": {
-                                                                          "type": "ObjectExpression",
-                                                                          "properties": []
+                                                                          "type": "CallExpression",
+                                                                          "callee": {
+                                                                            "type": "MemberExpression",
+                                                                            "computed": false,
+                                                                            "object": {
+                                                                              "type": "Identifier",
+                                                                              "name": "Math"
+                                                                            },
+                                                                            "property": {
+                                                                              "type": "Identifier",
+                                                                              "name": "pow",
+                                                                              "isSubscript": false
+                                                                            }
+                                                                          },
+                                                                          "arguments": [
+                                                                            {
+                                                                              "type": "CallExpression",
+                                                                              "callee": {
+                                                                                "type": "Identifier",
+                                                                                "name": "parseInt"
+                                                                              },
+                                                                              "arguments": [
+                                                                                {
+                                                                                  "type": "Identifier",
+                                                                                  "name": "a"
+                                                                                }
+                                                                              ]
+                                                                            },
+                                                                            {
+                                                                              "type": "Literal",
+                                                                              "value": 5,
+                                                                              "raw": "5",
+                                                                              "sType": "number"
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      }
+                                                                    ],
+                                                                    "kind": "let"
+                                                                  },
+                                                                  {
+                                                                    "type": "VariableDeclaration",
+                                                                    "declarations": [
+                                                                      {
+                                                                        "type": "VariableDeclarator",
+                                                                        "id": {
+                                                                          "type": "Identifier",
+                                                                          "name": "c"
+                                                                        },
+                                                                        "init": {
+                                                                          "type": "BinaryExpression",
+                                                                          "operator": "+",
+                                                                          "sType": "number",
+                                                                          "left": {
+                                                                            "type": "Identifier",
+                                                                            "name": "b"
+                                                                          },
+                                                                          "right": {
+                                                                            "type": "Literal",
+                                                                            "value": 25,
+                                                                            "raw": "25",
+                                                                            "sType": "number"
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    ],
+                                                                    "kind": "let"
+                                                                  },
+                                                                  {
+                                                                    "type": "VariableDeclaration",
+                                                                    "declarations": [
+                                                                      {
+                                                                        "type": "VariableDeclarator",
+                                                                        "id": {
+                                                                          "type": "Identifier",
+                                                                          "name": "d"
+                                                                        },
+                                                                        "init": {
+                                                                          "type": "Literal",
+                                                                          "value": "some string val",
+                                                                          "raw": "some string val",
+                                                                          "sType": "string"
                                                                         }
                                                                       }
                                                                     ],
@@ -527,10 +278,6 @@
                                                                         {
                                                                           "type": "Identifier",
                                                                           "name": "d"
-                                                                        },
-                                                                        {
-                                                                          "type": "Identifier",
-                                                                          "name": "obj"
                                                                         }
                                                                       ]
                                                                     }
@@ -557,16 +304,12 @@
                                                             {
                                                               "type": "Identifier",
                                                               "name": "d"
-                                                            },
-                                                            {
-                                                              "type": "Identifier",
-                                                              "name": "obj"
                                                             }
                                                           ]
                                                         },
                                                         "property": {
                                                           "type": "Identifier",
-                                                          "name": "map"
+                                                          "name": "bind"
                                                         }
                                                       },
                                                       "arguments": [
@@ -589,65 +332,38 @@
                                                             {
                                                               "type": "Identifier",
                                                               "name": "d"
-                                                            },
-                                                            {
-                                                              "type": "Identifier",
-                                                              "name": "obj"
                                                             }
                                                           ],
                                                           "body": {
-                                                            "type": "BlockStatement",
-                                                            "body": [
+                                                            "type": "CallExpression",
+                                                            "callee": {
+                                                              "type": "MemberExpression",
+                                                              "computed": false,
+                                                              "object": {
+                                                                "type": "Identifier",
+                                                                "name": "IO"
+                                                              },
+                                                              "property": {
+                                                                "type": "Identifier",
+                                                                "name": "putLine"
+                                                              }
+                                                            },
+                                                            "arguments": [
                                                               {
-                                                                "type": "VariableDeclaration",
-                                                                "declarations": [
-                                                                  {
-                                                                    "type": "VariableDeclarator",
-                                                                    "id": {
-                                                                      "type": "Identifier",
-                                                                      "name": "val1"
-                                                                    },
-                                                                    "init": {
-                                                                      "type": "Literal",
-                                                                      "value": "string",
-                                                                      "raw": "string",
-                                                                      "sType": "string"
-                                                                    }
-                                                                  }
-                                                                ],
-                                                                "kind": "let"
+                                                                "type": "Identifier",
+                                                                "name": "a"
                                                               },
                                                               {
-                                                                "type": "ReturnStatement",
-                                                                "argument": {
-                                                                  "type": "ArrayExpression",
-                                                                  "elements": [
-                                                                    {
-                                                                      "type": "Identifier",
-                                                                      "name": "a"
-                                                                    },
-                                                                    {
-                                                                      "type": "Identifier",
-                                                                      "name": "b"
-                                                                    },
-                                                                    {
-                                                                      "type": "Identifier",
-                                                                      "name": "c"
-                                                                    },
-                                                                    {
-                                                                      "type": "Identifier",
-                                                                      "name": "d"
-                                                                    },
-                                                                    {
-                                                                      "type": "Identifier",
-                                                                      "name": "obj"
-                                                                    },
-                                                                    {
-                                                                      "type": "Identifier",
-                                                                      "name": "val1"
-                                                                    }
-                                                                  ]
-                                                                }
+                                                                "type": "Identifier",
+                                                                "name": "b"
+                                                              },
+                                                              {
+                                                                "type": "Identifier",
+                                                                "name": "c"
+                                                              },
+                                                              {
+                                                                "type": "Identifier",
+                                                                "name": "d"
                                                               }
                                                             ]
                                                           },
@@ -671,20 +387,12 @@
                                                         {
                                                           "type": "Identifier",
                                                           "name": "d"
-                                                        },
-                                                        {
-                                                          "type": "Identifier",
-                                                          "name": "obj"
-                                                        },
-                                                        {
-                                                          "type": "Identifier",
-                                                          "name": "val1"
                                                         }
                                                       ]
                                                     },
                                                     "property": {
                                                       "type": "Identifier",
-                                                      "name": "bind"
+                                                      "name": "map"
                                                     }
                                                   },
                                                   "arguments": [
@@ -707,71 +415,83 @@
                                                         {
                                                           "type": "Identifier",
                                                           "name": "d"
-                                                        },
-                                                        {
-                                                          "type": "Identifier",
-                                                          "name": "obj"
-                                                        },
-                                                        {
-                                                          "type": "Identifier",
-                                                          "name": "val1"
                                                         }
                                                       ],
                                                       "body": {
-                                                        "type": "CallExpression",
-                                                        "callee": {
-                                                          "type": "MemberExpression",
-                                                          "computed": false,
-                                                          "object": {
-                                                            "type": "Identifier",
-                                                            "name": "IO"
-                                                          },
-                                                          "property": {
-                                                            "type": "Identifier",
-                                                            "name": "getLine"
-                                                          }
-                                                        },
-                                                        "arguments": [
+                                                        "type": "BlockStatement",
+                                                        "body": [
                                                           {
-                                                            "type": "Literal",
-                                                            "value": "enter number",
-                                                            "raw": "enter number",
-                                                            "sType": "string"
-                                                          }
-                                                        ],
-                                                        "nextParams": [
-                                                          {
-                                                            "type": "Identifier",
-                                                            "name": "a"
+                                                            "type": "VariableDeclaration",
+                                                            "declarations": [
+                                                              {
+                                                                "type": "VariableDeclarator",
+                                                                "id": {
+                                                                  "type": "Identifier",
+                                                                  "name": "obj"
+                                                                },
+                                                                "init": {
+                                                                  "type": "ObjectExpression",
+                                                                  "properties": []
+                                                                }
+                                                              }
+                                                            ],
+                                                            "kind": "let"
                                                           },
                                                           {
-                                                            "type": "Identifier",
-                                                            "name": "b"
+                                                            "type": "VariableDeclaration",
+                                                            "declarations": [
+                                                              {
+                                                                "type": "VariableDeclarator",
+                                                                "id": {
+                                                                  "type": "Identifier",
+                                                                  "name": "val1"
+                                                                },
+                                                                "init": {
+                                                                  "type": "Literal",
+                                                                  "value": "string",
+                                                                  "raw": "string",
+                                                                  "sType": "string"
+                                                                }
+                                                              }
+                                                            ],
+                                                            "kind": "let"
                                                           },
                                                           {
-                                                            "type": "Identifier",
-                                                            "name": "c"
-                                                          },
-                                                          {
-                                                            "type": "Identifier",
-                                                            "name": "d"
-                                                          },
-                                                          {
-                                                            "type": "Identifier",
-                                                            "name": "obj"
-                                                          },
-                                                          {
-                                                            "type": "Identifier",
-                                                            "name": "val1"
-                                                          },
-                                                          {
-                                                            "type": "Identifier",
-                                                            "name": "val2"
+                                                            "type": "ReturnStatement",
+                                                            "argument": {
+                                                              "type": "ArrayExpression",
+                                                              "elements": [
+                                                                {
+                                                                  "type": "Identifier",
+                                                                  "name": "a"
+                                                                },
+                                                                {
+                                                                  "type": "Identifier",
+                                                                  "name": "b"
+                                                                },
+                                                                {
+                                                                  "type": "Identifier",
+                                                                  "name": "c"
+                                                                },
+                                                                {
+                                                                  "type": "Identifier",
+                                                                  "name": "d"
+                                                                },
+                                                                {
+                                                                  "type": "Identifier",
+                                                                  "name": "obj"
+                                                                },
+                                                                {
+                                                                  "type": "Identifier",
+                                                                  "name": "val1"
+                                                                }
+                                                              ]
+                                                            }
                                                           }
                                                         ]
                                                       },
                                                       "generator": false,
-                                                      "expression": true
+                                                      "expression": false
                                                     }
                                                   ],
                                                   "nextParams": [
@@ -798,16 +518,12 @@
                                                     {
                                                       "type": "Identifier",
                                                       "name": "val1"
-                                                    },
-                                                    {
-                                                      "type": "Identifier",
-                                                      "name": "val2"
                                                     }
                                                   ]
                                                 },
                                                 "property": {
                                                   "type": "Identifier",
-                                                  "name": "map"
+                                                  "name": "bind"
                                                 }
                                               },
                                               "arguments": [
@@ -838,15 +554,31 @@
                                                     {
                                                       "type": "Identifier",
                                                       "name": "val1"
-                                                    },
-                                                    {
-                                                      "type": "Identifier",
-                                                      "name": "val2"
                                                     }
                                                   ],
                                                   "body": {
-                                                    "type": "ArrayExpression",
-                                                    "elements": [
+                                                    "type": "CallExpression",
+                                                    "callee": {
+                                                      "type": "MemberExpression",
+                                                      "computed": false,
+                                                      "object": {
+                                                        "type": "Identifier",
+                                                        "name": "IO"
+                                                      },
+                                                      "property": {
+                                                        "type": "Identifier",
+                                                        "name": "getLine"
+                                                      }
+                                                    },
+                                                    "arguments": [
+                                                      {
+                                                        "type": "Literal",
+                                                        "value": "enter number",
+                                                        "raw": "enter number",
+                                                        "sType": "string"
+                                                      }
+                                                    ],
+                                                    "nextParams": [
                                                       {
                                                         "type": "Identifier",
                                                         "name": "a"
@@ -914,7 +646,7 @@
                                             },
                                             "property": {
                                               "type": "Identifier",
-                                              "name": "maybeTrue"
+                                              "name": "map"
                                             }
                                           },
                                           "arguments": [
@@ -952,122 +684,35 @@
                                                 }
                                               ],
                                               "body": {
-                                                "type": "BinaryExpression",
-                                                "operator": "!==",
-                                                "sType": "bool",
-                                                "left": {
-                                                  "type": "BinaryExpression",
-                                                  "operator": "%",
-                                                  "sType": "number",
-                                                  "left": {
-                                                    "type": "CallExpression",
-                                                    "callee": {
-                                                      "type": "Identifier",
-                                                      "name": "parseInt"
-                                                    },
-                                                    "arguments": [
-                                                      {
-                                                        "type": "Identifier",
-                                                        "name": "val2"
-                                                      }
-                                                    ]
-                                                  },
-                                                  "right": {
-                                                    "type": "Literal",
-                                                    "value": 2,
-                                                    "raw": "2",
-                                                    "sType": "number"
-                                                  }
-                                                },
-                                                "right": {
-                                                  "type": "Literal",
-                                                  "value": 0,
-                                                  "raw": "0",
-                                                  "sType": "number"
-                                                }
-                                              },
-                                              "generator": false,
-                                              "expression": true
-                                            },
-                                            {
-                                              "type": "ArrowFunctionExpression",
-                                              "id": null,
-                                              "params": [
-                                                {
-                                                  "type": "Identifier",
-                                                  "name": "a"
-                                                },
-                                                {
-                                                  "type": "Identifier",
-                                                  "name": "b"
-                                                },
-                                                {
-                                                  "type": "Identifier",
-                                                  "name": "c"
-                                                },
-                                                {
-                                                  "type": "Identifier",
-                                                  "name": "d"
-                                                },
-                                                {
-                                                  "type": "Identifier",
-                                                  "name": "obj"
-                                                },
-                                                {
-                                                  "type": "Identifier",
-                                                  "name": "val1"
-                                                },
-                                                {
-                                                  "type": "Identifier",
-                                                  "name": "val2"
-                                                }
-                                              ],
-                                              "body": {
-                                                "type": "CallExpression",
-                                                "callee": {
-                                                  "type": "MemberExpression",
-                                                  "computed": false,
-                                                  "object": {
-                                                    "type": "CallExpression",
-                                                    "callee": {
-                                                      "type": "MemberExpression",
-                                                      "computed": false,
-                                                      "object": {
-                                                        "type": "Identifier",
-                                                        "name": "IO"
-                                                      },
-                                                      "property": {
-                                                        "type": "Identifier",
-                                                        "name": "putLine"
-                                                      }
-                                                    },
-                                                    "arguments": [
-                                                      {
-                                                        "type": "Literal",
-                                                        "value": "not even",
-                                                        "raw": "not even",
-                                                        "sType": "string"
-                                                      }
-                                                    ],
-                                                    "nextParams": []
-                                                  },
-                                                  "property": {
-                                                    "type": "Identifier",
-                                                    "name": "then"
-                                                  }
-                                                },
-                                                "arguments": [
+                                                "type": "ArrayExpression",
+                                                "elements": [
                                                   {
-                                                    "type": "ArrowFunctionExpression",
-                                                    "id": null,
-                                                    "params": [],
-                                                    "body": {
-                                                      "type": "Literal",
-                                                      "value": null,
-                                                      "raw": "null"
-                                                    },
-                                                    "generator": false,
-                                                    "expression": true
+                                                    "type": "Identifier",
+                                                    "name": "a"
+                                                  },
+                                                  {
+                                                    "type": "Identifier",
+                                                    "name": "b"
+                                                  },
+                                                  {
+                                                    "type": "Identifier",
+                                                    "name": "c"
+                                                  },
+                                                  {
+                                                    "type": "Identifier",
+                                                    "name": "d"
+                                                  },
+                                                  {
+                                                    "type": "Identifier",
+                                                    "name": "obj"
+                                                  },
+                                                  {
+                                                    "type": "Identifier",
+                                                    "name": "val1"
+                                                  },
+                                                  {
+                                                    "type": "Identifier",
+                                                    "name": "val2"
                                                   }
                                                 ]
                                               },
@@ -1108,7 +753,7 @@
                                         },
                                         "property": {
                                           "type": "Identifier",
-                                          "name": "map"
+                                          "name": "maybeTrue"
                                         }
                                       },
                                       "arguments": [
@@ -1146,148 +791,127 @@
                                             }
                                           ],
                                           "body": {
-                                            "type": "BlockStatement",
-                                            "body": [
-                                              {
-                                                "type": "ExpressionStatement",
-                                                "expression": {
-                                                  "type": "CallExpression",
-                                                  "callee": {
-                                                    "type": "MemberExpression",
-                                                    "computed": false,
-                                                    "object": {
-                                                      "type": "Identifier",
-                                                      "name": "Object"
-                                                    },
-                                                    "property": {
-                                                      "type": "Identifier",
-                                                      "name": "defineProperty"
-                                                    }
-                                                  },
-                                                  "arguments": [
-                                                    {
-                                                      "type": "Identifier",
-                                                      "name": "obj"
-                                                    },
-                                                    {
-                                                      "type": "Literal",
-                                                      "value": "key",
-                                                      "raw": "key",
-                                                      "sType": "string"
-                                                    },
-                                                    {
-                                                      "type": "ObjectExpression",
-                                                      "properties": [
-                                                        {
-                                                          "type": "Property",
-                                                          "key": {
-                                                            "type": "Identifier",
-                                                            "name": "value"
-                                                          },
-                                                          "computed": false,
-                                                          "value": {
-                                                            "type": "Literal",
-                                                            "value": 123,
-                                                            "raw": "123",
-                                                            "sType": "number"
-                                                          },
-                                                          "kind": "init",
-                                                          "method": false,
-                                                          "shorthand": false
-                                                        },
-                                                        {
-                                                          "type": "Property",
-                                                          "key": {
-                                                            "type": "Identifier",
-                                                            "name": "enumerable"
-                                                          },
-                                                          "computed": false,
-                                                          "value": {
-                                                            "type": "Literal",
-                                                            "value": true,
-                                                            "raw": "true"
-                                                          },
-                                                          "kind": "init",
-                                                          "method": false,
-                                                          "shorthand": false
-                                                        },
-                                                        {
-                                                          "type": "Property",
-                                                          "key": {
-                                                            "type": "Identifier",
-                                                            "name": "writable"
-                                                          },
-                                                          "computed": false,
-                                                          "value": {
-                                                            "type": "Literal",
-                                                            "value": true,
-                                                            "raw": "true"
-                                                          },
-                                                          "kind": "init",
-                                                          "method": false,
-                                                          "shorthand": false
-                                                        },
-                                                        {
-                                                          "type": "Property",
-                                                          "key": {
-                                                            "type": "Identifier",
-                                                            "name": "configurable"
-                                                          },
-                                                          "computed": false,
-                                                          "value": {
-                                                            "type": "Literal",
-                                                            "value": true,
-                                                            "raw": "true"
-                                                          },
-                                                          "kind": "init",
-                                                          "method": false,
-                                                          "shorthand": false
-                                                        }
-                                                      ]
-                                                    }
-                                                  ]
-                                                }
+                                            "type": "BinaryExpression",
+                                            "operator": "!==",
+                                            "sType": "bool",
+                                            "left": {
+                                              "type": "BinaryExpression",
+                                              "operator": "%",
+                                              "sType": "number",
+                                              "left": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                  "type": "Identifier",
+                                                  "name": "parseInt"
+                                                },
+                                                "arguments": [
+                                                  {
+                                                    "type": "Identifier",
+                                                    "name": "val2"
+                                                  }
+                                                ]
                                               },
+                                              "right": {
+                                                "type": "Literal",
+                                                "value": 2,
+                                                "raw": "2",
+                                                "sType": "number"
+                                              }
+                                            },
+                                            "right": {
+                                              "type": "Literal",
+                                              "value": 0,
+                                              "raw": "0",
+                                              "sType": "number"
+                                            }
+                                          },
+                                          "generator": false,
+                                          "expression": true
+                                        },
+                                        {
+                                          "type": "ArrowFunctionExpression",
+                                          "id": null,
+                                          "params": [
+                                            {
+                                              "type": "Identifier",
+                                              "name": "a"
+                                            },
+                                            {
+                                              "type": "Identifier",
+                                              "name": "b"
+                                            },
+                                            {
+                                              "type": "Identifier",
+                                              "name": "c"
+                                            },
+                                            {
+                                              "type": "Identifier",
+                                              "name": "d"
+                                            },
+                                            {
+                                              "type": "Identifier",
+                                              "name": "obj"
+                                            },
+                                            {
+                                              "type": "Identifier",
+                                              "name": "val1"
+                                            },
+                                            {
+                                              "type": "Identifier",
+                                              "name": "val2"
+                                            }
+                                          ],
+                                          "body": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                              "type": "MemberExpression",
+                                              "computed": false,
+                                              "object": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                  "type": "MemberExpression",
+                                                  "computed": false,
+                                                  "object": {
+                                                    "type": "Identifier",
+                                                    "name": "IO"
+                                                  },
+                                                  "property": {
+                                                    "type": "Identifier",
+                                                    "name": "putLine"
+                                                  }
+                                                },
+                                                "arguments": [
+                                                  {
+                                                    "type": "Literal",
+                                                    "value": "not even",
+                                                    "raw": "not even",
+                                                    "sType": "string"
+                                                  }
+                                                ],
+                                                "nextParams": []
+                                              },
+                                              "property": {
+                                                "type": "Identifier",
+                                                "name": "then"
+                                              }
+                                            },
+                                            "arguments": [
                                               {
-                                                "type": "ReturnStatement",
-                                                "argument": {
-                                                  "type": "ArrayExpression",
-                                                  "elements": [
-                                                    {
-                                                      "type": "Identifier",
-                                                      "name": "a"
-                                                    },
-                                                    {
-                                                      "type": "Identifier",
-                                                      "name": "b"
-                                                    },
-                                                    {
-                                                      "type": "Identifier",
-                                                      "name": "c"
-                                                    },
-                                                    {
-                                                      "type": "Identifier",
-                                                      "name": "d"
-                                                    },
-                                                    {
-                                                      "type": "Identifier",
-                                                      "name": "obj"
-                                                    },
-                                                    {
-                                                      "type": "Identifier",
-                                                      "name": "val1"
-                                                    },
-                                                    {
-                                                      "type": "Identifier",
-                                                      "name": "val2"
-                                                    }
-                                                  ]
-                                                }
+                                                "type": "ArrowFunctionExpression",
+                                                "id": null,
+                                                "params": [],
+                                                "body": {
+                                                  "type": "Literal",
+                                                  "value": null,
+                                                  "raw": "null"
+                                                },
+                                                "generator": false,
+                                                "expression": true
                                               }
                                             ]
                                           },
                                           "generator": false,
-                                          "expression": false
+                                          "expression": true
                                         }
                                       ],
                                       "nextParams": [
@@ -1363,6 +987,106 @@
                                       "body": {
                                         "type": "BlockStatement",
                                         "body": [
+                                          {
+                                            "type": "ExpressionStatement",
+                                            "expression": {
+                                              "type": "CallExpression",
+                                              "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": false,
+                                                "object": {
+                                                  "type": "Identifier",
+                                                  "name": "Object"
+                                                },
+                                                "property": {
+                                                  "type": "Identifier",
+                                                  "name": "defineProperty"
+                                                }
+                                              },
+                                              "arguments": [
+                                                {
+                                                  "type": "Identifier",
+                                                  "name": "obj"
+                                                },
+                                                {
+                                                  "type": "Literal",
+                                                  "value": "key",
+                                                  "raw": "key",
+                                                  "sType": "string"
+                                                },
+                                                {
+                                                  "type": "ObjectExpression",
+                                                  "properties": [
+                                                    {
+                                                      "type": "Property",
+                                                      "key": {
+                                                        "type": "Identifier",
+                                                        "name": "value"
+                                                      },
+                                                      "computed": false,
+                                                      "value": {
+                                                        "type": "Literal",
+                                                        "value": 123,
+                                                        "raw": "123",
+                                                        "sType": "number"
+                                                      },
+                                                      "kind": "init",
+                                                      "method": false,
+                                                      "shorthand": false
+                                                    },
+                                                    {
+                                                      "type": "Property",
+                                                      "key": {
+                                                        "type": "Identifier",
+                                                        "name": "enumerable"
+                                                      },
+                                                      "computed": false,
+                                                      "value": {
+                                                        "type": "Literal",
+                                                        "value": true,
+                                                        "raw": "true"
+                                                      },
+                                                      "kind": "init",
+                                                      "method": false,
+                                                      "shorthand": false
+                                                    },
+                                                    {
+                                                      "type": "Property",
+                                                      "key": {
+                                                        "type": "Identifier",
+                                                        "name": "writable"
+                                                      },
+                                                      "computed": false,
+                                                      "value": {
+                                                        "type": "Literal",
+                                                        "value": true,
+                                                        "raw": "true"
+                                                      },
+                                                      "kind": "init",
+                                                      "method": false,
+                                                      "shorthand": false
+                                                    },
+                                                    {
+                                                      "type": "Property",
+                                                      "key": {
+                                                        "type": "Identifier",
+                                                        "name": "configurable"
+                                                      },
+                                                      "computed": false,
+                                                      "value": {
+                                                        "type": "Literal",
+                                                        "value": true,
+                                                        "raw": "true"
+                                                      },
+                                                      "kind": "init",
+                                                      "method": false,
+                                                      "shorthand": false
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
                                           {
                                             "type": "VariableDeclaration",
                                             "declarations": [
