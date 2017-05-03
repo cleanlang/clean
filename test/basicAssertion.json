@@ -207,6 +207,12 @@
         "maybeUndefined": "maybeUndefined"
       }
     ],
+    "regexParser": [
+      "regex", {
+        "/hello/" : ["/hello/", "hello"],
+        "/hello/g": ["/hello/g", "hello", "g"]
+      }
+    ],
     "singleLineCommentParser": [
       "comment", {
         "// This is a comment\n": ["Line", " This is a comment\n"],
