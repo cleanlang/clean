@@ -22,6 +22,18 @@ h = sum 4 5 ^ 1 + 16 * 7 / (4 + a)
 
 print h
 
+re = /hello/
+
+reGlobal = /hello/g
+
+match = re.exec 'hello'
+
+match2 = reGlobal.exec 'qwertyiophello123123hello'
+
+print match
+
+print match2
+
 letin = let x = 15 in x ^ 4 * 5
 
 caller = do
