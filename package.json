@@ -7,7 +7,7 @@
     "clean": "bin/command.js"
   },
   "scripts": {
-    "test": "nyc ava --verbose --fail-fast --serial"
+    "test": "nyc ava --verbose --serial test/*.test.js"
   },
   "author": "Santosh Rajan",
   "license": "MIT",
