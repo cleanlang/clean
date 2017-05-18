@@ -26,78 +26,38 @@
                       "type": "MemberExpression",
                       "computed": false,
                       "object": {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "MemberExpression",
-                          "computed": false,
-                          "object": {
-                            "type": "Identifier",
-                            "name": "IO"
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "readFile"
-                          }
-                        },
-                        "arguments": [
-                          {
-                            "type": "MemberExpression",
-                            "computed": true,
-                            "object": {
-                              "type": "MemberExpression",
-                              "computed": false,
-                              "object": {
-                                "type": "Identifier",
-                                "name": "process"
-                              },
-                              "property": {
-                                "type": "Identifier",
-                                "name": "argv",
-                                "isSubscript": false
-                              }
-                            },
-                            "property": {
-                              "type": "Literal",
-                              "value": 2,
-                              "raw": "2",
-                              "sType": "number",
-                              "isSubscript": true
-                            }
-                          }
-                        ],
-                        "nextParams": [
-                          {
-                            "type": "Identifier",
-                            "name": "data"
-                          }
-                        ]
+                        "type": "Identifier",
+                        "name": "IO"
                       },
                       "property": {
                         "type": "Identifier",
-                        "name": "map"
+                        "name": "readFile"
                       }
                     },
                     "arguments": [
                       {
-                        "type": "ArrowFunctionExpression",
-                        "id": null,
-                        "params": [
-                          {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
                             "type": "Identifier",
-                            "name": "data"
+                            "name": "process"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "argv",
+                            "isSubscript": false
                           }
-                        ],
-                        "body": {
-                          "type": "ArrayExpression",
-                          "elements": [
-                            {
-                              "type": "Identifier",
-                              "name": "data"
-                            }
-                          ]
                         },
-                        "generator": false,
-                        "expression": true
+                        "property": {
+                          "type": "Literal",
+                          "value": 2,
+                          "raw": "2",
+                          "sType": "number",
+                          "isSubscript": true
+                        }
                       }
                     ],
                     "nextParams": [
@@ -123,52 +83,61 @@
                       }
                     ],
                     "body": {
-                      "type": "CallExpression",
-                      "callee": {
-                        "type": "MemberExpression",
-                        "computed": false,
-                        "object": {
-                          "type": "Identifier",
-                          "name": "IO"
-                        },
-                        "property": {
-                          "type": "Identifier",
-                          "name": "writeFile"
-                        }
-                      },
-                      "arguments": [
+                      "type": "ArrayExpression",
+                      "elements": [
                         {
-                          "type": "MemberExpression",
-                          "computed": true,
-                          "object": {
+                          "type": "Identifier",
+                          "name": "data"
+                        },
+                        {
+                          "type": "CallExpression",
+                          "callee": {
                             "type": "MemberExpression",
                             "computed": false,
                             "object": {
                               "type": "Identifier",
-                              "name": "process"
+                              "name": "IO"
                             },
                             "property": {
                               "type": "Identifier",
-                              "name": "argv",
-                              "isSubscript": false
+                              "name": "writeFile"
                             }
                           },
-                          "property": {
-                            "type": "Literal",
-                            "value": 3,
-                            "raw": "3",
-                            "sType": "number",
-                            "isSubscript": true
-                          }
-                        },
-                        {
-                          "type": "Identifier",
-                          "name": "data"
+                          "arguments": [
+                            {
+                              "type": "MemberExpression",
+                              "computed": true,
+                              "object": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "process"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "argv",
+                                  "isSubscript": false
+                                }
+                              },
+                              "property": {
+                                "type": "Literal",
+                                "value": 3,
+                                "raw": "3",
+                                "sType": "number",
+                                "isSubscript": true
+                              }
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "data"
+                            }
+                          ]
                         }
                       ]
                     },
                     "generator": false,
-                    "expression": false
+                    "expression": true
                   }
                 ],
                 "nextParams": [
@@ -187,12 +156,7 @@
               {
                 "type": "ArrowFunctionExpression",
                 "id": null,
-                "params": [
-                  {
-                    "type": "Identifier",
-                    "name": "data"
-                  }
-                ],
+                "params": [],
                 "body": {
                   "type": "ArrayExpression",
                   "elements": []

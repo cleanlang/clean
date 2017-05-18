@@ -487,355 +487,32 @@
                             "type": "MemberExpression",
                             "computed": false,
                             "object": {
-                              "type": "CallExpression",
-                              "callee": {
-                                "type": "MemberExpression",
-                                "computed": false,
-                                "object": {
-                                  "type": "CallExpression",
-                                  "callee": {
-                                    "type": "MemberExpression",
-                                    "computed": false,
-                                    "object": {
-                                      "type": "CallExpression",
-                                      "callee": {
-                                        "type": "MemberExpression",
-                                        "computed": false,
-                                        "object": {
-                                          "type": "CallExpression",
-                                          "callee": {
-                                            "type": "MemberExpression",
-                                            "computed": false,
-                                            "object": {
-                                              "type": "Identifier",
-                                              "name": "IO"
-                                            },
-                                            "property": {
-                                              "type": "Identifier",
-                                              "name": "getLine"
-                                            }
-                                          },
-                                          "arguments": [
-                                            {
-                                              "type": "Literal",
-                                              "value": "random string",
-                                              "raw": "random string",
-                                              "sType": "string"
-                                            }
-                                          ],
-                                          "nextParams": [
-                                            {
-                                              "type": "Identifier",
-                                              "name": "a"
-                                            }
-                                          ]
-                                        },
-                                        "property": {
-                                          "type": "Identifier",
-                                          "name": "map"
-                                        }
-                                      },
-                                      "arguments": [
-                                        {
-                                          "type": "ArrowFunctionExpression",
-                                          "id": null,
-                                          "params": [
-                                            {
-                                              "type": "Identifier",
-                                              "name": "a"
-                                            }
-                                          ],
-                                          "body": {
-                                            "type": "ArrayExpression",
-                                            "elements": [
-                                              {
-                                                "type": "Identifier",
-                                                "name": "a"
-                                              }
-                                            ]
-                                          },
-                                          "generator": false,
-                                          "expression": true
-                                        }
-                                      ],
-                                      "nextParams": [
-                                        {
-                                          "type": "Identifier",
-                                          "name": "a"
-                                        }
-                                      ]
-                                    },
-                                    "property": {
-                                      "type": "Identifier",
-                                      "name": "bind"
-                                    }
-                                  },
-                                  "arguments": [
-                                    {
-                                      "type": "ArrowFunctionExpression",
-                                      "id": null,
-                                      "params": [
-                                        {
-                                          "type": "Identifier",
-                                          "name": "a"
-                                        }
-                                      ],
-                                      "body": {
-                                        "type": "CallExpression",
-                                        "callee": {
-                                          "type": "MemberExpression",
-                                          "computed": false,
-                                          "object": {
-                                            "type": "Identifier",
-                                            "name": "IO"
-                                          },
-                                          "property": {
-                                            "type": "Identifier",
-                                            "name": "createIO"
-                                          }
-                                        },
-                                        "arguments": [
-                                          {
-                                            "type": "ArrowFunctionExpression",
-                                            "id": null,
-                                            "params": [
-                                              {
-                                                "type": "Identifier",
-                                                "name": "cb"
-                                              }
-                                            ],
-                                            "body": {
-                                              "type": "CallExpression",
-                                              "callee": {
-                                                "type": "Identifier",
-                                                "name": "request"
-                                              },
-                                              "arguments": [
-                                                {
-                                                  "type": "Literal",
-                                                  "value": "http://google.com",
-                                                  "raw": "http://google.com",
-                                                  "sType": "string"
-                                                },
-                                                {
-                                                  "type": "Identifier",
-                                                  "name": "cb"
-                                                }
-                                              ]
-                                            },
-                                            "generator": false,
-                                            "expression": true
-                                          }
-                                        ],
-                                        "nextParams": [
-                                          {
-                                            "type": "Identifier",
-                                            "name": "a"
-                                          },
-                                          {
-                                            "type": "Identifier",
-                                            "name": "err"
-                                          },
-                                          {
-                                            "type": "Identifier",
-                                            "name": "res"
-                                          }
-                                        ]
-                                      },
-                                      "generator": false,
-                                      "expression": true
-                                    }
-                                  ],
-                                  "nextParams": [
-                                    {
-                                      "type": "Identifier",
-                                      "name": "a"
-                                    },
-                                    {
-                                      "type": "Identifier",
-                                      "name": "err"
-                                    },
-                                    {
-                                      "type": "Identifier",
-                                      "name": "res"
-                                    }
-                                  ]
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "map"
-                                }
-                              },
-                              "arguments": [
-                                {
-                                  "type": "ArrowFunctionExpression",
-                                  "id": null,
-                                  "params": [
-                                    {
-                                      "type": "Identifier",
-                                      "name": "a"
-                                    },
-                                    {
-                                      "type": "Identifier",
-                                      "name": "err"
-                                    },
-                                    {
-                                      "type": "Identifier",
-                                      "name": "res"
-                                    }
-                                  ],
-                                  "body": {
-                                    "type": "ArrayExpression",
-                                    "elements": [
-                                      {
-                                        "type": "Identifier",
-                                        "name": "a"
-                                      },
-                                      {
-                                        "type": "Identifier",
-                                        "name": "err"
-                                      },
-                                      {
-                                        "type": "Identifier",
-                                        "name": "res"
-                                      }
-                                    ]
-                                  },
-                                  "generator": false,
-                                  "expression": true
-                                }
-                              ],
-                              "nextParams": [
-                                {
-                                  "type": "Identifier",
-                                  "name": "a"
-                                },
-                                {
-                                  "type": "Identifier",
-                                  "name": "err"
-                                },
-                                {
-                                  "type": "Identifier",
-                                  "name": "res"
-                                }
-                              ]
+                              "type": "Identifier",
+                              "name": "IO"
                             },
                             "property": {
                               "type": "Identifier",
-                              "name": "maybeErr"
+                              "name": "getLine"
                             }
                           },
                           "arguments": [
                             {
-                              "type": "ArrowFunctionExpression",
-                              "id": null,
-                              "params": [
-                                {
-                                  "type": "Identifier",
-                                  "name": "a"
-                                },
-                                {
-                                  "type": "Identifier",
-                                  "name": "err"
-                                },
-                                {
-                                  "type": "Identifier",
-                                  "name": "res"
-                                }
-                              ],
-                              "body": {
-                                "type": "Identifier",
-                                "name": "err"
-                              },
-                              "generator": false,
-                              "expression": true
-                            },
-                            {
-                              "type": "ArrowFunctionExpression",
-                              "id": null,
-                              "params": [
-                                {
-                                  "type": "Identifier",
-                                  "name": "a"
-                                },
-                                {
-                                  "type": "Identifier",
-                                  "name": "err"
-                                },
-                                {
-                                  "type": "Identifier",
-                                  "name": "res"
-                                }
-                              ],
-                              "body": {
-                                "type": "CallExpression",
-                                "callee": {
-                                  "type": "MemberExpression",
-                                  "computed": false,
-                                  "object": {
-                                    "type": "CallExpression",
-                                    "callee": {
-                                      "type": "MemberExpression",
-                                      "computed": false,
-                                      "object": {
-                                        "type": "Identifier",
-                                        "name": "IO"
-                                      },
-                                      "property": {
-                                        "type": "Identifier",
-                                        "name": "putLine"
-                                      }
-                                    },
-                                    "arguments": [
-                                      {
-                                        "type": "Identifier",
-                                        "name": "err"
-                                      }
-                                    ],
-                                    "nextParams": []
-                                  },
-                                  "property": {
-                                    "type": "Identifier",
-                                    "name": "then"
-                                  }
-                                },
-                                "arguments": [
-                                  {
-                                    "type": "ArrowFunctionExpression",
-                                    "id": null,
-                                    "params": [],
-                                    "body": {
-                                      "type": "Literal",
-                                      "value": null,
-                                      "raw": "null"
-                                    },
-                                    "generator": false,
-                                    "expression": true
-                                  }
-                                ]
-                              },
-                              "generator": false,
-                              "expression": true
+                              "type": "Literal",
+                              "value": "random string",
+                              "raw": "random string",
+                              "sType": "string"
                             }
                           ],
                           "nextParams": [
                             {
                               "type": "Identifier",
                               "name": "a"
-                            },
-                            {
-                              "type": "Identifier",
-                              "name": "err"
-                            },
-                            {
-                              "type": "Identifier",
-                              "name": "res"
                             }
                           ]
                         },
                         "property": {
                           "type": "Identifier",
-                          "name": "map"
+                          "name": "bind"
                         }
                       },
                       "arguments": [
@@ -846,200 +523,81 @@
                             {
                               "type": "Identifier",
                               "name": "a"
-                            },
-                            {
-                              "type": "Identifier",
-                              "name": "err"
-                            },
-                            {
-                              "type": "Identifier",
-                              "name": "res"
                             }
                           ],
                           "body": {
-                            "type": "BlockStatement",
-                            "body": [
+                            "type": "ArrayExpression",
+                            "elements": [
                               {
-                                "type": "VariableDeclaration",
-                                "declarations": [
-                                  {
-                                    "type": "VariableDeclarator",
-                                    "id": {
-                                      "type": "Identifier",
-                                      "name": "ob"
-                                    },
-                                    "init": {
-                                      "type": "ObjectExpression",
-                                      "properties": [
-                                        {
-                                          "type": "Property",
-                                          "key": {
-                                            "type": "Identifier",
-                                            "name": "f"
-                                          },
-                                          "computed": false,
-                                          "value": {
-                                            "type": "Literal",
-                                            "value": 25,
-                                            "raw": "25",
-                                            "sType": "number"
-                                          },
-                                          "kind": "init",
-                                          "method": false,
-                                          "shorthand": false
-                                        }
-                                      ]
-                                    }
-                                  }
-                                ],
-                                "kind": "let"
+                                "type": "Identifier",
+                                "name": "a"
                               },
                               {
-                                "type": "ExpressionStatement",
-                                "expression": {
-                                  "type": "CallExpression",
-                                  "callee": {
-                                    "type": "MemberExpression",
-                                    "computed": false,
-                                    "object": {
-                                      "type": "Identifier",
-                                      "name": "Object"
-                                    },
-                                    "property": {
-                                      "type": "Identifier",
-                                      "name": "defineProperty"
-                                    }
-                                  },
-                                  "arguments": [
-                                    {
-                                      "type": "Identifier",
-                                      "name": "ob"
-                                    },
-                                    {
-                                      "type": "Literal",
-                                      "value": "b",
-                                      "raw": "b",
-                                      "sType": "string"
-                                    },
-                                    {
-                                      "type": "ObjectExpression",
-                                      "properties": [
-                                        {
-                                          "type": "Property",
-                                          "key": {
-                                            "type": "Identifier",
-                                            "name": "value"
-                                          },
-                                          "computed": false,
-                                          "value": {
-                                            "type": "Literal",
-                                            "value": 45,
-                                            "raw": "45",
-                                            "sType": "number"
-                                          },
-                                          "kind": "init",
-                                          "method": false,
-                                          "shorthand": false
-                                        },
-                                        {
-                                          "type": "Property",
-                                          "key": {
-                                            "type": "Identifier",
-                                            "name": "enumerable"
-                                          },
-                                          "computed": false,
-                                          "value": {
-                                            "type": "Literal",
-                                            "value": true,
-                                            "raw": "true"
-                                          },
-                                          "kind": "init",
-                                          "method": false,
-                                          "shorthand": false
-                                        },
-                                        {
-                                          "type": "Property",
-                                          "key": {
-                                            "type": "Identifier",
-                                            "name": "writable"
-                                          },
-                                          "computed": false,
-                                          "value": {
-                                            "type": "Literal",
-                                            "value": true,
-                                            "raw": "true"
-                                          },
-                                          "kind": "init",
-                                          "method": false,
-                                          "shorthand": false
-                                        },
-                                        {
-                                          "type": "Property",
-                                          "key": {
-                                            "type": "Identifier",
-                                            "name": "configurable"
-                                          },
-                                          "computed": false,
-                                          "value": {
-                                            "type": "Literal",
-                                            "value": true,
-                                            "raw": "true"
-                                          },
-                                          "kind": "init",
-                                          "method": false,
-                                          "shorthand": false
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              },
-                              {
-                                "type": "UnaryExpression",
-                                "operator": "delete",
-                                "argument": {
+                                "type": "CallExpression",
+                                "callee": {
                                   "type": "MemberExpression",
                                   "computed": false,
                                   "object": {
                                     "type": "Identifier",
-                                    "name": "ob"
+                                    "name": "IO"
                                   },
                                   "property": {
                                     "type": "Identifier",
-                                    "name": "b",
-                                    "isSubscript": false
+                                    "name": "createIO"
                                   }
                                 },
-                                "prefix": true
-                              },
-                              {
-                                "type": "ReturnStatement",
-                                "argument": {
-                                  "type": "ArrayExpression",
-                                  "elements": [
-                                    {
-                                      "type": "Identifier",
-                                      "name": "a"
+                                "arguments": [
+                                  {
+                                    "type": "ArrowFunctionExpression",
+                                    "id": null,
+                                    "params": [
+                                      {
+                                        "type": "Identifier",
+                                        "name": "cb"
+                                      }
+                                    ],
+                                    "body": {
+                                      "type": "CallExpression",
+                                      "callee": {
+                                        "type": "Identifier",
+                                        "name": "request"
+                                      },
+                                      "arguments": [
+                                        {
+                                          "type": "Literal",
+                                          "value": "http://google.com",
+                                          "raw": "http://google.com",
+                                          "sType": "string"
+                                        },
+                                        {
+                                          "type": "Identifier",
+                                          "name": "cb"
+                                        }
+                                      ]
                                     },
-                                    {
-                                      "type": "Identifier",
-                                      "name": "err"
-                                    },
-                                    {
-                                      "type": "Identifier",
-                                      "name": "res"
-                                    },
-                                    {
-                                      "type": "Identifier",
-                                      "name": "ob"
-                                    }
-                                  ]
-                                }
+                                    "generator": false,
+                                    "expression": true
+                                  }
+                                ],
+                                "nextParams": [
+                                  {
+                                    "type": "Identifier",
+                                    "name": "a"
+                                  },
+                                  {
+                                    "type": "Identifier",
+                                    "name": "err"
+                                  },
+                                  {
+                                    "type": "Identifier",
+                                    "name": "res"
+                                  }
+                                ]
                               }
                             ]
                           },
                           "generator": false,
-                          "expression": false
+                          "expression": true
                         }
                       ],
                       "nextParams": [
@@ -1082,38 +640,289 @@
                         {
                           "type": "Identifier",
                           "name": "res"
-                        },
-                        {
-                          "type": "Identifier",
-                          "name": "ob"
                         }
                       ],
                       "body": {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "MemberExpression",
-                          "computed": false,
-                          "object": {
-                            "type": "Identifier",
-                            "name": "IO"
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "putLine"
-                          }
-                        },
-                        "arguments": [
+                        "type": "BlockStatement",
+                        "body": [
                           {
-                            "type": "MemberExpression",
-                            "computed": false,
-                            "object": {
-                              "type": "Identifier",
-                              "name": "res"
+                            "type": "IfStatement",
+                            "test": {
+                              "type": "BinaryExpression",
+                              "operator": "instanceof",
+                              "sType": "any",
+                              "left": {
+                                "type": "Identifier",
+                                "name": "err"
+                              },
+                              "right": {
+                                "type": "Identifier",
+                                "name": "Error"
+                              }
                             },
-                            "property": {
-                              "type": "Identifier",
-                              "name": "body",
-                              "isSubscript": false
+                            "consequent": {
+                              "type": "BlockStatement",
+                              "body": [
+                                {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                      "type": "CallExpression",
+                                      "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "IO"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "putLine"
+                                        }
+                                      },
+                                      "arguments": [
+                                        {
+                                          "type": "Identifier",
+                                          "name": "err"
+                                        }
+                                      ],
+                                      "nextParams": []
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "then"
+                                    }
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "ArrowFunctionExpression",
+                                      "id": null,
+                                      "params": [],
+                                      "body": {
+                                        "type": "Literal",
+                                        "value": null,
+                                        "raw": "null"
+                                      },
+                                      "generator": false,
+                                      "expression": true
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "ReturnStatement",
+                                  "argument": null
+                                }
+                              ]
+                            },
+                            "alternate": null
+                          },
+                          {
+                            "type": "VariableDeclaration",
+                            "declarations": [
+                              {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                  "type": "Identifier",
+                                  "name": "ob"
+                                },
+                                "init": {
+                                  "type": "ObjectExpression",
+                                  "properties": [
+                                    {
+                                      "type": "Property",
+                                      "key": {
+                                        "type": "Identifier",
+                                        "name": "f"
+                                      },
+                                      "computed": false,
+                                      "value": {
+                                        "type": "Literal",
+                                        "value": 25,
+                                        "raw": "25",
+                                        "sType": "number"
+                                      },
+                                      "kind": "init",
+                                      "method": false,
+                                      "shorthand": false
+                                    }
+                                  ]
+                                }
+                              }
+                            ],
+                            "kind": "let"
+                          },
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "Object"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "defineProperty"
+                                }
+                              },
+                              "arguments": [
+                                {
+                                  "type": "Identifier",
+                                  "name": "ob"
+                                },
+                                {
+                                  "type": "Literal",
+                                  "value": "b",
+                                  "raw": "b",
+                                  "sType": "string"
+                                },
+                                {
+                                  "type": "ObjectExpression",
+                                  "properties": [
+                                    {
+                                      "type": "Property",
+                                      "key": {
+                                        "type": "Identifier",
+                                        "name": "value"
+                                      },
+                                      "computed": false,
+                                      "value": {
+                                        "type": "Literal",
+                                        "value": 45,
+                                        "raw": "45",
+                                        "sType": "number"
+                                      },
+                                      "kind": "init",
+                                      "method": false,
+                                      "shorthand": false
+                                    },
+                                    {
+                                      "type": "Property",
+                                      "key": {
+                                        "type": "Identifier",
+                                        "name": "enumerable"
+                                      },
+                                      "computed": false,
+                                      "value": {
+                                        "type": "Literal",
+                                        "value": true,
+                                        "raw": "true"
+                                      },
+                                      "kind": "init",
+                                      "method": false,
+                                      "shorthand": false
+                                    },
+                                    {
+                                      "type": "Property",
+                                      "key": {
+                                        "type": "Identifier",
+                                        "name": "writable"
+                                      },
+                                      "computed": false,
+                                      "value": {
+                                        "type": "Literal",
+                                        "value": true,
+                                        "raw": "true"
+                                      },
+                                      "kind": "init",
+                                      "method": false,
+                                      "shorthand": false
+                                    },
+                                    {
+                                      "type": "Property",
+                                      "key": {
+                                        "type": "Identifier",
+                                        "name": "configurable"
+                                      },
+                                      "computed": false,
+                                      "value": {
+                                        "type": "Literal",
+                                        "value": true,
+                                        "raw": "true"
+                                      },
+                                      "kind": "init",
+                                      "method": false,
+                                      "shorthand": false
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "UnaryExpression",
+                            "operator": "delete",
+                            "argument": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "Identifier",
+                                "name": "ob"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "b",
+                                "isSubscript": false
+                              }
+                            },
+                            "prefix": true
+                          },
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "ArrayExpression",
+                              "elements": [
+                                {
+                                  "type": "Identifier",
+                                  "name": "a"
+                                },
+                                {
+                                  "type": "Identifier",
+                                  "name": "err"
+                                },
+                                {
+                                  "type": "Identifier",
+                                  "name": "res"
+                                },
+                                {
+                                  "type": "Identifier",
+                                  "name": "ob"
+                                },
+                                {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "IO"
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "putLine"
+                                    }
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "res"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "body",
+                                        "isSubscript": false
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
                             }
                           }
                         ]
@@ -1274,28 +1083,37 @@
                   }
                 ],
                 "body": {
-                  "type": "CallExpression",
-                  "callee": {
-                    "type": "MemberExpression",
-                    "computed": false,
-                    "object": {
-                      "type": "Identifier",
-                      "name": "IO"
-                    },
-                    "property": {
-                      "type": "Identifier",
-                      "name": "putLine"
-                    }
-                  },
-                  "arguments": [
+                  "type": "ArrayExpression",
+                  "elements": [
                     {
                       "type": "Identifier",
                       "name": "body"
+                    },
+                    {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                          "type": "Identifier",
+                          "name": "IO"
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "putLine"
+                        }
+                      },
+                      "arguments": [
+                        {
+                          "type": "Identifier",
+                          "name": "body"
+                        }
+                      ]
                     }
                   ]
                 },
                 "generator": false,
-                "expression": false
+                "expression": true
               }
             ],
             "nextParams": [
@@ -1314,12 +1132,7 @@
           {
             "type": "ArrowFunctionExpression",
             "id": null,
-            "params": [
-              {
-                "type": "Identifier",
-                "name": "body"
-              }
-            ],
+            "params": [],
             "body": {
               "type": "ArrayExpression",
               "elements": []

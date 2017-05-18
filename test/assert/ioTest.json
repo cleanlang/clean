@@ -25,60 +25,20 @@
                     "type": "MemberExpression",
                     "computed": false,
                     "object": {
-                      "type": "CallExpression",
-                      "callee": {
-                        "type": "MemberExpression",
-                        "computed": false,
-                        "object": {
-                          "type": "Identifier",
-                          "name": "IO"
-                        },
-                        "property": {
-                          "type": "Identifier",
-                          "name": "getLine"
-                        }
-                      },
-                      "arguments": [
-                        {
-                          "type": "Literal",
-                          "value": "enter some value",
-                          "raw": "enter some value",
-                          "sType": "string"
-                        }
-                      ],
-                      "nextParams": [
-                        {
-                          "type": "Identifier",
-                          "name": "a"
-                        }
-                      ]
+                      "type": "Identifier",
+                      "name": "IO"
                     },
                     "property": {
                       "type": "Identifier",
-                      "name": "map"
+                      "name": "getLine"
                     }
                   },
                   "arguments": [
                     {
-                      "type": "ArrowFunctionExpression",
-                      "id": null,
-                      "params": [
-                        {
-                          "type": "Identifier",
-                          "name": "a"
-                        }
-                      ],
-                      "body": {
-                        "type": "ArrayExpression",
-                        "elements": [
-                          {
-                            "type": "Identifier",
-                            "name": "a"
-                          }
-                        ]
-                      },
-                      "generator": false,
-                      "expression": true
+                      "type": "Literal",
+                      "value": "enter some value",
+                      "raw": "enter some value",
+                      "sType": "string"
                     }
                   ],
                   "nextParams": [
@@ -161,60 +121,20 @@
                     "type": "MemberExpression",
                     "computed": false,
                     "object": {
-                      "type": "CallExpression",
-                      "callee": {
-                        "type": "MemberExpression",
-                        "computed": false,
-                        "object": {
-                          "type": "Identifier",
-                          "name": "IO"
-                        },
-                        "property": {
-                          "type": "Identifier",
-                          "name": "readFile"
-                        }
-                      },
-                      "arguments": [
-                        {
-                          "type": "Literal",
-                          "value": "basicAssertion.json",
-                          "raw": "basicAssertion.json",
-                          "sType": "string"
-                        }
-                      ],
-                      "nextParams": [
-                        {
-                          "type": "Identifier",
-                          "name": "c"
-                        }
-                      ]
+                      "type": "Identifier",
+                      "name": "IO"
                     },
                     "property": {
                       "type": "Identifier",
-                      "name": "map"
+                      "name": "readFile"
                     }
                   },
                   "arguments": [
                     {
-                      "type": "ArrowFunctionExpression",
-                      "id": null,
-                      "params": [
-                        {
-                          "type": "Identifier",
-                          "name": "c"
-                        }
-                      ],
-                      "body": {
-                        "type": "ArrayExpression",
-                        "elements": [
-                          {
-                            "type": "Identifier",
-                            "name": "c"
-                          }
-                        ]
-                      },
-                      "generator": false,
-                      "expression": true
+                      "type": "Literal",
+                      "value": "basicAssertion.json",
+                      "raw": "basicAssertion.json",
+                      "sType": "string"
                     }
                   ],
                   "nextParams": [
@@ -349,90 +269,10 @@
                       "object": {
                         "type": "CallExpression",
                         "callee": {
-                          "type": "MemberExpression",
-                          "computed": false,
-                          "object": {
-                            "type": "CallExpression",
-                            "callee": {
-                              "type": "MemberExpression",
-                              "computed": false,
-                              "object": {
-                                "type": "CallExpression",
-                                "callee": {
-                                  "type": "Identifier",
-                                  "name": "sum"
-                                },
-                                "arguments": [],
-                                "nextParams": [
-                                  {
-                                    "type": "Identifier",
-                                    "name": "c"
-                                  }
-                                ]
-                              },
-                              "property": {
-                                "type": "Identifier",
-                                "name": "bind"
-                              }
-                            },
-                            "arguments": [
-                              {
-                                "type": "ArrowFunctionExpression",
-                                "id": null,
-                                "params": [
-                                  {
-                                    "type": "Identifier",
-                                    "name": "c"
-                                  }
-                                ],
-                                "body": {
-                                  "type": "CallExpression",
-                                  "callee": {
-                                    "type": "Identifier",
-                                    "name": "compute",
-                                    "nextParams": []
-                                  },
-                                  "arguments": []
-                                },
-                                "generator": false,
-                                "expression": true
-                              }
-                            ],
-                            "nextParams": [
-                              {
-                                "type": "Identifier",
-                                "name": "c"
-                              }
-                            ]
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "map"
-                          }
+                          "type": "Identifier",
+                          "name": "sum"
                         },
-                        "arguments": [
-                          {
-                            "type": "ArrowFunctionExpression",
-                            "id": null,
-                            "params": [
-                              {
-                                "type": "Identifier",
-                                "name": "c"
-                              }
-                            ],
-                            "body": {
-                              "type": "ArrayExpression",
-                              "elements": [
-                                {
-                                  "type": "Identifier",
-                                  "name": "c"
-                                }
-                              ]
-                            },
-                            "generator": false,
-                            "expression": true
-                          }
-                        ],
+                        "arguments": [],
                         "nextParams": [
                           {
                             "type": "Identifier",
@@ -456,12 +296,18 @@
                           }
                         ],
                         "body": {
-                          "type": "CallExpression",
-                          "callee": {
-                            "type": "Identifier",
-                            "name": "compute"
-                          },
-                          "arguments": []
+                          "type": "ArrayExpression",
+                          "elements": [
+                            {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "Identifier",
+                                "name": "compute",
+                                "nextParams": []
+                              },
+                              "arguments": []
+                            }
+                          ]
                         },
                         "generator": false,
                         "expression": true
@@ -476,7 +322,7 @@
                   },
                   "property": {
                     "type": "Identifier",
-                    "name": "map"
+                    "name": "bind"
                   }
                 },
                 "arguments": [
@@ -493,8 +339,12 @@
                       "type": "ArrayExpression",
                       "elements": [
                         {
-                          "type": "Identifier",
-                          "name": "c"
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "Identifier",
+                            "name": "compute"
+                          },
+                          "arguments": []
                         }
                       ]
                     },
