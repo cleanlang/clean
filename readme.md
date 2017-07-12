@@ -24,20 +24,6 @@ For more options
 Define function `main`. It is called at the start of your program. `putLine` is an asynchronous
 function.
 
-### File copy program
-
-    include node-core
-    main = do
-      data <- readFile process.argv[2]
-      writeFile process.argv[3] data
-
-Copies file given as the first argument to the file with name given as the next argument. Example
-
-    $ clean copy.cl file1.txt file2.txt
-
-Both `readFile` and `writeFile` are asynchronous function. These are Evented IO functions. In `clean`
-you can do evented IO in `main` or `do` blocks only.
-
 ### Factorial function
 
     include node-core
