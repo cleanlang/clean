@@ -1,0 +1,208 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "len"
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "arr"
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "SwitchStatement",
+                  "cases": [
+                    {
+                      "type": "SwitchCase",
+                      "consequent": [
+                        {
+                          "type": "ReturnStatement",
+                          "argument": {
+                            "type": "Literal",
+                            "value": 0,
+                            "raw": "0",
+                            "sType": "number"
+                          }
+                        }
+                      ],
+                      "test": {
+                        "type": "Literal",
+                        "value": 0,
+                        "raw": "0",
+                        "sType": {
+                          "type": "array",
+                          "elemTypes": {},
+                          "commonType": "needsInference",
+                          "isHomogeneous": false
+                        }
+                      }
+                    },
+                    {
+                      "type": "SwitchCase",
+                      "test": null,
+                      "consequent": [
+                        {
+                          "type": "ReturnStatement",
+                          "argument": {
+                            "type": "BinaryExpression",
+                            "operator": "+",
+                            "sType": "number",
+                            "left": {
+                              "type": "Literal",
+                              "value": 1,
+                              "raw": "1",
+                              "sType": "number"
+                            },
+                            "right": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "Identifier",
+                                "name": "len"
+                              },
+                              "arguments": [
+                                {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "arr"
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "slice",
+                                      "isSubscript": false
+                                    }
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Literal",
+                                      "value": 1,
+                                      "raw": "1",
+                                      "sType": "number"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "discriminant": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                      "type": "Identifier",
+                      "name": "arr"
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "length"
+                    }
+                  }
+                }
+              ]
+            },
+            "generator": false,
+            "expression": false
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "console"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "log"
+          }
+        },
+        "arguments": [
+          {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "len"
+            },
+            "arguments": [
+              {
+                "type": "ArrayExpression",
+                "elements": [
+                  {
+                    "type": "Literal",
+                    "value": 1,
+                    "raw": "1",
+                    "sType": "number"
+                  },
+                  {
+                    "type": "Literal",
+                    "value": 1,
+                    "raw": "1",
+                    "sType": "number"
+                  },
+                  {
+                    "type": "Literal",
+                    "value": 2,
+                    "raw": "2",
+                    "sType": "number"
+                  },
+                  {
+                    "type": "Literal",
+                    "value": 3,
+                    "raw": "3",
+                    "sType": "number"
+                  },
+                  {
+                    "type": "Literal",
+                    "value": 2,
+                    "raw": "2",
+                    "sType": "number"
+                  },
+                  {
+                    "type": "Literal",
+                    "value": 1,
+                    "raw": "1",
+                    "sType": "number"
+                  },
+                  {
+                    "type": "Literal",
+                    "value": 3,
+                    "raw": "3",
+                    "sType": "number"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "sType": "IO"
+      }
+    }
+  ],
+  "sourceType": "script"
+}
