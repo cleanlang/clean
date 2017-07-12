@@ -1,4 +1,4 @@
-# CleanJS
+# Cleanlang
 
 ## A clean compile to JavaScript language
 
@@ -87,3 +87,7 @@ statements in a `do` block to create scoped variables. `++` is used for string c
 Then we create an evented IO that uses `request`. The created IO function is bound to `err`,
 `res` and `body`. `maybeErr` will terminate the do if `err` is an instance of JavaScript Error, and calls
 `putLine err`.
+
+## Docs
+
+For the complete syntax, head over to the [wiki](https://github.com/cleanlang/clean/wiki)
