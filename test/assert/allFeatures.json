@@ -286,6 +286,48 @@
           "type": "VariableDeclarator",
           "id": {
             "type": "Identifier",
+            "name": "product"
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "a"
+              },
+              {
+                "type": "Identifier",
+                "name": "b"
+              }
+            ],
+            "body": {
+              "type": "BinaryExpression",
+              "operator": "*",
+              "sType": "number",
+              "left": {
+                "type": "Identifier",
+                "name": "a"
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "b"
+              }
+            },
+            "generator": false,
+            "expression": true
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
             "name": "h"
           },
           "init": {
@@ -326,41 +368,131 @@
             },
             "right": {
               "type": "BinaryExpression",
-              "operator": "/",
+              "operator": "-",
               "sType": "number",
               "left": {
+                "type": "BinaryExpression",
+                "operator": "/",
+                "sType": "number",
+                "left": {
+                  "type": "BinaryExpression",
+                  "operator": "*",
+                  "sType": "number",
+                  "left": {
+                    "type": "Literal",
+                    "value": 16,
+                    "raw": "16",
+                    "sType": "number"
+                  },
+                  "right": {
+                    "type": "Literal",
+                    "value": 7,
+                    "raw": "7",
+                    "sType": "number"
+                  }
+                },
+                "right": {
+                  "type": "BinaryExpression",
+                  "operator": "+",
+                  "sType": "number",
+                  "left": {
+                    "type": "Literal",
+                    "value": 4,
+                    "raw": "4",
+                    "sType": "number"
+                  },
+                  "right": {
+                    "type": "Identifier",
+                    "name": "a"
+                  }
+                }
+              },
+              "right": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "product"
+                },
+                "arguments": [
+                  {
+                    "type": "Literal",
+                    "value": 2,
+                    "raw": "2",
+                    "sType": "number"
+                  },
+                  {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "sum"
+                    },
+                    "arguments": [
+                      {
+                        "type": "Literal",
+                        "value": 1,
+                        "raw": "1",
+                        "sType": "number"
+                      },
+                      {
+                        "type": "Literal",
+                        "value": 2,
+                        "raw": "2",
+                        "sType": "number"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "sqr"
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "ArrowFunctionExpression",
+              "id": null,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "a"
+                }
+              ],
+              "body": {
                 "type": "BinaryExpression",
                 "operator": "*",
                 "sType": "number",
                 "left": {
-                  "type": "Literal",
-                  "value": 16,
-                  "raw": "16",
-                  "sType": "number"
-                },
-                "right": {
-                  "type": "Literal",
-                  "value": 7,
-                  "raw": "7",
-                  "sType": "number"
-                }
-              },
-              "right": {
-                "type": "BinaryExpression",
-                "operator": "+",
-                "sType": "number",
-                "left": {
-                  "type": "Literal",
-                  "value": 4,
-                  "raw": "4",
-                  "sType": "number"
+                  "type": "Identifier",
+                  "name": "a"
                 },
                 "right": {
                   "type": "Identifier",
                   "name": "a"
                 }
+              },
+              "generator": false,
+              "expression": true
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": 4,
+                "raw": "4",
+                "sType": "number"
               }
-            }
+            ]
           }
         }
       ],
@@ -386,6 +518,10 @@
           {
             "type": "Identifier",
             "name": "h"
+          },
+          {
+            "type": "Identifier",
+            "name": "sqr"
           }
         ],
         "sType": "IO"

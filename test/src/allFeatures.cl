@@ -18,9 +18,13 @@ g = 4 * 3 / 7 ^ 9 - 15 + 75 * 9
 
 sum a b = a + b
 
-h = sum 4 5 ^ 1 + 16 * 7 / (4 + a)
+product = \a b -> a * b
 
-print h
+h = sum 4 5 ^ 1 + 16 * 7 / (4 + a) - (product 2 (sum 1 2))
+
+sqr = (\a -> a * a) 4
+
+print h sqr
 
 letin = let x = 15 in x ^ 4 * 5
 
