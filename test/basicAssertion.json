@@ -132,8 +132,6 @@
         "defineProp": null,
         "putLine": null,
         "getLine": null,
-        "readFile": null,
-        "writeFile": null,
         "get": null,
         "del": null,
         "getJSON": null,
@@ -184,8 +182,6 @@
       "identifier", {
         "putLine": "putLine",
         "getLine": "getLine",
-        "readFile":"readFile" ,
-        "writeFile": "writeFile",
         "get": "get",
         "del": "del",
         "getJSON": "getJSON",
