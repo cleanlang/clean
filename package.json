@@ -14,11 +14,11 @@
   "dependencies": {
     "chokidar": "^1.6.1",
     "escodegen": "^1.8.1",
-    "yargs": "^7.0.1"
+    "yargs": "^9.0.1"
   },
   "devDependencies": {
-    "ava": "^0.19.0",
-    "nyc": "^10.2.0"
+    "ava": "^0.22.0",
+    "nyc": "^11.2.1"
   },
   "repository": {
     "type": "git",
