@@ -32,10 +32,10 @@ const searchAndTest = (tests, assert) => {
   if (fs.existsSync(tests)) {
     fs.readdirSync(tests).forEach(function (file, index) {
       const curPath = path.join(tests, '/', file)
+      const pathParse = path.parse(curPath)
       if (fs.lstatSync(curPath).isDirectory()) {
         searchAndTest(curPath, path.join(assert, '/', file))
-      } else {
-        const pathParse = path.parse(curPath)
+      } else if (pathParse.ext === '.cl') {
         const input = initObj(readFileContent(path.join(pathParse.dir, `${pathParse.name}.cl`)))
         const assertJson = path.join(assert, `${pathParse.name}.json`)
         const jsonValue = require(assertJson)
