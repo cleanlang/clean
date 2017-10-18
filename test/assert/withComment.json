@@ -62,7 +62,7 @@
           "type": "Line",
           "value": " This is a comment to test\n",
           "cursorLoc": {
-            "line": 6,
+            "line": 8,
             "column": 0
           }
         }
@@ -96,7 +96,17 @@
           }
         }
       ],
-      "kind": "const"
+      "kind": "const",
+      "leadingComments": [
+        {
+          "type": "Line",
+          "value": " this is an inline comment\n",
+          "cursorLoc": {
+            "line": 10,
+            "column": 0
+          }
+        }
+      ]
     },
     {
       "type": "VariableDeclaration",
@@ -147,17 +157,71 @@
           "type": "Block",
           "value": "\n\nMulti line comments\nMore comments\nEven more 2 + 1\n\nprod a b = a * b\n\n\n",
           "cursorLoc": {
-            "line": 20,
+            "line": 22,
             "column": 0
           }
         }
-      ],
+      ]
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "computed": false,
+              "object": {
+                "type": "Identifier",
+                "name": "IO"
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "putLine"
+              }
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": "testing inline comment inside \"do\"",
+                "raw": "testing inline comment inside \"do\"",
+                "sType": "string"
+              }
+            ],
+            "nextParams": [],
+            "sType": "IO"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "then"
+          }
+        },
+        "arguments": [
+          {
+            "type": "ArrowFunctionExpression",
+            "id": null,
+            "params": [],
+            "body": {
+              "type": "ArrayExpression",
+              "elements": []
+            },
+            "generator": false,
+            "expression": true
+          }
+        ],
+        "ioParams": [],
+        "sType": "IO"
+      },
       "trailingComments": [
         {
           "type": "Line",
           "value": " This is the end\n",
           "cursorLoc": {
-            "line": 25,
+            "line": 30,
             "column": 0
           }
         }
