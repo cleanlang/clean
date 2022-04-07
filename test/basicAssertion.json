@@ -1,114 +1,115 @@
 {
   "basic": {
     "returnParser": {
-      "\n": {"str": "\n", "line": 2, "column": 0}
+      "\n": { "str": "\n", "line": 2, "column": 0 }
     },
     "spaceParser": {
-      " ": {"str": " ", "line": 1, "column": 1}
+      " ": { "str": " ", "line": 1, "column": 1 }
     },
     "openParensParser": {
-      "(": {"str": "(", "line": 1, "column": 1}
+      "(": { "str": "(", "line": 1, "column": 1 }
     },
     "closeParensParser": {
-      ")": {"str": ")", "line": 1, "column": 1}
+      ")": { "str": ")", "line": 1, "column": 1 }
     },
     "openCurlyBraceParser": {
-      "{": {"str": "{", "line": 1, "column": 1}
+      "{": { "str": "{", "line": 1, "column": 1 }
     },
     "closeCurlyBraceParser": {
-      "}": {"str": "}", "line": 1, "column": 1}
+      "}": { "str": "}", "line": 1, "column": 1 }
     },
     "openSquareBracketParser": {
-      "[": {"str": "[", "line": 1, "column": 1}
+      "[": { "str": "[", "line": 1, "column": 1 }
     },
     "closeSquareBracketParser": {
-      "]": {"str": "]", "line": 1, "column": 1}
+      "]": { "str": "]", "line": 1, "column": 1 }
     },
     "commaParser": {
-      ",": {"str": ",", "line": 1, "column": 1}
+      ",": { "str": ",", "line": 1, "column": 1 }
     },
     "colonParser": {
-      ":": {"str": ":", "line": 1, "column": 1}
+      ":": { "str": ":", "line": 1, "column": 1 }
     },
     "binaryOperatorParser": {
-      "+": {"str": "+", "line": 1, "column": 1},
-      "-": {"str": "-", "line": 1, "column": 1},
-      "/": {"str": "/", "line": 1, "column": 1},
-      "%": {"str": "%", "line": 1, "column": 1},
-      "*": {"str": "*", "line": 1, "column": 1},
-      "^": {"str": "^", "line": 1, "column": 1},
-      "<": {"str": "<", "line": 1, "column": 1},
-      ">": {"str": ">", "line": 1, "column": 1},
-      "++": {"str": "++", "line": 1, "column": 2},
-      ">>": {"str": ">>", "line": 1, "column": 2},
-      "<<": {"str": "<<", "line": 1, "column": 2},
-      "<=": {"str": "<=", "line": 1, "column": 2},
-      ">=": {"str": ">=", "line": 1, "column": 2},
-      "&": {"str": "&", "line": 1, "column": 1},
-      "&&": {"str": "&&", "line": 1, "column": 2},
-      "||": {"str": "||", "line": 1, "column": 2},
-      "==": {"str": "==", "line": 1, "column": 2},
-      "!=": {"str": "!=", "line": 1, "column": 2},
-      ">>>": {"str": ">>>", "line": 1, "column": 3}
+      "+": { "str": "+", "line": 1, "column": 1 },
+      "-": { "str": "-", "line": 1, "column": 1 },
+      "/": { "str": "/", "line": 1, "column": 1 },
+      "%": { "str": "%", "line": 1, "column": 1 },
+      "*": { "str": "*", "line": 1, "column": 1 },
+      "^": { "str": "^", "line": 1, "column": 1 },
+      "<": { "str": "<", "line": 1, "column": 1 },
+      ">": { "str": ">", "line": 1, "column": 1 },
+      "++": { "str": "++", "line": 1, "column": 2 },
+      ">>": { "str": ">>", "line": 1, "column": 2 },
+      "<<": { "str": "<<", "line": 1, "column": 2 },
+      "<=": { "str": "<=", "line": 1, "column": 2 },
+      ">=": { "str": ">=", "line": 1, "column": 2 },
+      "&": { "str": "&", "line": 1, "column": 1 },
+      "&&": { "str": "&&", "line": 1, "column": 2 },
+      "||": { "str": "||", "line": 1, "column": 2 },
+      "==": { "str": "==", "line": 1, "column": 2 },
+      "!=": { "str": "!=", "line": 1, "column": 2 },
+      ">>>": { "str": ">>>", "line": 1, "column": 3 }
     },
     "unaryOperatorParser": {
-      ":type": {"str": ":type", "line": 1, "column": 5},
-      "-": {"str": "-", "line": 1, "column": 1},
-      "!": {"str": "!", "line": 1, "column": 1}
+      ":type": { "str": ":type", "line": 1, "column": 5 },
+      "-": { "str": "-", "line": 1, "column": 1 },
+      "!": { "str": "!", "line": 1, "column": 1 }
     },
     "letParser": {
-      "let ": {"str": "let ", "line": 1, "column": 4}
+      "let ": { "str": "let ", "line": 1, "column": 4 }
     },
     "inParser": {
-      "in ": {"str": "in ", "line": 1, "column": 3}
+      "in ": { "str": "in ", "line": 1, "column": 3 }
     },
     "dotParser": {
-      ".": {"str": ".", "line": 1, "column": 1}
+      ".": { "str": ".", "line": 1, "column": 1 }
     },
     "thinArrowParser": {
-      " -> ": {"str": " -> ", "line": 1, "column": 4}
+      " -> ": { "str": " -> ", "line": 1, "column": 4 }
     },
     "reverseBindParser": {
-      " <- ": {"str": " <- ", "line": 1, "column": 4}
+      " <- ": { "str": " <- ", "line": 1, "column": 4 }
     },
     "ifParser": {
-      "if ": {"str": "if ", "line": 1, "column": 3}
+      "if ": { "str": "if ", "line": 1, "column": 3 }
     },
     "thenParser": {
-      "then ": {"str": "then ", "line": 1, "column": 5}
+      "then ": { "str": "then ", "line": 1, "column": 5 }
     },
     "elseParser": {
-      "else ": {"str": "else ", "line": 1, "column": 5}
+      "else ": { "str": "else ", "line": 1, "column": 5 }
     },
     "doParser": {
-      "do": {"str": "do", "line": 1, "column": 2}
+      "do": { "str": "do", "line": 1, "column": 2 }
     },
     "equalSignParser": {
-      " = ": {"str": " = ", "line": 1, "column": 3}
+      " = ": { "str": " = ", "line": 1, "column": 3 }
     },
     "slashParser": {
-      "\\": {"str": "\\", "line": 1, "column": 1}
+      "\\": { "str": "\\", "line": 1, "column": 1 }
     },
     "returnKeywordParser": {
-      "return": {"str": "return", "line": 1, "column": 6}
+      "return": { "str": "return", "line": 1, "column": 6 }
     },
     "includeParser": {
-      "include node-core": {"str": "node-core", "line": 1, "column": 17}
+      "include node-core": { "str": "node-core", "line": 1, "column": 17 }
     },
     "emptyArgsParser": {
-      "()": {"str": [], "line": 1, "column": 2},
-      "(   )": {"str": [], "line": 1, "column": 5}
+      "()": { "str": [], "line": 1, "column": 2 },
+      "(   )": { "str": [], "line": 1, "column": 5 }
     },
     "definePropParser": {
-      "defineProp": {"str": "defineProp", "line": 1, "column": 10}
+      "defineProp": { "str": "defineProp", "line": 1, "column": 10 }
     },
     "deleteKeywordParser": {
-      "delete": {"str": "delete", "line": 1, "column": 6}
+      "delete": { "str": "delete", "line": 1, "column": 6 }
     }
   },
   "literal": {
     "nonReservedIdParser": [
-      "identifier", {
+      "identifier",
+      {
         "abcd": "abcd",
         "_abc_123": "_abc_123",
         "if": null,
@@ -150,36 +151,42 @@
       }
     ],
     "identifierParser": [
-      "identifier", {
+      "identifier",
+      {
         "abcd": "abcd",
         "_abc_123": "_abc_123"
       }
     ],
     "numberParser": [
-      "literal", {
+      "literal",
+      {
         "1234": "1234",
         "1.256": "1.256"
       }
     ],
     "booleanParser": [
-      "boolLiteral", {
+      "boolLiteral",
+      {
         "true": "true",
         "false": "false"
       }
     ],
     "stringParser": [
-      "stringLiteral", {
+      "stringLiteral",
+      {
         "'defghi'": "defghi",
         "'abc\\'def\\'ghi'": "abc'def'ghi"
       }
     ],
     "nullParser": [
-      "nullLiteral", {
+      "nullLiteral",
+      {
         "null": "null"
       }
     ],
     "ioFuncNameParser": [
-      "identifier", {
+      "identifier",
+      {
         "putLine": "putLine",
         "getLine": "getLine",
         "get": "get",
@@ -187,7 +194,7 @@
         "getJSON": "getJSON",
         "delJSON": "delJSON",
         "getBlob": "getBlob",
-        "postJSON":"postJSON" ,
+        "postJSON": "postJSON",
         "putJSON": "putJSON",
         "click": "click",
         "change": "change",
@@ -195,7 +202,8 @@
       }
     ],
     "ioMethodNameParser": [
-      "identifier", {
+      "identifier",
+      {
         "maybeErr": "maybeErr",
         "maybeTrue": "maybeTrue",
         "maybeFalse": "maybeFalse",
@@ -204,22 +212,31 @@
       }
     ],
     "regexParser": [
-      "regex", {
-        "/hello/" : ["/hello/", "hello"],
+      "regex",
+      {
+        "/hello/": ["/hello/", "hello"],
         "/hello/g": ["/hello/g", "hello", "g"]
       }
     ],
     "singleLineCommentParser": [
-      "comment", {
+      "comment",
+      {
         "// This is a comment\n": ["Line", " This is a comment\n"],
-        "// This is a no end new line comment": ["Line", " This is a no end new line comment"],
+        "// This is a no end new line comment": [
+          "Line",
+          " This is a no end new line comment"
+        ],
         "// This is a comment\ntest": ["Line", " This is a comment\n"]
       }
     ],
     "multiLineCommentParser": [
-      "comment", {
+      "comment",
+      {
         "/* This is a comment */": ["Block", " This is a comment "],
-        "/* This is a\n multiline comment */": ["Block", " This is a\n multiline comment "]
+        "/* This is a\n multiline comment */": [
+          "Block",
+          " This is a\n multiline comment "
+        ]
       }
     ]
   }

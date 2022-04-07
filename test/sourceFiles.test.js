@@ -1,32 +1,35 @@
-const fs = require('fs')
-const path = require('path')
-const test = require('ava')
+const fs = require("fs");
+const path = require("path");
+const test = require("ava");
 
 /* lib files */
-const base = require('../lib/basicParsers')
-const parser = require('../lib/parser').programParser
-const typeInfer = require('../lib/typeInference')
+const base = require("../lib/basicParsers");
+const parser = require("../lib/parser").programParser;
+const typeInfer = require("../lib/typeInference");
 
 /* test and assert files */
-const [srcFiles, assertFiles] = [path.join(__dirname, '/src'), path.join(__dirname, '/assert')]
+const [srcFiles, assertFiles] = [
+  path.join(__dirname, "/src"),
+  path.join(__dirname, "/assert"),
+];
 
-const initObj = (input, line = 1, column = 0) => ({str: input, line, column})
+const initObj = (input, line = 1, column = 0) => ({ str: input, line, column });
 
-const generateTree = input => {
-  const parseResult = base.includeParser(input)
-  let rest = input
+const generateTree = (input) => {
+  const parseResult = base.includeParser(input);
+  let rest = input;
   if (parseResult !== null) {
-    [, rest] = parseResult
+    [, rest] = parseResult;
   }
-  const tree = parser(rest)
-  if (tree.error) return tree
-  const newTree = typeInfer(tree.body)
-  if (newTree.error) return newTree
-  tree.body = newTree
-  return tree
-}
+  const tree = parser(rest);
+  if (tree.error) return tree;
+  const newTree = typeInfer(tree.body);
+  if (newTree.error) return newTree;
+  tree.body = newTree;
+  return tree;
+};
 
-const readFileContent = file => fs.readFileSync(file, 'utf8')
+const readFileContent = (file) => fs.readFileSync(file, "utf8");
 
 const searchAndTest = (tests, assert) => {
   if (fs.existsSync(tests)) {
@@ -44,7 +47,7 @@ const searchAndTest = (tests, assert) => {
           t.deepEqual(tree, jsonValue)
         })
       }
-    })
+    });
   }
-}
-searchAndTest(srcFiles, assertFiles)
+};
+searchAndTest(srcFiles, assertFiles);
