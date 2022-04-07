@@ -2,6 +2,15 @@
 
 Please follow the guidelines strictly in order to keep the code readable for future contributors and other curious people who want to read the code.
 
+### Guidelines for Post-Installation
+
+- Make sure you install `husky`, to formate and test the code before you
+  commit. To install, run
+
+```
+npm run prepare
+```
+
 ### Guidelines for Git
 
 Commit messages must follow these rules sourced from [here](http://chris.beams.io/posts/git-commit/):
