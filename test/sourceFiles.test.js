@@ -10,7 +10,7 @@ const typeInfer = require('../lib/typeInference')
 /* test and assert files */
 const [srcFiles, assertFiles] = [
   path.join(__dirname, '/src'),
-  path.join(__dirname, '/assert'),
+  path.join(__dirname, '/assert')
 ]
 
 const initObj = (input, line = 1, column = 0) => ({ str: input, line, column })

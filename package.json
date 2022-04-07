@@ -9,12 +9,12 @@
   "scripts": {
     "test": "nyc ava --verbose --serial test/*.test.js",
     "prepare": "husky install",
-    "format": "prettier --write \"**/*.{js,json,md}\"",
+    "format": "standard --fix \"**/*.js\"",
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "**/*.+(js|json|md)": [
-      "prettier --write --ignore-unknown",
+    "**/*.+(js)": [
+      "standard --fix",
       "git add ."
     ]
   },
@@ -30,7 +30,7 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
     "nyc": "^10.2.0",
-    "prettier": "2.6.2"
+    "standard": "^16.0.4"
   },
   "repository": {
     "type": "git",

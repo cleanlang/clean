@@ -21,16 +21,16 @@ const exprStmt = templ.expression
 
 /* Exported parsers from parser.js to test */
 const {
-  doBlockParser,
-  ioParser,
-  doFuncParser,
+  // doBlockParser,
+  // ioParser,
+  // doFuncParser,
   declParser,
   ifExprParser,
   fnDeclParser,
   defineStmtParser,
   fnCallParser,
   lambdaParser,
-  lambdaCallParser,
+  lambdaCallParser
 } = parsers
 
 const initObj = (input, line = 1, column = 0) => ({ str: input, line, column })
@@ -66,7 +66,7 @@ const fnCallPass = initObj('fact 5 15')
 const fnCallTest = exprStmt(fnCall(id('fact'), [num('5'), num('15')]))
 testRunner(fnCallParser(fnCallPass)[0], fnCallTest, 'fnCallParser')
 
-const definePass = initObj(`defineProp a 'b' 'abcd'`)
+const definePass = initObj('defineProp a \'b\' \'abcd\'')
 const defineTest = define(id('a'), str('b'), str('abcd'), false)
 testRunner(defineStmtParser(definePass)[0], defineTest, 'defineProp')
 
