@@ -4,7 +4,7 @@ Please follow the guidelines strictly in order to keep the code readable for fut
 
 ### Guidelines for Post-Installation
 
-- Make sure you install `husky`, to formate and test the code before you
+- Make sure you install `husky`, to format and test the code before you
   commit. To install, run
 
 ```
