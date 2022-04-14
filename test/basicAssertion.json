@@ -93,7 +93,11 @@
       "return": { "str": "return", "line": 1, "column": 6 }
     },
     "includeParser": {
-      "include node-core": { "str": "node-core", "line": 1, "column": 17 }
+      "include node-core": {
+        "str": "node-core",
+        "line": 1,
+        "column": 17
+      }
     },
     "emptyArgsParser": {
       "()": { "str": [], "line": 1, "column": 2 },

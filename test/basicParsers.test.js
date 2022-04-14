@@ -8,9 +8,16 @@ const utils = require('../lib/utilityFunctions')
 /* test file with inputs and expected outputs */
 const assertion = require('./basicAssertion')
 
-const initObj = (input, line = 1, column = 0) => ({ str: input, line, column })
+const initInputObj = (input, line = 1, column = 0) => ({
+  str: input,
+  line,
+  column
+})
 
-const output = (input, line, column) => [input, initObj('', line, column)]
+const output = (input, line, column) => [
+  input,
+  initInputObj('', line, column)
+]
 
 const basicTest = () => {
   for (const parser in base) {
@@ -18,7 +25,7 @@ const basicTest = () => {
     if (utils.notUndefined(valid)) {
       for (const input in valid) {
         const op = valid[input]
-        const value = base[parser](initObj(input))
+        const value = base[parser](initInputObj(input))
         const expected = output(op.str, op.line, op.column)
         test(parser, (t) => {
           t.deepEqual(value, expected)
@@ -30,13 +37,16 @@ const basicTest = () => {
       const inpTempl = valid[0]
       const checks = valid[1]
       for (const input in checks) {
-        let value = base[parser](initObj(input))
+        let value = base[parser](initInputObj(input))
         if (utils.notNull(value)) {
           value = value[0]
           delete value.cursorLoc
+          delete value.isInLine
         }
         const output = checks[input]
-        let expected = utils.isNull(output) ? null : templ[inpTempl](output)
+        let expected = utils.isNull(output)
+          ? null
+          : templ[inpTempl](output)
         if (Array.isArray(output)) {
           expected = templ[inpTempl](...output)
         }
