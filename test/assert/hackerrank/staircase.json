@@ -99,7 +99,15 @@
       "leadingComments": [
         {
           "type": "Line",
-          "value": " link to hackerRank : https://www.hackerrank.com/challenges/staircase\n",
+          "value": " link to hackerRank : https://www.hackerrank.com/challenges/staircase",
+          "cursorLoc": {
+            "line": 1,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": " Print the stairs using space and hash------------------------------------z'",
           "cursorLoc": {
             "line": 2,
             "column": 0
@@ -107,25 +115,17 @@
         },
         {
           "type": "Line",
-          "value": " Print the stairs using space and hash------------------------------------z'\n",
+          "value": " Concat single character count times to itself",
           "cursorLoc": {
-            "line": 3,
+            "line": 5,
             "column": 0
           }
         },
         {
           "type": "Line",
-          "value": " Concat single character count times to itself\n",
+          "value": " string count -> string",
           "cursorLoc": {
             "line": 6,
-            "column": 0
-          }
-        },
-        {
-          "type": "Line",
-          "value": " string count -> string\n",
-          "cursorLoc": {
-            "line": 7,
             "column": 0
           }
         }
@@ -221,17 +221,17 @@
       "leadingComments": [
         {
           "type": "Line",
-          "value": " concat two strings\n",
+          "value": " concat two strings",
           "cursorLoc": {
-            "line": 13,
+            "line": 12,
             "column": 0
           }
         },
         {
           "type": "Line",
-          "value": " string string number number -> string\n",
+          "value": " string string number number -> string",
           "cursorLoc": {
-            "line": 14,
+            "line": 13,
             "column": 0
           }
         }
@@ -421,17 +421,17 @@
       "leadingComments": [
         {
           "type": "Line",
-          "value": " prints stairs given height of stairs\n",
+          "value": " prints stairs given height of stairs",
           "cursorLoc": {
-            "line": 20,
+            "line": 19,
             "column": 0
           }
         },
         {
           "type": "Line",
-          "value": " height -> string\n",
+          "value": " height -> string",
           "cursorLoc": {
-            "line": 21,
+            "line": 20,
             "column": 0
           }
         }

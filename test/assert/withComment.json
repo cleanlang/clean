@@ -60,9 +60,9 @@
       "leadingComments": [
         {
           "type": "Line",
-          "value": " This is a comment to test\n",
+          "value": " This is a comment to test",
           "cursorLoc": {
-            "line": 8,
+            "line": 7,
             "column": 0
           }
         }
@@ -70,9 +70,9 @@
       "trailingComments": [
         {
           "type": "Line",
-          "value": " this is an inline comment\n",
+          "value": " this is an inline comment",
           "cursorLoc": {
-            "line": 10,
+            "line": 9,
             "column": 0
           }
         }

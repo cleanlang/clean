@@ -862,9 +862,9 @@
       "leadingComments": [
         {
           "type": "Line",
-          "value": " BOOLEAN DECLARATION\n",
+          "value": " BOOLEAN DECLARATION",
           "cursorLoc": {
-            "line": 34,
+            "line": 33,
             "column": 0
           }
         }
@@ -1854,9 +1854,9 @@
       "leadingComments": [
         {
           "type": "Line",
-          "value": " ARRAYS\n",
+          "value": " ARRAYS",
           "cursorLoc": {
-            "line": 68,
+            "line": 67,
             "column": 0
           }
         }
@@ -2245,9 +2245,9 @@
       "leadingComments": [
         {
           "type": "Line",
-          "value": "OBJECTS\n",
+          "value": "OBJECTS",
           "cursorLoc": {
-            "line": 76,
+            "line": 75,
             "column": 0
           }
         }
@@ -2629,9 +2629,9 @@
       "leadingComments": [
         {
           "type": "Line",
-          "value": " ARRAY-SUBSCRIPTING -- MEMBER-EXPRESSIONS\n",
+          "value": " ARRAY-SUBSCRIPTING -- MEMBER-EXPRESSIONS",
           "cursorLoc": {
-            "line": 104,
+            "line": 103,
             "column": 0
           }
         }
@@ -2892,9 +2892,9 @@
       "leadingComments": [
         {
           "type": "Line",
-          "value": " Member check\n",
+          "value": " Member check",
           "cursorLoc": {
-            "line": 111,
+            "line": 110,
             "column": 0
           }
         }
@@ -3470,7 +3470,15 @@
       "trailingComments": [
         {
           "type": "Line",
-          "value": " should fail\n",
+          "value": " should fail",
+          "cursorLoc": {
+            "line": 126,
+            "column": 0
+          }
+        },
+        {
+          "type": "Line",
+          "value": "boolCheck5 = 5 < 'string'",
           "cursorLoc": {
             "line": 127,
             "column": 0
@@ -3478,7 +3486,7 @@
         },
         {
           "type": "Line",
-          "value": "boolCheck5 = 5 < 'string'\n",
+          "value": "strNumAdd = 5 + 'string'",
           "cursorLoc": {
             "line": 128,
             "column": 0
@@ -3486,7 +3494,7 @@
         },
         {
           "type": "Line",
-          "value": "strNumAdd = 5 + 'string'\n",
+          "value": " boolCheck8 = 5 <= 'clean'",
           "cursorLoc": {
             "line": 129,
             "column": 0
@@ -3494,7 +3502,7 @@
         },
         {
           "type": "Line",
-          "value": " boolCheck8 = 5 <= 'clean'\n",
+          "value": "boolCheck10 = true > 1",
           "cursorLoc": {
             "line": 130,
             "column": 0
@@ -3502,7 +3510,7 @@
         },
         {
           "type": "Line",
-          "value": "boolCheck10 = true > 1\n",
+          "value": "concatCheck = 1 ++ 3",
           "cursorLoc": {
             "line": 131,
             "column": 0
@@ -3510,7 +3518,7 @@
         },
         {
           "type": "Line",
-          "value": "concatCheck = 1 ++ 3\n",
+          "value": "concatCheck3 = 'clean' ++ 01235",
           "cursorLoc": {
             "line": 132,
             "column": 0
@@ -3518,7 +3526,7 @@
         },
         {
           "type": "Line",
-          "value": "concatCheck3 = 'clean' ++ 01235\n",
+          "value": " concatCheck4 = 01234 ++ 'afnbf'",
           "cursorLoc": {
             "line": 133,
             "column": 0
@@ -3526,7 +3534,7 @@
         },
         {
           "type": "Line",
-          "value": " concatCheck4 = 01234 ++ 'afnbf'\n",
+          "value": " concatCheck5 = true ++ false",
           "cursorLoc": {
             "line": 134,
             "column": 0
@@ -3534,7 +3542,7 @@
         },
         {
           "type": "Line",
-          "value": " concatCheck5 = true ++ false\n",
+          "value": " concatCheck6 = true ++ 1",
           "cursorLoc": {
             "line": 135,
             "column": 0
@@ -3542,7 +3550,7 @@
         },
         {
           "type": "Line",
-          "value": " concatCheck6 = true ++ 1\n",
+          "value": "logicalCheck11 = 1 && 'dack'",
           "cursorLoc": {
             "line": 136,
             "column": 0
@@ -3550,7 +3558,7 @@
         },
         {
           "type": "Line",
-          "value": "logicalCheck11 = 1 && 'dack'\n",
+          "value": " logicalCheck10 = 1 && true",
           "cursorLoc": {
             "line": 137,
             "column": 0
@@ -3558,7 +3566,7 @@
         },
         {
           "type": "Line",
-          "value": " logicalCheck10 = 1 && true\n",
+          "value": "logicalCheck12 = 1 || true",
           "cursorLoc": {
             "line": 138,
             "column": 0
@@ -3566,7 +3574,7 @@
         },
         {
           "type": "Line",
-          "value": "logicalCheck12 = 1 || true\n",
+          "value": " logicalCheck15 = 7 != 7 && 'garima' ++ ' kamboj'",
           "cursorLoc": {
             "line": 139,
             "column": 0
@@ -3574,7 +3582,7 @@
         },
         {
           "type": "Line",
-          "value": " logicalCheck15 = 7 != 7 && 'garima' ++ ' kamboj'\n",
+          "value": " logicalCheck19 = -4 == 'clean'",
           "cursorLoc": {
             "line": 140,
             "column": 0
@@ -3582,7 +3590,7 @@
         },
         {
           "type": "Line",
-          "value": " logicalCheck19 = -4 == 'clean'\n",
+          "value": " logicalCheck22 = 10 & 10",
           "cursorLoc": {
             "line": 141,
             "column": 0
@@ -3590,7 +3598,7 @@
         },
         {
           "type": "Line",
-          "value": " logicalCheck22 = 10 & 10\n",
+          "value": " logicalCheck24 = 5 > 1 == 9 != 9",
           "cursorLoc": {
             "line": 142,
             "column": 0
@@ -3598,7 +3606,7 @@
         },
         {
           "type": "Line",
-          "value": " logicalCheck24 = 5 > 1 == 9 != 9\n",
+          "value": " arrayCheck7 = (['str'] ++ ['tgb'])",
           "cursorLoc": {
             "line": 143,
             "column": 0
@@ -3606,7 +3614,7 @@
         },
         {
           "type": "Line",
-          "value": " arrayCheck7 = (['str'] ++ ['tgb'])\n",
+          "value": " arrSubs3 = arrayCheck3[0] + arrayCheck3[1]",
           "cursorLoc": {
             "line": 144,
             "column": 0
@@ -3614,7 +3622,7 @@
         },
         {
           "type": "Line",
-          "value": " arrSubs3 = arrayCheck3[0] + arrayCheck3[1]\n",
+          "value": " arrSubs5 = arrayCheck3[1 + 3]",
           "cursorLoc": {
             "line": 145,
             "column": 0
@@ -3622,17 +3630,9 @@
         },
         {
           "type": "Line",
-          "value": " arrSubs5 = arrayCheck3[1 + 3]\n",
+          "value": "",
           "cursorLoc": {
             "line": 146,
-            "column": 0
-          }
-        },
-        {
-          "type": "Line",
-          "value": "\n",
-          "cursorLoc": {
-            "line": 147,
             "column": 0
           }
         }
