@@ -24,6 +24,4 @@ prod a b = a * b
 variable = if 'hello' > 'world' then true else false
 
 do
-    putLine 'testing inline comment inside "do"'  // inside do
-
-// This is the end
+    putLine 'testing inline comment inside "do"'

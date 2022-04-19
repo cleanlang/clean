@@ -93,7 +93,11 @@
       "return": { "str": "return", "line": 1, "column": 6 }
     },
     "includeParser": {
-      "include node-core": { "str": "node-core", "line": 1, "column": 17 }
+      "include node-core": {
+        "str": "node-core",
+        "line": 1,
+        "column": 17
+      }
     },
     "emptyArgsParser": {
       "()": { "str": [], "line": 1, "column": 2 },
@@ -221,12 +225,12 @@
     "singleLineCommentParser": [
       "comment",
       {
-        "// This is a comment\n": ["Line", " This is a comment\n"],
+        "// This is a comment\n": ["Line", " This is a comment"],
         "// This is a no end new line comment": [
           "Line",
           " This is a no end new line comment"
         ],
-        "// This is a comment\ntest": ["Line", " This is a comment\n"]
+        "// This is a comment\ntest": ["Line", " This is a comment"]
       }
     ],
     "multiLineCommentParser": [

@@ -60,9 +60,19 @@
       "leadingComments": [
         {
           "type": "Line",
-          "value": " This is a comment to test\n",
+          "value": " This is a comment to test",
           "cursorLoc": {
-            "line": 8,
+            "line": 7,
+            "column": 0
+          }
+        }
+      ],
+      "trailingComments": [
+        {
+          "type": "Line",
+          "value": " this is an inline comment",
+          "cursorLoc": {
+            "line": 9,
             "column": 0
           }
         }
@@ -96,17 +106,7 @@
           }
         }
       ],
-      "kind": "const",
-      "leadingComments": [
-        {
-          "type": "Line",
-          "value": " this is an inline comment\n",
-          "cursorLoc": {
-            "line": 10,
-            "column": 0
-          }
-        }
-      ]
+      "kind": "const"
     },
     {
       "type": "VariableDeclaration",
@@ -215,17 +215,7 @@
         ],
         "ioParams": [],
         "sType": "IO"
-      },
-      "trailingComments": [
-        {
-          "type": "Line",
-          "value": " This is the end\n",
-          "cursorLoc": {
-            "line": 30,
-            "column": 0
-          }
-        }
-      ]
+      }
     }
   ],
   "sourceType": "script"
