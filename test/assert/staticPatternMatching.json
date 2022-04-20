@@ -8,32 +8,73 @@
           "type": "VariableDeclarator",
           "id": {
             "type": "Identifier",
-            "name": "bobAt10"
+            "name": "bobAt"
           },
           "init": {
-            "type": "Literal",
-            "value": "naughty",
-            "raw": "naughty",
-            "sType": "string"
-          }
-        }
-      ],
-      "kind": "const"
-    },
-    {
-      "type": "VariableDeclaration",
-      "declarations": [
-        {
-          "type": "VariableDeclarator",
-          "id": {
-            "type": "Identifier",
-            "name": "bobAt20"
-          },
-          "init": {
-            "type": "Literal",
-            "value": "nerdy",
-            "raw": "nerdy",
-            "sType": "string"
+            "type": "ArrowFunctionExpression",
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "x"
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "SwitchStatement",
+                  "discriminant": {
+                    "type": "Identifier",
+                    "name": "x"
+                  },
+                  "cases": [
+                    {
+                      "type": "SwitchCase",
+                      "test": {
+                        "type": "Literal",
+                        "value": 10,
+                        "raw": "10",
+                        "sType": "number"
+                      },
+                      "consequent": [
+                        {
+                          "type": "ReturnStatement",
+                          "argument": {
+                            "type": "Literal",
+                            "value": "naughty",
+                            "raw": "naughty",
+                            "sType": "string"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "SwitchCase",
+                      "test": {
+                        "type": "Literal",
+                        "value": 20,
+                        "raw": "20",
+                        "sType": "number"
+                      },
+                      "consequent": [
+                        {
+                          "type": "ReturnStatement",
+                          "argument": {
+                            "type": "Literal",
+                            "value": "nerdy",
+                            "raw": "nerdy",
+                            "sType": "string"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "generator": false,
+            "expression": false
           }
         }
       ],
@@ -42,6 +83,7 @@
     {
       "type": "ExpressionStatement",
       "expression": {
+        "sType": "IO",
         "type": "CallExpression",
         "callee": {
           "type": "MemberExpression",
@@ -57,11 +99,21 @@
         },
         "arguments": [
           {
-            "type": "Identifier",
-            "name": "bobAt20"
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "bobAt"
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": 20,
+                "raw": "20",
+                "sType": "number"
+              }
+            ]
           }
-        ],
-        "sType": "IO"
+        ]
       }
     }
   ],

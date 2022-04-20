@@ -1,5 +1,5 @@
+bobAt 10 = 'naughty'
+bobAt 20 = 'nerdy'
 
-bobAt10 = 'naughty'
-bobAt20 = 'nerdy'
+print (bobAt 20)
 
-print bobAt20
