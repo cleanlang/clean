@@ -14,8 +14,7 @@
   },
   "lint-staged": {
     "**/*.+(js)": [
-      "standard --fix",
-      "git add ."
+      "standard --fix"
     ]
   },
   "author": "Santosh Rajan",
