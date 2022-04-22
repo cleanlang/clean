@@ -1,1 +1,6 @@
-{ "error": true, "id": "a" }
+{
+  "error": true,
+  "id": "a",
+  "message": "TypeError at VariableDeclaration 'a'",
+  "type": "VariableDeclaration"
+}

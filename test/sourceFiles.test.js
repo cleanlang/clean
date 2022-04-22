@@ -20,9 +20,8 @@ const generateTree = input => {
   }
   const tree = parser(rest)
   if (tree.error) return tree
-  const newTree = typeInfer(tree.body)
-  if (newTree.error) return newTree
-  tree.body = newTree
+  const maybeTypeErrors = typeInfer(tree.body)
+  if (maybeTypeErrors !== null) return maybeTypeErrors
   return tree
 }
 
