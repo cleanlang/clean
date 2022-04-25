@@ -1,0 +1,7 @@
+{
+  "error": true,
+  "id": "fact",
+  "message": "TypeError at CallExpression 'fact'",
+  "type": "CallExpression"
+}
+
