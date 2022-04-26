@@ -1,0 +1,402 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "bmiTell"
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "bmi"
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "IfStatement",
+                  "test": {
+                    "type": "BinaryExpression",
+                    "operator": "<=",
+                    "sType": "bool",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "bmi"
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": 18.5,
+                      "raw": "18.5",
+                      "sType": "number"
+                    }
+                  },
+                  "consequent": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ReturnStatement",
+                        "argument": {
+                          "type": "Literal",
+                          "value": "Underweight",
+                          "raw": "Underweight",
+                          "sType": "string"
+                        }
+                      }
+                    ]
+                  },
+                  "alternate": {
+                    "type": "IfStatement",
+                    "test": {
+                      "type": "BinaryExpression",
+                      "operator": "<=",
+                      "sType": "bool",
+                      "left": {
+                        "type": "Identifier",
+                        "name": "bmi"
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "value": 25,
+                        "raw": "25.0",
+                        "sType": "number"
+                      }
+                    },
+                    "consequent": {
+                      "type": "BlockStatement",
+                      "body": [
+                        {
+                          "type": "ReturnStatement",
+                          "argument": {
+                            "type": "Literal",
+                            "value": "Normal",
+                            "raw": "Normal",
+                            "sType": "string"
+                          }
+                        }
+                      ]
+                    },
+                    "alternate": {
+                      "type": "IfStatement",
+                      "test": {
+                        "type": "BinaryExpression",
+                        "operator": "<=",
+                        "sType": "bool",
+                        "left": {
+                          "type": "Identifier",
+                          "name": "bmi"
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": 30,
+                          "raw": "30.0",
+                          "sType": "number"
+                        }
+                      },
+                      "consequent": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "Literal",
+                              "value": "Fatty",
+                              "raw": "Fatty",
+                              "sType": "string"
+                            }
+                          }
+                        ]
+                      },
+                      "alternate": {
+                        "type": "IfStatement",
+                        "test": {
+                          "type": "Literal",
+                          "value": true,
+                          "raw": "true",
+                          "sType": "bool"
+                        },
+                        "consequent": {
+                          "type": "BlockStatement",
+                          "body": [
+                            {
+                              "type": "ReturnStatement",
+                              "argument": {
+                                "type": "Literal",
+                                "value": "Index overflow",
+                                "raw": "Index overflow",
+                                "sType": "string"
+                              }
+                            }
+                          ]
+                        },
+                        "alternate": null
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "generator": false,
+            "expression": false
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "add"
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "x"
+              },
+              {
+                "type": "Identifier",
+                "name": "y"
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "IfStatement",
+                  "test": {
+                    "type": "Literal",
+                    "value": true,
+                    "raw": "true",
+                    "sType": "bool"
+                  },
+                  "consequent": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ReturnStatement",
+                        "argument": {
+                          "type": "BinaryExpression",
+                          "operator": "+",
+                          "sType": "number",
+                          "left": {
+                            "type": "Identifier",
+                            "name": "x"
+                          },
+                          "right": {
+                            "type": "Identifier",
+                            "name": "y"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "alternate": null
+                }
+              ]
+            },
+            "generator": false,
+            "expression": false
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "isZero"
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "x"
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "IfStatement",
+                  "test": {
+                    "type": "BinaryExpression",
+                    "operator": "===",
+                    "sType": "bool",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "x"
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": 0,
+                      "raw": "0",
+                      "sType": "number"
+                    }
+                  },
+                  "consequent": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ReturnStatement",
+                        "argument": {
+                          "type": "Literal",
+                          "value": true,
+                          "raw": "true",
+                          "sType": "bool"
+                        }
+                      }
+                    ]
+                  },
+                  "alternate": {
+                    "type": "IfStatement",
+                    "test": {
+                      "type": "Literal",
+                      "value": true,
+                      "raw": "true",
+                      "sType": "bool"
+                    },
+                    "consequent": {
+                      "type": "BlockStatement",
+                      "body": [
+                        {
+                          "type": "ReturnStatement",
+                          "argument": {
+                            "type": "Literal",
+                            "value": false,
+                            "raw": "false",
+                            "sType": "bool"
+                          }
+                        }
+                      ]
+                    },
+                    "alternate": null
+                  }
+                }
+              ]
+            },
+            "generator": false,
+            "expression": false
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "sign"
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "x"
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "IfStatement",
+                  "test": {
+                    "type": "BinaryExpression",
+                    "operator": "<",
+                    "sType": "bool",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "x"
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": 0,
+                      "raw": "0",
+                      "sType": "number"
+                    }
+                  },
+                  "consequent": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ReturnStatement",
+                        "argument": {
+                          "type": "Literal",
+                          "value": "Negative",
+                          "raw": "Negative",
+                          "sType": "string"
+                        }
+                      }
+                    ]
+                  },
+                  "alternate": {
+                    "type": "IfStatement",
+                    "test": {
+                      "type": "BinaryExpression",
+                      "operator": ">",
+                      "sType": "bool",
+                      "left": {
+                        "type": "Identifier",
+                        "name": "x"
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "value": 0,
+                        "raw": "0",
+                        "sType": "number"
+                      }
+                    },
+                    "consequent": {
+                      "type": "BlockStatement",
+                      "body": [
+                        {
+                          "type": "ReturnStatement",
+                          "argument": {
+                            "type": "Literal",
+                            "value": "Positive",
+                            "raw": "Positive",
+                            "sType": "string"
+                          }
+                        }
+                      ]
+                    },
+                    "alternate": null
+                  }
+                }
+              ]
+            },
+            "generator": false,
+            "expression": false
+          }
+        }
+      ],
+      "kind": "const"
+    }
+  ],
+  "sourceType": "script"
+}
