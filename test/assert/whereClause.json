@@ -1,0 +1,336 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "add5"
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "x"
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "n"
+                      },
+                      "init": {
+                        "type": "Literal",
+                        "value": 5,
+                        "raw": "5",
+                        "sType": "number"
+                      }
+                    }
+                  ],
+                  "kind": "const"
+                },
+                {
+                  "type": "IfStatement",
+                  "test": {
+                    "type": "Literal",
+                    "value": true,
+                    "raw": "true",
+                    "sType": "bool"
+                  },
+                  "consequent": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ReturnStatement",
+                        "argument": {
+                          "type": "BinaryExpression",
+                          "operator": "+",
+                          "sType": "number",
+                          "left": {
+                            "type": "Identifier",
+                            "name": "x"
+                          },
+                          "right": {
+                            "type": "Identifier",
+                            "name": "n"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "alternate": null
+                }
+              ]
+            },
+            "generator": false,
+            "expression": false
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "mul2"
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "x"
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "n"
+                      },
+                      "init": {
+                        "type": "Literal",
+                        "value": 2,
+                        "raw": "2",
+                        "sType": "number"
+                      }
+                    }
+                  ],
+                  "kind": "const"
+                },
+                {
+                  "type": "IfStatement",
+                  "test": {
+                    "type": "BinaryExpression",
+                    "operator": "===",
+                    "sType": "bool",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "x"
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": 0,
+                      "raw": "0",
+                      "sType": "number"
+                    }
+                  },
+                  "consequent": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ReturnStatement",
+                        "argument": {
+                          "type": "Literal",
+                          "value": "multiplicant can not be 0",
+                          "raw": "multiplicant can not be 0",
+                          "sType": "string"
+                        }
+                      }
+                    ]
+                  },
+                  "alternate": {
+                    "type": "IfStatement",
+                    "test": {
+                      "type": "Literal",
+                      "value": true,
+                      "raw": "true",
+                      "sType": "bool"
+                    },
+                    "consequent": {
+                      "type": "BlockStatement",
+                      "body": [
+                        {
+                          "type": "ReturnStatement",
+                          "argument": {
+                            "type": "BinaryExpression",
+                            "operator": "*",
+                            "sType": "number",
+                            "left": {
+                              "type": "Identifier",
+                              "name": "x"
+                            },
+                            "right": {
+                              "type": "Identifier",
+                              "name": "n"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "alternate": null
+                  }
+                }
+              ]
+            },
+            "generator": false,
+            "expression": false
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "mul2and4"
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "ArrowFunctionExpression",
+              "id": null,
+              "params": [],
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                      {
+                        "type": "VariableDeclarator",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "x"
+                        },
+                        "init": {
+                          "type": "Literal",
+                          "value": 2,
+                          "raw": "2",
+                          "sType": "number"
+                        }
+                      }
+                    ],
+                    "kind": "const"
+                  },
+                  {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                      {
+                        "type": "VariableDeclarator",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "y"
+                        },
+                        "init": {
+                          "type": "Literal",
+                          "value": 4,
+                          "raw": "4",
+                          "sType": "number"
+                        }
+                      }
+                    ],
+                    "kind": "const"
+                  },
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "BinaryExpression",
+                      "operator": "*",
+                      "sType": "number",
+                      "left": {
+                        "type": "Identifier",
+                        "name": "x"
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "y"
+                      }
+                    }
+                  }
+                ]
+              },
+              "generator": false,
+              "expression": false
+            },
+            "arguments": []
+          }
+        }
+      ],
+      "kind": "const"
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "val10"
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "ArrowFunctionExpression",
+              "id": null,
+              "params": [],
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                      {
+                        "type": "VariableDeclarator",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "v"
+                        },
+                        "init": {
+                          "type": "Literal",
+                          "value": 10,
+                          "raw": "10",
+                          "sType": "number"
+                        }
+                      }
+                    ],
+                    "kind": "const"
+                  },
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "Identifier",
+                      "name": "v"
+                    }
+                  }
+                ]
+              },
+              "generator": false,
+              "expression": false
+            },
+            "arguments": []
+          }
+        }
+      ],
+      "kind": "const"
+    }
+  ],
+  "sourceType": "script"
+}
